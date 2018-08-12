@@ -5,7 +5,7 @@ subtitle: Olin Student / Robotics Nerd / Engineer
 bigimg: /img/walle2.jpg
 ---
 
-Here are some of my favorite projects:
+## Here are some of my favorite projects:
 
 <!--
  ![](img/tractor.jpg) |![](img/roc.jpg) | ![](img/fruit-ninja.jpg)
@@ -26,7 +26,7 @@ Here are some of my favorite projects:
       <div class="container">
         <p>Autonomous Research Tractor</p>
       </div>
-    </div></th>
+    </th>
     <th class="tg-us36"><img src="img/roc.jpg"></th>
     <th class="tg-us36"><img src="img/fruit-ninja.jpg"></th>
 
@@ -51,7 +51,6 @@ div.container {
   padding: 10px;
 }
 </style>
-</head>
 <body>
 
 <h2>Polaroid Images / Cards</h2>
