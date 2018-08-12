@@ -94,16 +94,24 @@ div.container {
 
 <h2>Responsive Polaroid Images / Cards</h2>
 
-<div class="polaroid">
-  <img src="img/tractor.jpg" alt="5 Terre" style="width:100%">
-  <div class="container">
-    <p>Cinque Terre</p>
-  </div>
-</div>
+<table>
+  <tr>
+    <th>
+      <div class="polaroid">
+        <img src="img/tractor.jpg" alt="5 Terre" style="width:100%">
+        <div class="container">
+          <p>Cinque Terre</p>
+        </div>
+      </div>
+    </th>
 
-<div class="polaroid">
-  <img src="img/tractor.jpg" alt="Norther Lights" style="width:100%">
-  <div class="container">
-    <p>Northern Lights</p>
-  </div>
-</div>
+    <th>
+      <div class="polaroid">
+        <img src="img/tractor.jpg" alt="Norther Lights" style="width:100%">
+        <div class="container">
+          <p>Northern Lights</p>
+        </div>
+      </div>
+    </th>
+  </tr>
+</table>
