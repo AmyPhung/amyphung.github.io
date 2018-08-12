@@ -23,18 +23,25 @@ bigimg: /img/walle2.jpg
   <tr>
     <th class="tg-us36"><div class="polaroid">
       <img src="img/tractor.jpg" alt="tractor" style="width:100%">
-      <div class="container">
-        <p>Autonomous Research Tractor</p>
-      </div>
+    </div>
     </th>
-    <th class="tg-us36"><img src="img/roc.jpg"></th>
-    <th class="tg-us36"><img src="img/fruit-ninja.jpg"></th>
+
+    <th class="tg-us36"><div class="polaroid">
+      <img src="img/tractor.jpg" alt="tractor" style="width:100%">
+    </div>
+    </th>
+
+
+    <th class="tg-us36"><div class="polaroid">
+      <img src="img/tractor.jpg" alt="tractor" style="width:100%">
+    </div>
+    </th>
 
   </tr>
   <tr>
-    <td class="tg-us36">**Autonomous Research Tractor**</td>
-    <td class="tg-us36"></td>
-    <td class="tg-us36"></td>
+    <td class="tg-us36"><b>Autonomous Research Tractor</b></td>
+    <td class="tg-us36"><b>Autonomous Research Tractor</b></td>
+    <td class="tg-us36"><b>Autonomous Research Tractor</b></td>
   </tr>
 </table>
 
