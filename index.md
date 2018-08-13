@@ -32,7 +32,7 @@ bigimg: /img/walle2.jpg
 <div class="row">
   <div class="column">
     <img src="img/tractor.jpg" style="width:100%">
-    <h3>Autonomous Tractor Research</h3>
+    <h3><a href="https://amyphung.github.io/gravl/">Autonomous Tractor Research</a></h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
   </div>
