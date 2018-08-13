@@ -139,14 +139,25 @@ div.container {
       <h3>Column 1</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <div class="polaroid">
+        <img src="img/tractor.jpg">
+        <div class="container">
+          <p>Cinque Terre</p>
+        </div>
+      </div>
+
     </div>
     <div class="col-sm-4">
       <h3>Column 2</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <img src="img/tractor.jpg" alt="Norway" style="width:100%">
     </div>
     <div class="col-sm-4">
       <h3>Column 3</h3>        
+      <div class="polaroid">
+        <img src="img/tractor.jpg">
+        <div/>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
@@ -154,4 +165,3 @@ div.container {
 </div>
 
 </body>
-</html>
