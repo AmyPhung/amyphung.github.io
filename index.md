@@ -19,21 +19,21 @@ bigimg: /img/walle2.jpg
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-3">
+    <div class="col-xs-3">
       <img src="img/tractor.jpg" style="width:100%">
       <h3>Autonomous Tractor Research</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
 
-    <div class="col-sm-3">
+    <div class="col-xs-3">
       <img src="img/roc.jpg" style="width:100%">
       <h3>Rotorcraft Operations Center</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
 
-    <div class="col-sm-3">
+    <div class="col-xs-3">
       <img src="img/fruit-ninja.jpg" style="width:100%">
       <h3>OpenCV Fruit Ninja</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
