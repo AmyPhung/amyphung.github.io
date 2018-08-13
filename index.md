@@ -7,7 +7,6 @@ bigimg: /img/walle2.jpg
 
 ## Here are some of my favorite projects:
 
-
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -29,8 +28,6 @@ bigimg: /img/walle2.jpg
 </style>
 </head>
 <body>
-
-<h2>Three Equal Columns</h2>
 
 <div class="row">
   <div class="column">
