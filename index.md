@@ -32,7 +32,7 @@ Margin-bottom: 21px;
 
 <body>
 
-<table width="100%" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF"  align="center" max-width: 750px;">
+<table width="100%" bordercolor="#FFFFFF" align="center">
   <tr>
     <td width="33%" valign="top" class="full" style="text-align: left;">
       <a href="https://amyphung.github.io/gravl/">
