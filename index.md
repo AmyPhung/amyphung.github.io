@@ -14,7 +14,9 @@ bigimg: /img/walle2.jpg
   }
 }
 
-table {border: none;}
+table, th, td {
+   border: 0px;
+}
 
 h3 {
 
