@@ -14,13 +14,25 @@ bigimg: /img/walle2.jpg
   }
 }
 
+body { background-color: #313740; }
+
 h3 {
 
+font-family: sans-serif;
 line-height: 21px;
-text-rendering: optimizeLegibility;}
+text-rendering: optimizeLegibility;
+Margin-bottom: 21px;
+color: #d8dee3;
+text-shadow: 0 1px 0 #000000; }
 
 p {
-text-rendering: optimizeLegibility;}
+font-family: sans-serif;
+font-size: 13px;
+line-height: 21px;
+text-rendering: optimizeLegibility;
+Margin-bottom: 21px;
+color: #d8dee3;
+text-shadow: 0 1px 0 #000000; }
 
 </style>
 </head>
