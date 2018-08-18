@@ -39,7 +39,7 @@ text-shadow: 0 1px 0 #000000; }
 
 <body>
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; max-width: 500px;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; max-width: 750px;">
   <tr>
     <td width="33%" valign="top" class="full" style="text-align: center;">
       <a href="https://amyphung.github.io/gravl/">
