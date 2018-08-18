@@ -8,6 +8,8 @@ bigimg: /img/walle2.jpg
 ## Here are some of my favorite projects:
 
 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .container {
     display: grid;
