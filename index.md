@@ -14,6 +14,10 @@ bigimg: /img/walle2.jpg
   }
 }
 
+table {
+    border-collapse: collapse;
+}
+
 table, th, td {
    border: 10px solid black;
 }
