@@ -36,9 +36,6 @@ bigimg: /img/walle2.jpg
   <div><img src="img/tractor.jpg"/></div>
   <div><img src="img/tractor.jpg"/></div>
   <div><img src="img/tractor.jpg"/></div>
-  <div><img src="img/tractor.jpg"/></div>
-  <div><img src="img/tractor.jpg"/></div>
-  <div><img src="img/tractor.jpg"/></div>
 </div>
 
 
@@ -46,36 +43,5 @@ bigimg: /img/walle2.jpg
 
 
 
-
-
-
-
-
-<div class="row">
-  <div class="column">
-    <a href="https://amyphung.github.io/gravl/">
-      <img src="img/tractor.jpg" style="width:100%">
-    </a>
-    <h3>Autonomous Tractor Research</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-  </div>
-  <div class="column">
-    <a href="https://amyphung.github.io/roc/">
-      <img src="img/roc.jpg" style="width:100%">
-    </a>
-    <h3>Rotorcraft Operations Center</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-  </div>
-  <div class="column">
-    <a href="https://amyphung.github.io/fruit-ninja/">
-      <img src="img/fruit-ninja.jpg" style="width:100%">
-    </a>
-    <h3>OpenCV Fruit Ninja</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-  </div>
-</div>
 
 </body>
