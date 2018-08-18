@@ -8,7 +8,7 @@ bigimg: /img/walle2.jpg
 ## Here are some of my favorite projects:
 
 
-
+<style>
 .container {
     display: grid;
     grid-gap: 5px;
@@ -20,6 +20,7 @@ bigimg: /img/walle2.jpg
     height: 100%;
     object-fit: cover;
 }
+</style>
 
 <div class="container">
   <div><img src="img/tractor.jpg"/></div>
