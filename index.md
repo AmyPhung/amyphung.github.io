@@ -15,7 +15,7 @@ bigimg: /img/walle2.jpg
 }
 
 table, th, td {
-   border: 1px solid black;
+   border: 10px solid black;
 }
 
 h3 {
