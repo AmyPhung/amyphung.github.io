@@ -19,7 +19,7 @@ table {
 }
 
 table, th, td {
-   border: 10px solid black;
+   border: 1px solid white;
 }
 
 h3 {
