@@ -1,4 +1,3 @@
-
 ---
 layout: page
 title: Hello World! I'm Amy.
@@ -6,6 +5,7 @@ subtitle: Olin Student / Robotics Nerd / Engineer
 bigimg: /img/walle2.jpg
 ---
 
+<head>
 <style>
 @media only screen and (max-width: 480px)  {
   .full {
@@ -13,8 +13,6 @@ bigimg: /img/walle2.jpg
     width:100%;
   }
 }
-
-/* Prettifying code */
 
 body { background-color: #313740; }
 
@@ -41,17 +39,19 @@ text-align:center;
 font-style: italic;
 }
 </style>
+</head>
 
-
+<body>
 
 <table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; max-width: 500px;">
   <tr>
-    <td width="50%" valign="top"class="full" style="text-align: center;">
+    <td width="50%" valign="top" class="full" style="text-align: center;">
 
       <p class="caption">(Left)</p>
       <img src="https://cl.ly/image/083K1Z3Z1U0x/download/icon-apps1.png" alt="Right-side image" width="180" height="96" border="0" />
 
     </td>
+
     <td width="50%" class="full">
 
       <p class="caption">(Right)</p>
@@ -72,3 +72,4 @@ style="background-color:#556270;background-image:url(https://i.imgur.com/0xPEf.g
     </td>
   </tr>
 </table>
+</body>
