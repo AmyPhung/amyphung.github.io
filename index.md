@@ -14,16 +14,22 @@ bigimg: /img/walle2.jpg
   }
 }
 
+table { border-collapse:collapse }
+
 h3 {
 
-line-height: 21px;
-text-rendering: optimizeLegibility;}
+text-rendering: optimizeLegibility;
+Margin-bottom: 21px;
+}
 
 p {
-text-rendering: optimizeLegibility;}
+text-rendering: optimizeLegibility;
+Margin-bottom: 21px;
+}
 
 </style>
 </head>
+<!-- font-size: 13px;-->
 
 <body>
 
