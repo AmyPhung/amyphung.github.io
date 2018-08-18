@@ -7,6 +7,42 @@ bigimg: /img/walle2.jpg
 
 ## Here are some of my favorite projects:
 
+
+
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+}
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+<div class="container">
+  <div><img src="img/tractor.jpg"/></div>
+  <div><img src="img/tractor.jpg"/></div>
+  <div><img src="img/tractor.jpg"/></div>
+  <div><img src="img/tractor.jpg"/></div>
+  <div><img src="img/tractor.jpg"/></div>
+  <div><img src="img/tractor.jpg"/></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
