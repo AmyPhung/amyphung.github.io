@@ -7,13 +7,14 @@ bigimg: /img/walle2.jpg
 
 <head>
 <style>
-@media only screen and (max-width: 480px)  {
+@media only screen and (max-width: 580px)  {
   .full {
     display:block;
     width:100%;
   }
 }
 
+table {border: none;}
 
 h3 {
 
@@ -32,7 +33,7 @@ Margin-bottom: 21px;
 
 <body>
 
-<table width="100%" bordercolor="#FFFFFF" align="center">
+<table>
   <tr>
     <td width="33%" valign="top" class="full" style="text-align: left;">
       <a href="https://amyphung.github.io/gravl/">
