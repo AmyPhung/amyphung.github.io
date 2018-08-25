@@ -50,8 +50,8 @@ It all started back in the summer of 2008 - I visited NASA's open house for the 
         <img src="img/tractor.jpg" style="width:100%">
       </a>
       <h3>Autonomous Tractor Research</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>Developing an autonomous tractor as a research platform</p>
+      <a href="{{ https://amyphung.github.io/gravl/ | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
     </td>
 
     <td width="33%" valign="top" class="full" style="text-align: left;">
@@ -59,8 +59,8 @@ It all started back in the summer of 2008 - I visited NASA's open house for the 
         <img src="img/roc2.jpg" style="width:100%">
       </a>
       <h3>Rotorcraft Operations Center</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>GUI for plotting data from helicopter engine Health and Usage Monitoring System</p>
+      <a href="{{ https://amyphung.github.io/roc/ | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
     </td>
 
     <td width="33%" valign="top" class="full" style="text-align: left;">
@@ -68,8 +68,8 @@ It all started back in the summer of 2008 - I visited NASA's open house for the 
         <img src="img/fruit-ninja.jpg" style="width:100%">
       </a>
       <h3>OpenCV Fruit Ninja</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>Python-based project using OpenCV to make a simple version of Fruit Ninja</p>
+      <a href="{{ https://amyphung.github.io/fruit-ninja/ | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
     </td>
   </tr>
 </table>
