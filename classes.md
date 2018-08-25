@@ -11,8 +11,7 @@ I applied to this internship to learn about what career opportunities were avail
 #### Projects:
 - Rotorcraft Operations Center (link)
 - Graphing GUI
-
-
+---
 # Classes at Olin:
 ## Software Design (1st Year, 2nd Semester)
 This class covered foundational python topics while providing flexibility in the projects we wanted to create.
