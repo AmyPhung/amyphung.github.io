@@ -32,13 +32,14 @@ p {
 text-rendering: optimizeLegibility;
 Margin-bottom: 21px;
 }
-
 </style>
 </head>
 <!-- font-size: 13px;-->
 
-<body>
 
+I've wanted to be an engineer since 4th grade. It all started back in 2008, when I saw models of the mars rovers Spirt and Opportunity. When I saw those rovers, I knew that I wanted to build robots when I grew up, which is what I've been doing up until now. From building LEGO robots in elementary school, to 120 lb FIRST Robotics Competition robots, to a 1.20 ton robotic tractor, my passion for robots continues to grow, and I hope that I can someday make a career out of continuing to learn about and build robots 
+
+<body>
 <table>
   <tr>
     <td width="33%" valign="top" class="full" style="text-align: left;">
