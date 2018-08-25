@@ -38,7 +38,7 @@ Margin-bottom: 21px;
 
 
 ### I've wanted to be an engineer since 4th grade...
-It all started back in the summer of 2008 - I visited NASA's open house for the first time and learned about the mars rovers Spirt and Opportunity. When I saw those rovers, I knew that I wanted to build robots when I grew up, which is what I've been doing up until now! From building LEGO robots in elementary school, to 120 lb FIRST Robotics Competition robots in highschool, and now a 1.20 ton robotic tractor in college, my passion for robots continues to grow, and I hope that I can someday make a career out of continuing to learn about and build robots!
+It all started back in the summer of 2008 - I visited NASA's open house for the first time and learned about the mars rovers Spirt and Opportunity. When I saw those rovers, I knew that I wanted to build robots when I grew up, which is what I've been doing up until now! From building LEGO robots in elementary school, to 120 lb FIRST Robotics Competition robots in highschool, and now a 1.20 ton robotic tractor in college, my passion for robots continues to grow and I hope that I can someday make a career out of continuing to learn about and build robots!
 
 Here are some of my favorite projects:
 
@@ -71,7 +71,6 @@ Here are some of my favorite projects:
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </td>
-
   </tr>
 </table>
 </body>
