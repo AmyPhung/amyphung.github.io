@@ -64,12 +64,12 @@ It all started back in the summer of 2008 - I visited NASA's open house for the 
     </td>
 
     <td width="33%" valign="top" class="full" style="text-align: left;">
-      <a href="https://amyphung.github.io/fruit-ninja/">
-        <img src="img/fruit-ninja.jpg" style="width:100%">
+      <a href="https://amyphung.github.io/ROS-map-navigation/">
+        <img src="img/mapnav.jpg" style="width:100%">
       </a>
-      <h3>OpenCV Fruit Ninja</h3>
-      <p>Python-based project using OpenCV to make a simple version of Fruit Ninja</p>
-      <a href="https://amyphung.github.io/fruit-ninja/" class="post-read-more">[Read&nbsp;More]</a>
+      <h3>ROS Map Navigation</h3>
+      <p>A simple ROS package to navigate a robot through a map</p>
+      <a href="https://amyphung.github.io/ROS-map-navigation/" class="post-read-more">[Read&nbsp;More]</a>
     </td>
   </tr>
 </table>
