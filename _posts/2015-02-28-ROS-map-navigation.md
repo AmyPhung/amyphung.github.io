@@ -11,6 +11,6 @@ We first used the ROS package [gmapping](http://wiki.ros.org/gmapping) to genera
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/Fnh2aS3DxgY' frameborder='0' allowfullscreen></iframe></div>
 
-+ See project website here: (https://amyphung.github.io/SLAM-SoftDes-Final-Project/)
-+ See source code here: (https://github.com/AmyPhung/SLAM-SoftDes-Final-Project)
-+ See code documentation here: (https://github.com/AmyPhung/SLAM-SoftDes-Final-Project/wiki)
++ See project website here: <https://amyphung.github.io/SLAM-SoftDes-Final-Project/>
++ See source code here: <https://github.com/AmyPhung/SLAM-SoftDes-Final-Project>
++ See code documentation here: <https://github.com/AmyPhung/SLAM-SoftDes-Final-Project/wiki>
