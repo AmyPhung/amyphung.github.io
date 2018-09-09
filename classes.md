@@ -1,17 +1,18 @@
 ---
 layout: page
 title: Classes & Experiences
+bigimg: /img/class.jpg
 ---
 
 
-## Olin Ground Robotic Autonomous Vehicle Lab Research
-Of the many different research teams in Olin's Robotics Lab, I decided to join this team since it had the most systems-level work - there was a significant mechanical, electrical, and software component, unlike the other teams which were often primarily software-focused.
+## Olin Ground Robotic Autonomous Vehicle Lab Research (Fall 2017-Fall 2018)
+Of the many different research teams in Olin's Robotics Lab, I decided to join this team since it had the most systems-level work - there was a significant mechanical, electrical, and software component, unlike most teams which were often primarily software-focused.
 #### Projects:
 - [Autonomous Tractor Platform](https://amyphung.github.io/gravl/)
 
 ---
 
-## Summer 2018 GE Internship
+## GE Internship (Summer 2018)
 I applied to this internship to learn about what career opportunities were available in a mechanical engineering environment and ended up learning a lot about what work is like in the industry. My assignment was on a Product Support Team for <a href="https://en.wikipedia.org/wiki/General_Electric_T700" target="blank">CT7/T700</a>  helicopter engines where I helped develop digital tools for the team.
 #### Projects:
 - [Rotorcraft Operations Center](https://amyphung.github.io/roc/ "Rotorcraft Operations Center")
@@ -59,11 +60,14 @@ In this class, I learned about the basics of creating circuits and using various
 ## Modeling and Simulation in Python (Fall 2017)
 This class covered different types of models and how to implement them in Python to generate useful insights from a given dataset.
 #### Projects:
+- Whale Populations Model
+- Iced Coffee Model
+- Freefall NERF Dart Model
 
 ---
 
 ## Design Nature (Fall 2017)
 This class is intended as an introduction to mechanical engineering, where using SolidWorks to design and fabricate projects is first introduced. This class also had a significant emphasis on observing nature as a source of inspiration for design.
 #### Projects:
-- Alarm Clock Hopper:
-- Goblin Shark 4th Grade Play Experience:
+- Alarm Clock Hopper
+- Goblin Shark 4th Grade Play Experience

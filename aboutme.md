@@ -2,6 +2,7 @@
 layout: page
 title: About me
 subtitle: A bit more beyond the resume
+bigimg: /img/space.jpg
 ---
 
 My name is Amy Phung and I am a student at Olin College of Engineering.
@@ -17,4 +18,4 @@ I’d like to share a bit more about who I am as a person, but that’s hard to 
 
 I don’t generally like quotes because they tend to be pretty idealistic, but I sure do hope this one is true. I think it also sums up my goal in life pretty well. In my own words, if I could make one wish, I’d hope that I’ll be able to continue trying new things and doing what I love while remaining close to the people I love.
 
-So now you know a bit more about me beyond the resume. Want to know what I’ve been working on? Check out the project pages (https://amyphung.github.io/projects/)! That’s plenty more than I’ve ever written about myself (maybe except for college applications), but I’m much more interested in hearing all about you! If you want to chat (or grab lunch, if you’re in the area), scroll down to the bottom of the page and use the platform of your choice to contact me!
+So now you know a bit more about me beyond the resume. Want to know what I’ve been working on? Check out the project pages <https://amyphung.github.io/projects/>! That’s plenty more than I’ve ever written about myself (maybe except for college applications), but I’m much more interested in hearing all about you! If you want to chat (or grab lunch, if you’re in the area), scroll down to the bottom of the page and use the platform of your choice to contact me!
