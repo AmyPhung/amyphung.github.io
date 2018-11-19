@@ -9,7 +9,9 @@ The topic of this project was "wearable sensing" and analyzing sensor data for a
 
 Interested to see how we were able to identify tricks with up 87% accuracy? Want to read more about the math behind our project? Or just want to know more about our project? See our project website [here](https://sites.google.com/view/eigentricks/home)!
 
-
+Website Homepage                    |  Trick Analysis
+:----------------------------------:|:--------------------------------------:
+![](../../img/eigentricks-home.png) | ![](../../img/eigentricks-analysis.png)
 
 Project Partner: Kyle Bertram
 
