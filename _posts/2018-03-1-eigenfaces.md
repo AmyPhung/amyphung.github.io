@@ -1,31 +1,22 @@
 ---
 layout: post
-title: Eigenfaces
+title: Eigenfaces and Fisherfaces
 subtitle: Using eigenvectors for facial recognition
 tags: [QEA]
 ---
 
+This class project involved using eigenvectors and the Fisherface algorithm to create a facial recognition program in MATLAB. One of the main objectives of this project was to become more familiar with core linear algebra concepts and provide scaffolding for learning how to apply these concepts to the inconsistency of real-world data.
 
+Project Partner: Sarah Deng
 
+Final deliverable: [Project Report](
+https://drive.google.com/open?id=1LO9RhMCf81uIzvCRr7qmsoYnYnqo7jR1)
 
-
-
-One of the
-
-https://sites.google.com/view/eigentricks/home
-
-This class project was part of a segway robots module centered on learning about controls. The base deliverable was to get the robot to stand, drive forward, and spin, but we took this a step further and got the robot to also drive along a parametric curve.
-
-Project Partner: Everardo Gonzalez
-
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/1q_l--pycgc' frameborder='0' allowfullscreen></iframe></div>
-
-Other deliverables for this project included a paper documenting the control system we used, code for the robot, and a demo. See these links for more information about our project!
-+ [Paper](https://drive.google.com/open?id=1iAzoYLpepR2T3e_7MMJvq5O_UAfpUIqb)
-+ [Code](https://github.com/AmyPhung/QEA-Rocky)
-+ [Demo](https://www.youtube.com/1q_l--pycgc)
+Images from project:
+![](../../img/EigenAccuracy.jpg)
+![](../../img/EigenTime.jpg)
+![](../../img/SVDfigure.jpg)
+![](../../img/coefficientsfigure.jpg)
 
 Tools used:
-- **MATLAB** - used for determining wheel velocity commands based on parametric curve
-- **Mathematica** - used for calculating and tuning the constants needed to complete our controls system
-- **Arduino** - how we implemented our controller and loaded it onto the robot
+- **MATLAB** - used for calculating eigenvectors and plotting results
