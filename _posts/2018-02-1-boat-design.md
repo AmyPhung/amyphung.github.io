@@ -5,7 +5,7 @@ subtitle: Applying multi-variable calculus to boat design
 tags: [QEA]
 ---
 
-![](../../FinishedBoat.jpg)
+![](../../img/FinishedBoat.jpg)
 
 In this project, we applied concepts from multivariable calculus and physics to create a mathematical model of our boat. The objective was to create a boat that had an [angle of vanishing stability (AVS)](http://sailskills.co.uk/Stability/sailskills_stability_stability_explained_AVS.html) at 130 degrees and optimize the hull shape for speed.
 
@@ -15,28 +15,28 @@ Kawin and I chose to optimize the hull shape first, then position ballast inside
 
 Photos from project:
 CAD model of boat
-![](../../Boat-Uncovered.PNG)
+![](../../img/Boat-Uncovered.PNG)
 
 Boat model with flow lines from SolidWorks Flow Simulation
-![](../../FlowLines.JPG)
+![](../../img/FlowLines.JPG)
 
 Mathematical model of boat
-![](../../hull-math-model.png)
+![](../../img/hull-math-model.png)
 
 Calculated stability curve
-![](../../stability-curve.png)
+![](../../img/stability-curve.png)
 
 Boat assembly
-![](../../boat-frame.jpg)
+![](../../img/boat-frame.jpg)
 
 Measuring the COM
-![](../../boat-com.jpg)
+![](../../img/boat-com.jpg)
 
 Boats on demo day!
-![](../../allboats.jpg)
+![](../../img/allboats.jpg)
 
 Our boat in a display case!
-![](../../displaycase.jpg)
+![](../../img/displaycase.jpg)
 
 Final Deliverables
 + [Poster](https://drive.google.com/open?id=1iEd-SI95zQ6L0sc_Lgt8aN6uIrD7Ud8T)
