@@ -23,14 +23,12 @@ description: A portfoilo to document all the fun I've been having so I don't for
 
 # List of links in the navigation bar
 navbar-links:
-  Home: "#"
+  Home: "https://amyphung.github.io"
   Classes & Experiences: "classes"
 
   Projects: # Use blog style for full list
-    - All Projects: "projects"
-    - Projects by Category: "tags/#test"
-
-  SEA Semester: "sea"
+    - All Projects: "https://amyphung.github.io/projects/"
+    - Projects by Category: "https://amyphung.github.io/tags/#test"
 
   About Me: "aboutme"
 
