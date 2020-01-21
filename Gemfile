@@ -1,10 +1,20 @@
 source 'https://rubygems.org'
 
-gem "github-pages", '197', group: :jekyll_plugins
+# gem "github-pages", '197'
+
+# gem "jekyll", "3.3.1"
+gem "github-pages", group: :jekyll_plugins
+
+group :jekyll_plugins do
+   gem "jekyll-feed", "~> 0.6"
+   gem "jekyll-paginate", "~> 1.1.0"
+   gem "jekyll-paginate-multiple", "~> 0.1.0"
+end
 
 # enable tzinfo-data for local build
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-gem 'jekyll-paginate'
+# gem 'jekyll-paginate'
+# gem 'jekyll-paginate-multiple'
 #
 # gem "nokogiri", ">= 1.8.2"
 # gem "jekyll", ">= 3.6.3"
