@@ -243,13 +243,13 @@ exclude:
 - Gemfile
 - Gemfile.lock
 
-# paginate_path: "/projects/page:num/"
 paginate_multiple:
-  - paginate: 2
+  - paginate: 10
     paginate_path: '/projects/page:num/'
     sub_dir: '/projects'
-  - paginate: 2
+  - paginate: 10
     paginate_path: '/sea/page:num/'
     sub_dir: '/sea'
+
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
