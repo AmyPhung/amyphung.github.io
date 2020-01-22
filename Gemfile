@@ -1,4 +1,10 @@
 source 'https://rubygems.org'
+ruby RUBY_VERSION
+
+# For building site in TravisCI
+gem "rake", "~> 12"
+gem "jekyll"
+
 
 # gem "github-pages", '197'
 

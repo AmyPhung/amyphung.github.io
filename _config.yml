@@ -242,6 +242,7 @@ plugins:
 exclude:
 - Gemfile
 - Gemfile.lock
+- Rakefile
 
 paginate_multiple:
   - paginate: 10
