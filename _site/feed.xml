@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
+  <channel>
+    <title>Amy Phung</title>
+    <description>A portfoilo to document all the fun I've been having so I don't forget</description>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>SEA Semester!</title>
+        <description>
+          Introduction to what I'm up to this semester - 
+          Content will be here soon!
+
+        </description>
+        <pubDate>Tue, 21 Jan 2020 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/sea-intro/</link>
+        <guid isPermaLink="true">http://localhost:4000/sea-intro/</guid>
+      </item>
+    
+      <item>
+        <title>Ground Robotic Autonomous Vehicle Lab</title>
+        <description>
+          Developing an autonomous tractor as a research platform - 
+          The objective of this research group changes from semester to semester, so the objectives and outcomes of each semester are listed individually Fall 2018: This semester, our objective is to finish up last semester’s project, then start to work on making the platform more robust. More info to come… Spring...
+        </description>
+        <pubDate>Tue, 01 Jan 2019 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/gravl/</link>
+        <guid isPermaLink="true">http://localhost:4000/gravl/</guid>
+      </item>
+    
+      <item>
+        <title>Segway Robot</title>
+        <description>
+          A segway robot that drives along a parametric curve - 
+          This class project was part of a segway robots module centered on learning about controls. The base deliverable was to get the robot to stand, drive forward, and spin, but we took this a step further and got the robot to also drive along a parametric curve. Project Partner: Everardo...
+        </description>
+        <pubDate>Thu, 01 Nov 2018 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/segway/</link>
+        <guid isPermaLink="true">http://localhost:4000/segway/</guid>
+      </item>
+    
+      <item>
+        <title>Eigentricks</title>
+        <description>
+          Using eigenvectors to characterize and identify poi tricks - 
+          The topic of this project was “wearable sensing” and analyzing sensor data for a user’s benefit. My project partner and I were both involved with the fire arts club, so we asked ourselves - Could we collect data on someone’s poi spinning to determine what trick they were using, then...
+        </description>
+        <pubDate>Sat, 01 Sep 2018 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/eigentricks/</link>
+        <guid isPermaLink="true">http://localhost:4000/eigentricks/</guid>
+      </item>
+    
+      <item>
+        <title>NEATOs</title>
+        <description>
+          A robot programmed to drive along a parametric curve, climb a mountain, and navigate its surroundings - 
+          In QEA, we programmed NEATOs (robot vacuums) to complete a series of tasks while also learning the math behind the code. This project was split into a series of three smaller projects, including: “The Bridge of Death” - have the robot drive along a parametric curve (Project Partner: Khang Vu)...
+        </description>
+        <pubDate>Tue, 01 May 2018 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/neatos/</link>
+        <guid isPermaLink="true">http://localhost:4000/neatos/</guid>
+      </item>
+    
+      <item>
+        <title>Eigenfaces and Fisherfaces</title>
+        <description>
+          Using eigenvectors for facial recognition - 
+          This class project involved using eigenvectors and the Fisherface algorithm to create a facial recognition program in MATLAB. One of the main objectives of this project was to become more familiar with core linear algebra concepts and provide scaffolding for learning how to apply these concepts to the inconsistency of...
+        </description>
+        <pubDate>Thu, 01 Mar 2018 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/eigenfaces/</link>
+        <guid isPermaLink="true">http://localhost:4000/eigenfaces/</guid>
+      </item>
+    
+      <item>
+        <title>Rotorcraft Operations Center</title>
+        <description>
+          Virtual and Physical Dashboards for Predictive Fleet Monitoring - 
+          The rotorcraft operations center (ROC) is a digital project featuring virtual and physical dashboards to display summarized fleet info with the objective of being able to predict engine events before they happen. Currently, engine data is monitored monthly through manually compiled summary report, but this project will help automate these...
+        </description>
+        <pubDate>Wed, 28 Feb 2018 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/roc/</link>
+        <guid isPermaLink="true">http://localhost:4000/roc/</guid>
+      </item>
+    
+      <item>
+        <title>Boat Design</title>
+        <description>
+          Applying multi-variable calculus to boat design - 
+          In this project, we applied concepts from multivariable calculus and physics to create a mathematical model of our boat. The objective was to create a boat that had an angle of vanishing stability (AVS) at 130 degrees and optimize the hull shape for speed. Project partner: Kawin Nikomborirak Kawin and...
+        </description>
+        <pubDate>Thu, 01 Feb 2018 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/boat-design/</link>
+        <guid isPermaLink="true">http://localhost:4000/boat-design/</guid>
+      </item>
+    
+      <item>
+        <title>Engine Data Graphing GUI</title>
+        <description>
+          GUI for plotting data from helicopter engine Health and Usage Monitoring System - 
+          One of the primary functions of the product support team is to look at helicopter engine data from events when something doesn’t go as expected and be able to understand what happened, what the cause of the event was, and what corrective action they should recommend to the customers to...
+        </description>
+        <pubDate>Sat, 28 Feb 2015 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/graphing-gui/</link>
+        <guid isPermaLink="true">http://localhost:4000/graphing-gui/</guid>
+      </item>
+    
+      <item>
+        <title>ROS Map Navigation</title>
+        <description>
+          A simple ROS package to navigate a robot through a map - 
+          My friends and I wanted to learn more about SLAM, so we thought it’d be a good idea to use the final project in our Software Design class to get a headstart in learning about what goes into this complex problem. We first used the ROS package hector_slam to get...
+        </description>
+        <pubDate>Sat, 28 Feb 2015 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/ROS-map-navigation/</link>
+        <guid isPermaLink="true">http://localhost:4000/ROS-map-navigation/</guid>
+      </item>
+    
+  </channel>
+</rss>
