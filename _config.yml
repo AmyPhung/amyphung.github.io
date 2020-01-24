@@ -127,7 +127,7 @@ url-pretty: "https://amyphung.github.io/"  # eg. "deanattali.com/beautiful-jekyl
 #disqus: ""
 
 # Facebook App ID
-fb_app_id: "600762203989703"
+fb_comment_id: "600762203989703"
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
