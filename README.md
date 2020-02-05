@@ -10,3 +10,8 @@
 
 # Troubleshooting
 + If you get errors with an invalid token, double-check that TravisCI has an environment variable GITHUB_TOKEN with a properly set personal access token
+
+# Features to be added
++ Image zooming/gallery
++ Comments section
++ Fix display image
