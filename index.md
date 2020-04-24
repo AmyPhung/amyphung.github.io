@@ -11,7 +11,7 @@ bigimg: /img/oppy-background.png
   .full {
     display:block;
     width:100%;
-    border: 1px solid white;
+    border: 5px solid white;
   }
 }
 
@@ -20,7 +20,7 @@ table {
 }
 
 table, th, td {
-   border: 1px solid white;
+   border: 5px solid white;
    <!-- border: none; -->
 }
 
