@@ -2,7 +2,7 @@
 layout: page
 title: Hello World! I'm Amy.
 subtitle: Olin Student / Robotics Nerd / Engineer
-bigimg: /img/walle2.jpg
+bigimg: /img/oppy-background.png
 ---
 
 <head>
@@ -19,7 +19,8 @@ table {
 }
 
 table, th, td {
-   border: 1px solid white;
+   border: 10px solid white;
+   <!-- border: none; -->
 }
 
 h3 {
