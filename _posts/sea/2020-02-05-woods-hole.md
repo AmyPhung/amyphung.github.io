@@ -18,32 +18,26 @@ One of the things I've appreciated most is being near the water - there were doc
   </figure>
 </center>
 
-<br>
-
 <center>
   <figure>
-    <img src="/img/beach3.jpg" style="width:60%">
+    <img src="/img/beach3.jpg" style="padding-top:10px;width:60%">
     <figcaption style="width:50%">More sunny beaches</figcaption>
   </figure>
 </center>
 
-<br>
-
 <center>
   <figure>
-    <img src="/img/dock2.jpg" style="width:45%">
-    <img src="/img/dock3.jpg" style="width:45%">
-    <img src="/img/dock.jpg" style="width:45%">
-    <img src="/img/dock4.jpg" style="width:45%">
+    <img src="/img/dock2.jpg" style="padding-top:10px;width:45%">
+    <img src="/img/dock3.jpg" style="padding-top:10px;width:45%">
+    <img src="/img/dock.jpg" style="padding-top:5px;width:45%">
+    <img src="/img/dock4.jpg" style="padding-top:5px;width:45%">
     <figcaption style="width:50%">Lots of docks around Woods Hole</figcaption>
   </figure>
 </center>
 
-<br>
-
 <center>
   <figure>
-    <img src="/img/armstrong.jpg" style="width:70%">
+    <img src="/img/armstrong.jpg" style="padding-top:10px;width:70%">
     <figcaption style="width:70%">WHOI's (Woods Hole Oceanographic Institution) research vessel Armstrong</figcaption>
   </figure>
 </center>
@@ -71,7 +65,7 @@ Also caught a nice photo of Falmouth's downtown area...
 
 <center>
   <figure>
-    <img src="/img/falmouth.jpg" style="width:50%">
+    <img src="/img/falmouth.jpg" style="width:70%">
     <figcaption style="width:50%">Downtown Falmouth - not quite Woods Hole, but it's nearby</figcaption>
   </figure>
 </center>
