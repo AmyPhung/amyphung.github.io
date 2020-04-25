@@ -19,9 +19,8 @@ text-align: center;
 /* Styles the thumbnail */
 
 a.lightbox img {
-
-
-  height: 150px;
+  max-width: 80%;
+  max-height: 80%;
   border: 3px solid white;
   box-shadow: 0px 0px 8px rgba(0,0,0,.3);
   margin: 94px 20px 20px 20px;
@@ -36,7 +35,6 @@ top: 0;
 left: 0;
 width: 100%;
 background: rgba(1,0,0,.7);
-width: 100%;
 opacity: 0;
 -webkit-transition: opacity .5s ease-in-out;
 -moz-transition: opacity .5s ease-in-out;
@@ -54,11 +52,16 @@ top: 0;
 left:0;
 right:0;
 bottom: 0;
-max-height: 0%;
-max-width: 0%;
+/* max-height: 0%;
+max-width: 0%; */
+width: auto;
+height: auto;
+max-width: 70%;
+max-height: 70%;
+
 border: 3px solid white;
 box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-box-sizing: border-box;
+/* box-sizing: border-box; */
 -webkit-transition: .5s ease-in-out;
 -moz-transition: .5s ease-in-out;
 -o-transition: .5s ease-in-out;
@@ -71,7 +74,7 @@ a.lightbox-close {
 display: block;
 width:50px;
 height:50px;
-box-sizing: border-box;
+/* box-sizing: border-box; */
 background: white;
 color: black;
 text-decoration: none;
@@ -139,10 +142,10 @@ top: 0px;
 
 
 <a class="lightbox" href="#dog">
-   <img src="/img/life-on-board/headrig.jpg"/>
+   <img src="/img/life-on-board/lines.jpg" style="width:70%"/>
 </a>
 <div class="lightbox-target" id="dog">
-   <img src="/img/life-on-board/headrig.jpg"/>
+   <img src="/img/life-on-board/lines.jpg"/>
    <a class="lightbox-close" href="#"></a>
 </div>
 
