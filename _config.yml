@@ -110,8 +110,8 @@ url-pretty: "https://amyphung.github.io/"  # eg. "deanattali.com/beautiful-jekyl
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: "G-KVB79MNVY1"
-
+#google_analytics: "G-KVB79MNVY1"
+gtag: "G-KVB79MNVY1"
 # Google Tag Manager ID
 #gtm: ""
 
