@@ -7,6 +7,146 @@ share-img: /img/life-on-board/furling3.jpg
 tags: [SEA]
 ---
 
+<style>
+/*Eliminates padding, centers the thumbnail */
+
+body, html {
+padding: 0;
+margin: 0;
+text-align: center;
+}
+
+/* Styles the thumbnail */
+
+a.lightbox img {
+
+
+  height: 150px;
+  border: 3px solid white;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  margin: 94px 20px 20px 20px;
+}
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.lightbox-target {
+position: fixed;
+z-index: 10000;
+top: 0;
+left: 0;
+width: 100%;
+background: rgba(1,0,0,.7);
+width: 100%;
+opacity: 0;
+-webkit-transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-o-transition: opacity .5s ease-in-out;
+transition: opacity .5s ease-in-out;
+overflow: hidden;
+}
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox-target img {
+margin: auto;
+position: absolute;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+max-height: 0%;
+max-width: 0%;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+box-sizing: border-box;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+display: block;
+width:50px;
+height:50px;
+box-sizing: border-box;
+background: white;
+color: black;
+text-decoration: none;
+position: absolute;
+top: -80px;
+right: 0;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+opacity: 1;
+top: 0;
+bottom: 0;
+}
+
+.lightbox-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+top: 0px;
+}
+
+</style>
+
+
+<a class="lightbox" href="#dog">
+   <img src="/img/life-on-board/headrig.jpg"/>
+</a>
+<div class="lightbox-target" id="dog">
+   <img src="/img/life-on-board/headrig.jpg"/>
+   <a class="lightbox-close" href="#"></a>
+</div>
+
+
 In this post I'll share a bit about what the day-to-day was like while on board the ship.
 
 While we were underway, the ship needed to be looked after 24/7, so we were divided into three watch groups and operated on a 6 hours on 12 hours off schedule.
@@ -67,7 +207,7 @@ The process itself was fairly straightforward, but adding the ship's continuous 
 One day during dawn watch, the boat rolled so much that the part of the coffee maker that held coffee grounds flew out of the machine and made a mess on the floor. Subsequent rolls made sure to spread out the coffee grounds everywhere...
 
 Since we couldn't fit everyone in the main saloon to eat at the same time, mealtimes happened in seatings where there would be designated times for each watch to eat. A typical food schedule on the boat was:
-- 0620: Breakfast for on-coming watch & others (folks like the captain, engineers, professors etc. who didn't stand a regular watch)  
+- 0620: Breakfast for on-coming watch & others (folks like the captain, engineers, professors etc. who didn't stand a regular watch)
 - 0700: Breakfast for the off-coming watch & the "lazy watch" (the remaining group not going on or coming off watch)
 - 1000: Morning snack
 - 1220: Lunch for on-coming watch & others
@@ -96,7 +236,7 @@ During our time off-watch, we were free to structure our time however we wanted 
 Coursework on the boat mostly consisted of the daily class (the subject would rotate every day) with an additional break-out session for those currently on watch. I really appreciated that the professors always seemed to find a way to relate something we were currently observing into our studies for the day - it made the content a lot more interesting and relevant. While we were on watch in the lab, we would collect data that fed into our individual research projects. During slow watches or our time off watch, we worked on our written coursework which consisted of essays, blog posts, and our research project. Admittedly, it was difficult to get work done while underway since it felt a lot like trying to get work done in a moving car - every minute or so when big swells hit, I had to pause on my work to hold on to my laptop and balance myself. Trying to get work done was also a sure-fire way to get sea sick which was never fun.
 
 <center>
-  <figure>  
+  <figure>
     <img src="/img/life-on-board/laptop-work.jpg" style="width:70%">
     <figcaption style="padding-top:5px;width:80%">Allison and Juliette attempt to get work done in the charthouse during a slow watch</figcaption>
   </figure>
