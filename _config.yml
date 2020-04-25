@@ -19,7 +19,7 @@ fullurl: "https://amyphung.github.io"
 title: Amy Phung
 
 # Short description of your site
-description: A portfoilo/blog/personal website, because documentation is important
+description: Hello World! I'm Amy. Olin Student/Robotics Nerd/Engineer. I believe in the importance of good documentation, so welcome to my portfoilo/blog/personal website!
 
 # --- Navigation bar options --- #
 
@@ -110,7 +110,7 @@ url-pretty: "https://amyphung.github.io/"  # eg. "deanattali.com/beautiful-jekyl
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "G-KVB79MNVY1"
 
 # Google Tag Manager ID
 #gtm: ""
