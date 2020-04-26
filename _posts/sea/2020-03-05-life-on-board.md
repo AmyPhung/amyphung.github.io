@@ -7,140 +7,6 @@ share-img: /img/life-on-board/furling3.jpg
 tags: [SEA]
 ---
 
-<style>
-/*Eliminates padding, centers the thumbnail */
-
-body, html {
-padding: 0;
-margin: 0;
-text-align: center;
-}
-
-/* Styles the thumbnail */
-
-a.lightbox img {
-  max-width: 80%;
-  max-height: 80%;
-  border: 3px solid white;
-  box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-  margin: 94px 20px 20px 20px;
-}
-
-/* Styles the lightbox, removes it from sight and adds the fade-in transition */
-
-.lightbox-target {
-position: fixed;
-z-index: 10000;
-top: 0;
-left: 0;
-width: 100%;
-background: rgba(1,0,0,.7);
-opacity: 0;
--webkit-transition: opacity .5s ease-in-out;
--moz-transition: opacity .5s ease-in-out;
--o-transition: opacity .5s ease-in-out;
-transition: opacity .5s ease-in-out;
-overflow: hidden;
-}
-
-/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
-
-.lightbox-target img {
-margin: auto;
-position: absolute;
-top: 0;
-left:0;
-right:0;
-bottom: 0;
-/* max-height: 0%;
-max-width: 0%; */
-width: auto;
-height: auto;
-max-width: 70%;
-max-height: 70%;
-
-border: 3px solid white;
-box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-/* box-sizing: border-box; */
--webkit-transition: .5s ease-in-out;
--moz-transition: .5s ease-in-out;
--o-transition: .5s ease-in-out;
-transition: .5s ease-in-out;
-}
-
-/* Styles the close link, adds the slide down transition */
-
-a.lightbox-close {
-display: block;
-width:50px;
-height:50px;
-/* box-sizing: border-box; */
-background: white;
-color: black;
-text-decoration: none;
-position: absolute;
-top: -80px;
-right: 0;
--webkit-transition: .5s ease-in-out;
--moz-transition: .5s ease-in-out;
--o-transition: .5s ease-in-out;
-transition: .5s ease-in-out;
-}
-
-/* Provides part of the "X" to eliminate an image from the close link */
-
-a.lightbox-close:before {
-content: "";
-display: block;
-height: 30px;
-width: 1px;
-background: black;
-position: absolute;
-left: 26px;
-top:10px;
--webkit-transform:rotate(45deg);
--moz-transform:rotate(45deg);
--o-transform:rotate(45deg);
-transform:rotate(45deg);
-}
-
-/* Provides part of the "X" to eliminate an image from the close link */
-
-a.lightbox-close:after {
-content: "";
-display: block;
-height: 30px;
-width: 1px;
-background: black;
-position: absolute;
-left: 26px;
-top:10px;
--webkit-transform:rotate(-45deg);
--moz-transform:rotate(-45deg);
--o-transform:rotate(-45deg);
-transform:rotate(-45deg);
-}
-
-/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
-
-.lightbox-target:target {
-opacity: 1;
-top: 0;
-bottom: 0;
-}
-
-.lightbox-target:target img {
-max-height: 100%;
-max-width: 100%;
-}
-
-.lightbox-target:target a.lightbox-close {
-top: 0px;
-}
-
-</style>
-
-{% include lightbox.html file="/img/wellington/headrig.jpg" %}
 
 
 In this post I'll share a bit about what the day-to-day was like while on board the ship.
@@ -149,17 +15,79 @@ While we were underway, the ship needed to be looked after 24/7, so we were divi
 
 <center>
   <figure>
-    <img src="/img/life-on-board/headrig.jpg" style="width:70%">
+    {% include lightbox.html
+      file="/img/life-on-board/headrig.jpg"
+      padding-top="5px"
+      width="70%" %}
     <figcaption style="padding-top:5px;width:80%">B watch (best watch) hanging out on the headrig</figcaption>
   </figure>
 </center>
 
 Hours of the day were split into 6 hour blocks - 0100-0700 (dawn watch), 0700-1300 (morning watch), 1300-1900 (afternoon watch), 1900-0100 (evening watch). This made it so that the watches we stood would rotate day-by-day (ex: On day 1, my watch group stood morning watch, and the next day we stood dawn watch, then were also on watch for that evening. On day 3, we stood afternoon watch, and on day 4, was back on morning watch again). Each day, we would have an all-hands meeting and class at 1400, regardless of who was currently on watch.
 
+
+<button onclick="myFunction()">Copy Text</button>
+
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+
+<style>
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+</style>
+
+<style>
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+</style>
+
+<div id="overlay">
+  <!-- <div id="text">Overlay Text -->
+    <button onclick="off()">off</button>
+  <!-- </div> -->
+</div>
+
+<button onclick="on()">on</button>
+
+
+
+
 <center>
   <figure>
-    <img src="/img/life-on-board/class.jpg" style="width:45%">
-    <img src="/img/life-on-board/stats.jpg" style="width:45%">
+    {% include lightbox.html
+      file="/img/life-on-board/class.jpg"
+      padding-top="5px"
+      width="45%" %}
+    {% include lightbox.html
+      file="/img/life-on-board/stats.jpg"
+      padding-top="5px"
+      width="45%" %}
     <figcaption style="padding-top:5px;width:80%">Daily class on the quarterdeck (left) Jackie, one of my shipmates, shares an engineering report (right)</figcaption>
   </figure>
 </center>
