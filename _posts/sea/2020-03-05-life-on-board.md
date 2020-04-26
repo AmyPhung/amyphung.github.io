@@ -140,14 +140,7 @@ top: 0px;
 
 </style>
 
-
-<a class="lightbox" href="#dog">
-   <img src="/img/life-on-board/lines.jpg" style="width:70%"/>
-</a>
-<div class="lightbox-target" id="dog">
-   <img src="/img/life-on-board/lines.jpg"/>
-   <a class="lightbox-close" href="#"></a>
-</div>
+{% include lightbox.html file="/img/wellington/headrig.jpg" %}
 
 
 In this post I'll share a bit about what the day-to-day was like while on board the ship.
