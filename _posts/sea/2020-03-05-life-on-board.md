@@ -7,18 +7,17 @@ share-img: /img/life-on-board/furling3.jpg
 tags: [SEA]
 ---
 
-
-
 In this post I'll share a bit about what the day-to-day was like while on board the ship.
 
 While we were underway, the ship needed to be looked after 24/7, so we were divided into three watch groups and operated on a 6 hours on 12 hours off schedule.
 
 <center>
   <figure>
-    {% include lightbox.html
+    {% include overlay.html
       file="/img/life-on-board/headrig.jpg"
       padding-top="5px"
-      width="70%" %}
+      width="70%"
+      id="headrig"%}
     <figcaption style="padding-top:5px;width:80%">B watch (best watch) hanging out on the headrig</figcaption>
   </figure>
 </center>
@@ -26,68 +25,18 @@ While we were underway, the ship needed to be looked after 24/7, so we were divi
 Hours of the day were split into 6 hour blocks - 0100-0700 (dawn watch), 0700-1300 (morning watch), 1300-1900 (afternoon watch), 1900-0100 (evening watch). This made it so that the watches we stood would rotate day-by-day (ex: On day 1, my watch group stood morning watch, and the next day we stood dawn watch, then were also on watch for that evening. On day 3, we stood afternoon watch, and on day 4, was back on morning watch again). Each day, we would have an all-hands meeting and class at 1400, regardless of who was currently on watch.
 
 
-<button onclick="myFunction()">Copy Text</button>
-
-<script>
-function on() {
-  document.getElementById("overlay").style.display = "block";
-}
-
-function off() {
-  document.getElementById("overlay").style.display = "none";
-}
-</script>
-
-
-<style>
-#overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
-}
-</style>
-
-<style>
-#text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-}
-</style>
-
-<div id="overlay">
-  <!-- <div id="text">Overlay Text -->
-    <button onclick="off()">off</button>
-  <!-- </div> -->
-</div>
-
-<button onclick="on()">on</button>
-
-
-
-
 <center>
   <figure>
-    {% include lightbox.html
+    {% include overlay.html
       file="/img/life-on-board/class.jpg"
       padding-top="5px"
-      width="45%" %}
-    {% include lightbox.html
+      width="45%"
+      id="class" %}
+    {% include overlay.html
       file="/img/life-on-board/stats.jpg"
       padding-top="5px"
-      width="45%" %}
+      width="45%"
+      id="stats" %}
     <figcaption style="padding-top:5px;width:80%">Daily class on the quarterdeck (left) Jackie, one of my shipmates, shares an engineering report (right)</figcaption>
   </figure>
 </center>
