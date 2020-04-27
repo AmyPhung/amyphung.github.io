@@ -2,12 +2,12 @@
 layout: post
 title: Mechanical Prototyping
 subtitle: Mechanical engineering-focused projects involving rapid prototyping
-image: /img/bike-with-rock.jpg
-share-img: /img/bike-with-rock.jpg
-tags: [mechanical-prototyping]
+image: /img/projects/mechproto/LaserBox/wallE1.jpg
+share-img: /img/projects/mechproto/LaserBox/wallE1.jpg
+tags: [Mechanical-Prototyping]
 ---
 
-In my mechanical prototyping class, I worked on four projects that were much more hardware focused than most of my other software-related projects. My primary motivation for this class was to get better at rapid prototyping mechanical systems since a foundational knowledge in this space would be useful for quickly putting together robust robots. Overall, I'd say things went fairly well, and my experiences putting together these projects helped to make my future projects a lot more sturdy.
+In my mechanical prototyping class, I worked on four projects that were much more hardware focused than most of my other software-related projects. Through these projects, I'd hoped to improve my ability to rapidly prototype mechanical systems since a foundational knowledge in this space would be useful for quickly putting together robust robots. Overall, I'd say things went fairly well, and my experiences putting together these projects helped to make my future projects a lot more sturdy.
 
 ---
 # Project 1: Wall-E Lasercut Box
