@@ -2,6 +2,8 @@
 layout: post
 title: Eigentricks
 subtitle: Using eigenvectors to characterize and identify poi tricks
+image: /img/projects/qea/eigentricks-square.jpg
+share-img: /img/projects/qea/eigentricks-square.jpg
 tags: [QEA]
 ---
 

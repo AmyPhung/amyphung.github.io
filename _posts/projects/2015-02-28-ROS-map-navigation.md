@@ -2,6 +2,8 @@
 layout: post
 title: ROS Map Navigation
 subtitle: A simple ROS package to navigate a robot through a map
+image: /img/projects/slam/mapnav.jpg
+share-img: /img/projects/slam/mapnav.jpg
 tags: [Software-Design]
 ---
 

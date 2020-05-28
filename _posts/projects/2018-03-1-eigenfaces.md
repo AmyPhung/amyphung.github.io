@@ -2,6 +2,8 @@
 layout: post
 title: Eigenfaces and Fisherfaces
 subtitle: Using eigenvectors for facial recognition
+image: /img/projects/qea/eigenfaces.jpg
+share-img: /img/projects/qea/eigenfaces.jpg
 tags: [QEA]
 ---
 

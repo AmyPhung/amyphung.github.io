@@ -2,12 +2,21 @@
 layout: post
 title: Boat Design
 subtitle: Applying multi-variable calculus to boat design
+image: /img/projects/qea/boats-square.jpg
+share-img: /img/projects/qea/boats-square.jpg
 tags: [QEA]
 ---
 
-![](../../img/FinishedBoat.jpg)
-
 In this project, we applied concepts from multivariable calculus and physics to create a mathematical model of our boat. The objective was to create a boat that had an [angle of vanishing stability (AVS)](http://sailskills.co.uk/Stability/sailskills_stability_stability_explained_AVS.html) at 130 degrees and optimize the hull shape for speed.
+
+![](../../img/FinishedBoat.jpg)
+<center>
+  {% include overlay.html
+    file="/img/projects/portal-turret/portal-turret-game.jpg"
+    padding-top="5px"
+    width="35%"
+    id="portal-turret-game"%}
+</center>
 
 Project partner: Kawin Nikomborirak
 
