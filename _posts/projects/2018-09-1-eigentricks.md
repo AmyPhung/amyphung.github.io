@@ -13,9 +13,9 @@ Interested to see how we were able to identify tricks with up 87% accuracy? Want
 
 Website Homepage                    |  Trick Analysis
 :----------------------------------:|:--------------------------------------:
-![](../../img/eigentricks-home.png) | ![](../../img/eigentricks-analysis.png)
+![](/img/projects/qea/eigentricks-home.png) | ![](/img/projects/qea/eigentricks-analysis.png)
 
 Project Partner: Kyle Bertram
-
+ 
 Tools used:
 - **MATLAB** - used for trick frequency analysis and classification with eigenvectors

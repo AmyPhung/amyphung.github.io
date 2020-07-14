@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Classes & Experiences
-bigimg: /img/class.jpg
+bigimg: /img/website/class.jpg
 ---
 
 ## Olin Ground Robotic Autonomous Vehicle Lab Research (Fall 2017-Fall 2020)

@@ -2,7 +2,7 @@
 layout: page
 title: Hello World! I'm Amy.
 subtitle: Olin Student / Robotics Nerd / Engineer
-bigimg: /img/oppy-background.png
+bigimg: /img/website/oppy-background.png
 ---
 
 <head>
@@ -49,7 +49,7 @@ It all started back in the summer of 2008 - I visited NASA's open house for the 
   <tr>
     <td width="33%" valign="top" class="full" style="text-align: left;">
       <a href="https://amyphung.github.io/gravl/">
-        <img src="img/tractor.jpg" style="width:100%">
+        <img src="img/projects/gravl/tractor.jpg" style="width:100%">
       </a>
       <h3>Autonomous Tractor Research</h3>
       <p>Developing an autonomous tractor as a research platform</p>
@@ -58,7 +58,7 @@ It all started back in the summer of 2008 - I visited NASA's open house for the 
 
     <td width="33%" valign="top" class="full" style="text-align: left;">
       <a href="https://amyphung.github.io/roc/">
-        <img src="img/roc2.jpg" style="width:100%">
+        <img src="img/projects/GE/roc2.jpg" style="width:100%">
       </a>
       <h3>Rotorcraft Operations Center</h3>
       <p>GUI for plotting data from helicopter engine Health and Usage Monitoring System</p>
@@ -67,7 +67,7 @@ It all started back in the summer of 2008 - I visited NASA's open house for the 
 
     <td width="33%" valign="top" class="full" style="text-align: left;">
       <a href="https://amyphung.github.io/ROS-map-navigation/">
-        <img src="img/mapnav.jpg" style="width:100%">
+        <img src="img/projects/softdes/mapnav.jpg" style="width:100%">
       </a>
       <h3>ROS Map Navigation</h3>
       <p>A simple ROS package to navigate a robot through a map</p>
