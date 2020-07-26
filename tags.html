@@ -10,12 +10,16 @@ title: 'Projects By Category'
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
-{%- for tag in tags_list -%}
+<!-- {%- for tag in tags_list -%}
+  {%- if tag != "SEA" -%}
     <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
-{%- endfor -%}
+  {%- endif -%}
+{%- endfor -%} -->
 
 <div id="full-tags-list">
 {%- for tag in tags_list -%}
+  <!-- Ignore SEA posts on project page -->
+  {%- if tag != "SEA" -%}
     <h2 id="{{- tag -}}" class="linked-section">
         <i class="fa fa-tag" aria-hidden="true"></i>
         &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
@@ -30,5 +34,6 @@ title: 'Projects By Category'
             </div>
         {%- endfor -%}
     </div>
+  {%- endif -%}
 {%- endfor -%}
 </div>

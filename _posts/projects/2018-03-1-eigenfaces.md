@@ -4,7 +4,7 @@ title: Eigenfaces and Fisherfaces
 subtitle: Using eigenvectors for facial recognition
 image: /img/projects/qea/eigenfaces.jpg
 share-img: /img/projects/qea/eigenfaces.jpg
-tags: [QEA]
+tags: [Quantitative-Engineering-Analysis]
 ---
 
 This class project involved using eigenvectors and the Fisherface algorithm to create a facial recognition program in MATLAB. One of the main objectives of this project was to become more familiar with core linear algebra concepts and provide scaffolding for learning how to apply these concepts to the inconsistency of real-world data.
