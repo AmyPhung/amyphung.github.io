@@ -2,6 +2,8 @@
 layout: post
 title: Engine Data Graphing GUI
 subtitle: GUI for plotting data from helicopter engine Health and Usage Monitoring System
+image: /img/projects/GE/CT7_T700.jpg
+share-img: /img/projects/GE/CT7_T700.jpg
 tags: [GE]
 ---
 

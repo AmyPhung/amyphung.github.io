@@ -23,7 +23,10 @@ For those who've played the game Portal or Portal 2, you probably recognized the
     id="portal-turret-side"%}
 </center>
 
-**To see our final documentation for this project, visit our project website [here](http://poe.olin.edu/2019/poetal-turret/)!**
+I'd also highly suggest checking our project website [here](http://poe.olin.edu/2019/poetal-turret/) for more documentation!
+<center>
+  <a href="http://poe.olin.edu/2019/poetal-turret/" target="_blank" rel="project website"><img src="/img/projects/portal-turret/website.jpg" alt="" /></a>
+</center>
 
 This project was created along with my classmates Tim, Bennett, Mia, and Skye for our Principles of Engineering (POE) class. The final project for this class was rather open-ended - the only requirement was that whatever we made, it needed to consist of a significat mechanical, electrical, and software component. We chose this project since it provided good technical work that all of our members were interested in and could learn a lot from, with the bonus of being a project that would be fun for our classmates to interact with.
 
