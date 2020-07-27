@@ -41,7 +41,7 @@ Margin-bottom: 21px;
 <!-- font-size: 13px;-->
 
 ## Biography
-I'm currently in my senior year studying towards a Robotics Engineering degree at Franklin W. Olin College of Engineering, a small undergraduate-only school in Needham, Massachusetts. At Olin, I do research with the [Olin Robotics Lab](https://olinrobotics.github.io/) and currently lead the [Ground Vehicle Research group](https://github.com/olinrobotics/gravl/wiki), doing work with autonomous vehicles in unstructured environments. After Olin, I hope to continue working on research projects that leverage machine learning to solve some of the most difficult navigation & perception problems on board mobile exploration robots.
+I'm currently in my senior year studying towards a Robotics Engineering degree at Franklin W. Olin College of Engineering, a small undergraduate-only school in Needham, Massachusetts. At Olin, I do research with the [Olin Robotics Lab](https://olinrobotics.github.io/) and currently lead the [Ground Vehicle Research group](https://github.com/olinrobotics/gravl/wiki), doing work with autonomous vehicles in unstructured environments. After Olin, I hope to continue working on research projects that leverage machine learning to solve navigation & perception problems on board mobile exploration robots.
 
 If you're interested in learning more about the projects I've worked on, check out the link below!
 
