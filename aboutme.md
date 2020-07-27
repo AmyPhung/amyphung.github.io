@@ -5,17 +5,9 @@ subtitle: A bit more beyond the resume
 bigimg: /img/website/space.jpg
 ---
 
-My name is Amy Phung and I am a student at Olin College of Engineering.
+I've dreamed of working on exploration robots ever since 4th grade, when I visited the NASA JPL Open House back in 2008 and learned about the Mars rovers Spirit and Opportunity. Ever since that day, I've sought out opportinities to work on robots - I found a start with LEGO Mindstorms robots in elementary school and transitioned to building FIRST Robotics Competition robots in high school. I now do autonomous vehicle research at Olin College of Engineering with a [robotic tractor](/gravl), and plan to graduate in May 2021 with a degree in Robotics Engineering. Outside of working on robots, I also enjoy whittling, kayaking, and
+[spinning fire](https://www.youtube.com/watch?v=YQ9AsDnuLgw&list=PLO8BVdvev9baU0EnWLt45Rn8z-Z5NZg5m&index=14) on occasion.
 
-I grew up in Santa Clarita, California (For those of you who don’t know where that is, it’s in the desert slightly north of LA). Although I had my heart set on engineering since 4th grade, I still tried just about everything from playing tennis, attending debate competitions, and tutoring summer school students, but the hobbies that really stuck with me were tinkering with robots and baking. I struggled with making new friends throughout school, but I think as a result of this I tend to be really good friends with the people I get to know.
+Spending this [past semester abroad](/sea) at sea gave me a lot of time to reflect on my experiences, and opened my eyes to the importance of ongoing research related to the marine sciences - understanding our oceans is crucial since it provides us with the air we breathe, a means of transportation between continents, a source of food, and key resources like rare minerals and oil, just to name a few. As a roboticist, I believe that my role in this is to contribute to the tools used to increase this understanding on a large scale - namely, ocean robotics. The more I learn about the oceans, the more I realize just how much out there remains to be explored. I hope to make a contribution by working on research projects that leverage modern tools like machine learning to solve some of the most difficult navigation & perception problems on board mobile exploration robots operating in challenging environments like the ocean or outer space.
 
-Funnily enough, I think I’m the same way with projects. It’s strange to think of having some form of “relationship” with my projects, but hear me out - I like talking to a lot of different people and also like trying lots of different activities, but when I find that person or project that really shares my passion for something, hours fly by when I’m working with said person or project. Now looking back, I’ve gotten to know most of my close friends so far from sharing a passion for a project we worked on together
-
-
-I’d like to share a bit more about who I am as a person, but that’s hard to put into words. How about a quote? I really like the quote:
-
-“Allow your passion to become your purpose, and it will one day become your profession”
-
-I don’t generally like quotes because they tend to be pretty idealistic, but I sure do hope this one is true. I think it also sums up my goal in life pretty well. In my own words, if I could make one wish, I’d hope that I’ll be able to continue trying new things and doing what I love while remaining close to the people I love.
-
-So now you know a bit more about me beyond the resume. Want to know what I’ve been working on? Check out the project pages <https://amyphung.github.io/projects/>! That’s plenty more than I’ve ever written about myself (maybe except for college applications), but I’m much more interested in hearing all about you! If you want to chat (or grab lunch, if you’re in the area), scroll down to the bottom of the page and use the platform of your choice to contact me!
+Thanks for reading! I update this site with new projects and updates regularly, so check back another time to hear more about my [current projects](/projects). If you want to chat (or grab lunch, if you’re in the area), scroll down to the bottom of the page and use the platform of your choice to contact me!

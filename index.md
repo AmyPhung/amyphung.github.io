@@ -17,11 +17,13 @@ bigimg: /img/website/oppy-background.png
 
 table {
     border-collapse: collapse;
+    border: 5px solid white;
 }
 
-table, th, td {
+th, td {
+   border-collapse: collapse;
    border: 5px solid white;
-   <!-- border: none; -->
+   /* border: none; */
 }
 
 h3 {
@@ -38,40 +40,102 @@ Margin-bottom: 21px;
 </head>
 <!-- font-size: 13px;-->
 
+## Biography
+I'm currently in my senior year studying towards a Robotics Engineering degree at Franklin W. Olin College of Engineering, a small undergraduate-only school in Needham, Massachusetts. At Olin, I do research with the [Olin Robotics Lab](https://olinrobotics.github.io/) and currently lead the [Ground Vehicle Research group](https://github.com/olinrobotics/gravl/wiki), doing work with autonomous vehicles in unstructured environments. After Olin, I hope to continue working on research projects that leverage machine learning to solve some of the most difficult navigation & perception problems on board mobile exploration robots.
 
-### I've wanted to be an engineer since 4th grade...
-It all started back in the summer of 2008 - I visited NASA's open house for the first time and learned about the mars rovers Spirit and Opportunity. When I saw those rovers, I knew that I wanted to build robots when I grew up, which is what I've been doing up until now! From building LEGO robots in elementary school, to 120 lb FIRST Robotics Competition robots in highschool, and now a 1.20 ton robotic tractor in college, my passion for robots continues to grow and I hope that I can someday make a career out of continuing to learn about and build robots!
+If you're interested in learning more about the projects I've worked on, check out the link below!
 
-### Here are some of my favorite projects:
+<center>
+  <!-- <a href="/projects" class="button buttonblack">Projects</a> -->
+  <button onclick="location.href='/projects'" type="button" class="button buttonblack">
+         Projects Page</button>
+</center>
+
+<p/>
+## Project Highlights
 
 <body>
+
 <table>
   <tr>
-    <td width="33%" valign="top" class="full" style="text-align: left;">
-      <a href="https://amyphung.github.io/gravl/">
-        <img src="img/projects/gravl/tractor.jpg" style="width:100%">
-      </a>
-      <h3>Autonomous Tractor Research</h3>
-      <p>Developing an autonomous tractor as a research platform</p>
-      <a href="https://amyphung.github.io/gravl/" class="post-read-more">[Read&nbsp;More]</a>
+    <td width="69%" valign="top" class="full" style="text-align: left;">
+      <div class="imageHolder">
+        <a href="/gravl/">
+          <img src="/img/projects/gravl/tractor.jpg" alt="" />
+          <div class="overlay"> <br>
+            <h3 class="overlay-heading">Autonomous Tractor Research</h3>
+            <p class="overlay-text">Developing an autonomous tractor for automated dirt road maintenance in unstructured environments</p>
+          </div>
+        </a>
+      </div>
+    </td>
+
+    <td width="31%" valign="top" class="full" style="text-align: left;">
+      <div class="imageHolder">
+        <a href="/portal-turret/">
+          <img src="/img/projects/portal-turret/half-shell-turret.jpg" alt="" />
+          <div class="overlay"> <br>
+            <h3 class="overlay-heading">POEtal Turret</h3>
+            <p class="overlay-text">A fun sentry turret from the game Portal</p>
+          </div>
+        </a>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="41%" valign="top" class="full" style="text-align: left;">
+      <div class="imageHolder">
+        <a href="/ekf-slam/">
+          <img src="/img/projects/qea/neatomeasure.png" alt="" />
+          <div class="overlay"> <br>
+            <h3 class="overlay-heading">EKF SLAM</h3>
+            <p class="overlay-text">A deep dive into the math and theory behind SLAM</p>
+          </div>
+        </a>
+      </div>
+    </td>
+
+    <td width="59%" valign="top" class="full" style="text-align: left;">
+      <div class="imageHolder">
+        <a href="/ROS-map-navigation/">
+          <img src="/img/projects/softdes/mapnav.jpg" alt="" />
+          <div class="overlay"> <br>
+            <h3 class="overlay-heading">ROS Map Navigation</h3>
+            <p class="overlay-text">A simple ROS package to navigate a robot through a map</p>
+          </div>
+        </a>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="57%" valign="top" class="full" style="text-align: left;">
+      <div class="imageHolder">
+        <a href="/robotic-tugboat/">
+          <img src="/img/projects/tugboat/front.jpg" alt="" />
+          <div class="overlay"> <br>
+            <h3 class="overlay-heading">Robot Tugboat</h3>
+            <p class="overlay-text">An autonomous mini-tugboat that can avoid obstacles, dock, and follow a target</p>
+          </div>
+        </a>
+      </div>
     </td>
 
     <td width="33%" valign="top" class="full" style="text-align: left;">
-      <a href="https://amyphung.github.io/roc/">
-        <img src="img/projects/GE/roc2.jpg" style="width:100%">
-      </a>
-      <h3>Rotorcraft Operations Center</h3>
-      <p>GUI for plotting data from helicopter engine Health and Usage Monitoring System</p>
-      <a href="https://amyphung.github.io/roc/" class="post-read-more">[Read&nbsp;More]</a>
-    </td>
-
-    <td width="33%" valign="top" class="full" style="text-align: left;">
-      <a href="https://amyphung.github.io/ROS-map-navigation/">
-        <img src="img/projects/softdes/mapnav.jpg" style="width:100%">
-      </a>
-      <h3>ROS Map Navigation</h3>
-      <p>A simple ROS package to navigate a robot through a map</p>
-      <a href="https://amyphung.github.io/ROS-map-navigation/" class="post-read-more">[Read&nbsp;More]</a>
+      <div class="imageHolder">
+        <a href="/segway/">
+          <img src="/img/projects/qea/segway-rectangle.jpg" alt="" />
+          <div class="overlay"> <br>
+            <h3 class="overlay-heading">Segway Robot</h3>
+            <p class="overlay-text">Balancing robot that drives along a parametric curve</p>
+          </div>
+        </a>
+      </div>
     </td>
   </tr>
 </table>
