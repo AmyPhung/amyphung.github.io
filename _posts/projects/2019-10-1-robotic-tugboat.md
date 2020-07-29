@@ -7,23 +7,13 @@ share-img: /img/projects/tugboat/square.jpg
 tags: [Fundamentals-Of-Robotics]
 ---
 
-This project involved modifying a prebuilt tugboat and adding sensors, sensor mounts, Arduinos, and other hardware to upgrade the platform from being remote-controlled to a fully autonomous tugboat with radio communications to an off-board computer. To prove sufficient autonomous behavior, we programmed our boat to be able to do several low-level
-behaviors including wall following, obstacle circumnavigation, and autonomous docking and
-undocking. To further showcase the boat’s autonomous capabilities, ”missions” utilizing
-these low-level behaviors to create more complex behaviors were also added. Some missions
-we sought out to achieve included making figure 8s around two obstacles and target capture,
-which incorporates the boat’s programmed low-level behaviors.
+This project involved modifying a prebuilt tugboat and adding sensors, sensor mounts, Arduinos, and other hardware to upgrade the platform from being remote-controlled to a fully autonomous tugboat with radio communications to an off-board computer. To prove sufficient autonomous behavior, we programmed our boat to be able to do several low-level behaviors:
++ wall following
++ obstacle circumnavigation
++ autonomous docking and undocking.
+To further showcase the boat’s autonomous capabilities, we also programmed the boat to accomplish ”missions”. These included completing figure 8s around two obstacles and following a specified target capture, which incorporated the boat’s programmed low-level behaviors.
 
-In order to accomplish these objectives, our team used a three Arduino setup with hardware
-serial communications between Arduinos, an XBee radio for communications between the
-Arduinos and the off-board computer, three sonars, six long-range sharp IRs, an IMU shield,
-and a Pixycam. In order to seamlessly integrate these additions to our boat, we also had
-to make some mechanical modifications including various sensor mounts. In the process of
-creating this tugboat, we also created various libraries that made it easier to interface with
-the boat. Each sensor had a library, each low-level behavior was included in a "Tugboat"
-object, and each high-level behavior was programmed in a separate "missions" library to
-distinguish low-level behaviors from high-level missions. We also added in a robust teleoperated control system to prevent the boat from being stranded in case of failures on any of
-the sensors.
+For more technical details, check out the report at the bottom of this page!
 
 This project was created along with my classmates Jordan Leadley, Everardo Gonzalez, and Robert Wechsler.
 
