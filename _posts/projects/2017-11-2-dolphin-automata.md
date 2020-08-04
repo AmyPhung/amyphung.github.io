@@ -7,7 +7,7 @@ share-img: /img/projects/mechproto/Automata/automata-front.jpg
 tags: [Mechanical-Prototyping]
 ---
 
-In the second project of my mechanical prototyping class, our assignment was to construct an automata that used a hand crank as an input and created some sort of interesting mortion with it. Some ways to do this included gears, cams, and linkages. Personally, I was fairly intrigued by linkages, so I wanted to create an automata that used them in some way. I settled on an automata that features two dolphins jumping over waves, with the internal linkages visible on one side.
+In the second project of my mechanical prototyping class, our assignment was to construct an automata that used a hand crank as an input and created some sort of interesting motion with it. Some ways to do this included gears, cams, and linkages. Personally, I was fairly intrigued by linkages, so I wanted to create an automata that used them in some way. I settled on an automata that features two dolphins jumping over waves, with the internal linkages visible on one side.
 
 ### Photos
 <center>
