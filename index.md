@@ -46,9 +46,9 @@ I'm currently in my senior year working toward a Robotics Engineering degree at 
 If you're interested in learning more about the projects I've worked on, check out the link below!
 
 <center>
-  <!-- <a href="/projects" class="button buttonblack">Projects</a> -->
-  <button onclick="location.href='/projects'" type="button" class="button buttonblack">
-         Projects Page</button>
+  <a href="/projects" class="button buttonblack" style="text-decoration: none">
+      Projects Page
+  </a>
 </center>
 
 <p/>
