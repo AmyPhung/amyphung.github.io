@@ -61,9 +61,9 @@ Accurately measuring chlorophyll-a concentrations within the world’s oceans is
 </center>
 
 <center>
-  <!-- <a href="/projects" class="button buttonblack">Projects</a> -->
-  <button onclick="location.href='/files/chl-a/PosterPDF_Phung.pdf'" type="button" class="button buttonblack">
-         High-Resolution PDF Version</button>
+  <a href="/files/chl-a/PosterPDF_Phung.pdf" class="button buttonblack" style="text-decoration: none">
+      High-Resolution PDF Version
+  </a>
 </center>
 
 #### Pre-recorded Presentation Video
