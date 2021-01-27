@@ -7,7 +7,7 @@ share-img: /img/projects/comprobo/particle-filter-cover-img.png
 tags: [Computational-Robotics]
 ---
 
-As one of the first few projects in my Computational Robotics course, my project group and I implemented a Particle Filter to help localize a robot based on lidar data (in layman's terms - figured out where the robot is on a map based on sensor input). As one of the earlier projects in this course, this project was fairly scaffolded, with starter code and data provided. Our primary focus while working on this project was to gain a strong understanding of the theoretical underpinnings of the Particle Filter (in particular, why this approximation is needed and why this method works) and practice taking the project from theory to implementation.
+As one of the first few projects in my [Computational Robotics course](https://comprobo20.github.io/), my project group and I implemented a Particle Filter to help localize a robot based on lidar data (in layman's terms - figured out where the robot is on a map based on sensor input). As one of the earlier projects in this course, this project was fairly scaffolded, with starter code and data provided. Our primary focus while working on this project was to gain a strong understanding of the theoretical underpinnings of the Particle Filter (in particular, why this approximation is needed and why this method works) and practice taking the project from theory to implementation. The project assignment description can be found [here](https://comprobo20.github.io/assignments/robot_localization).
 
 Project Partners: Eamon O'Brien, Emma Pan
 
