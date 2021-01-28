@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby RUBY_VERSION
+ruby '2.6.3'
 
 # For building site in TravisCI
 gem "rake", "~> 12"
