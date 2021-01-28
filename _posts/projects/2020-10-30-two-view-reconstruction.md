@@ -26,7 +26,7 @@ Ultimately, we were able to get a 3D reconstruction with two images on both a [p
       file="https://github.com/AmyPhung/computer_vision/blob/main/img/fountain1.jpg?raw=true"
       padding-top="5px"
       width="45%"
-      id="fountain0"%}
+      id="fountain1"%}
     <figcaption style="padding-top:5px;width:70%">Fountain input images (look carefully - they have slightly different perspectives!)</figcaption>
   </figure>
 </center>
