@@ -43,12 +43,15 @@ Margin-bottom: 21px;
 ## Biography
 I'm currently in my senior year working toward a Robotics Engineering degree at Olin College of Engineering, a small undergraduate-only school in Needham, MA. At Olin, I do research with the [Olin Robotics Lab](https://olinrobotics.github.io/) and currently lead the [Ground Vehicle Research group](https://github.com/olinrobotics/gravl/wiki), doing work with autonomous vehicles in unstructured environments. After Olin, I hope to continue working on research projects that leverage machine learning to solve navigation & perception problems on board mobile exploration robots.
 
-If you're interested in learning more about the projects I've worked on, check out the link below!
+If you're interested in learning more about the projects I've worked on or about my prior work experiences, check out the links below!
 
 <center>
   <a href="/projects" class="button buttonblack" style="text-decoration: none">
       Projects Page
   </a>
+	<a href="/files/about/CV___V1_5.pdf" class="button buttonblack" style="text-decoration: none" target="_blank" rel="noopener noreferrer">
+		  Curriculum Vitae
+	</a>
 </center>
 
 <p/>
