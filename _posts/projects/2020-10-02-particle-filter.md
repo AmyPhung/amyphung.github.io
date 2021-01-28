@@ -58,6 +58,7 @@ for each particle in the particle cloud:
 To read more about this project and to see our full-length project write-up, visit the link below!
 
 <center>
-  <button onclick="location.href='https://github.com/AmyPhung/robot_localization'" type="button" class="button buttonblack">
-         GitHub Repo & Project Write-up</button>
+	<a href="https://github.com/AmyPhung/robot_localization" class="button buttonblack" style="text-decoration: none" target="_blank" rel="noopener noreferrer">
+		  GitHub Repo & Project Write-up
+	</a>
 </center>
