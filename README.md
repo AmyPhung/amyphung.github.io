@@ -4,6 +4,7 @@
   + To set this up, install ruby 2.6.3 with `rvm install 2.6.3`
   + Install bundler `gem install bundler`
   + Navigate to this directory and run `bundle install`
+  + In the future, use `rvm use 2.6.3` to re-activate this environment
 
 + To test locally, navigate to this directory and run `bundle exec jekyll serve`
 + To update the `Gemfile.lock` file (to fix old dependency issues)
@@ -23,6 +24,7 @@
 
 # Features to be added
 + Image zooming/gallery
++ More dynamic homepage
 + Comments section
 + Fix display image
 + Last updated date in footer
