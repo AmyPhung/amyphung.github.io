@@ -73,3 +73,4 @@ Accurately measuring chlorophyll-a concentrations within the world’s oceans is
 + [Global OCEANS 2020 Student Poster Competition Article](https://ieeeoes.org/oes-beacon/december-2020-oes-beacon/the-student-poster-competition-at-global-oceans-2020/)
 + [Global OCEANS 2020 Conference Website](https://global20.oceansconference.org/)
 + [Project Code & Data Info](https://github.com/AmyPhung/chl-a-comparison/)
++ [View on IEEE Xplore](https://ieeexplore.ieee.org/document/9389221)
