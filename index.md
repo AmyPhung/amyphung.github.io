@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Hello World! I'm Amy.
-subtitle: Olin Student / Robotics Nerd / Engineer
+subtitle: PhD Student / Robotics Nerd / Engineer
 bigimg: /img/website/oppy-background.png
+show-avatar: false
 ---
 
 <head>
@@ -36,25 +37,51 @@ p {
 text-rendering: optimizeLegibility;
 Margin-bottom: 21px;
 }
+
+<!-- For image side-by-side with text -->
+bio_container {
+    position:relative;
+    width:30%;
+    height:auto;
+}
 </style>
 </head>
 <!-- font-size: 13px;-->
 
 ## Biography
-I'm currently in my senior year working toward a Robotics Engineering degree at Olin College of Engineering, a small undergraduate-only school in Needham, MA. At Olin, I do research with the [Olin Robotics Lab](https://olinrobotics.github.io/) and currently lead the [Ground Vehicle Research group](https://github.com/olinrobotics/gravl/wiki), doing work with autonomous vehicles in unstructured environments. After Olin, I hope to continue working on research projects that leverage machine learning to solve navigation & perception problems on board mobile exploration robots.
+<img style="float: right;" src="/img/website/headshot.jpg" width="30%">
 
-If you're interested in learning more about the projects I've worked on or about my prior work experiences, check out the links below!
+<!-- <div id="bio_container">
+  <img style="float: right;" src="/img/website/oppy-background.png" width="100">
+  <p> test test test </p>
+</div> -->
+
+
+
+
+I'm a PhD student at the Massachusetts Institute of Technology in the [MIT-WHOI Joint Program](https://mit.whoi.edu/), where I'm advised by Richard Camilli. I'm affiliated with the [AeroAstro](https://aeroastro.mit.edu/) department at MIT and the [Applied Ocean Sciences and Engineering](https://mit.whoi.edu/academics/fields/aope/) (AOSE) department at WHOI.
+
+Prior to grad school, I studied robotics engineering at [Olin College](https://www.olin.edu/), where I spent a lot of time working on [autonomous tractors](/gravl) and a [VR-based control room](/rov-vr) for underwater remotely operated vehicle (ROV) pilots. Through my research, I hope to improve the perception systems for deep-sea robotic arms to enable safe remote operation.
+
+<!-- I'm currently in my senior year working toward a Robotics Engineering degree at Olin College of Engineering, a small undergraduate-only school in Needham, MA. At Olin, I do research with the [Olin Robotics Lab](https://olinrobotics.github.io/) and currently lead the [Ground Vehicle Research group](https://github.com/olinrobotics/gravl/wiki), doing work with autonomous vehicles in unstructured environments. After Olin, I hope to continue working on research projects that leverage machine learning to solve navigation & perception problems on board mobile exploration robots. -->
+
+If you're interested in learning more about the projects I've worked on, check out the links below!
 
 <center>
-  <a href="/projects" class="button buttonblack" style="text-decoration: none">
-      Projects Page
+  <a href="/publications" class="button buttonblack-fixed" style="text-decoration: none">
+      Publications
   </a>
-	<a href="/files/about/CV___V1_5.pdf" class="button buttonblack" style="text-decoration: none" target="_blank" rel="noopener noreferrer">
-		  Curriculum Vitae
+  <a href="/projects" class="button buttonblack-fixed" style="text-decoration: none">
+      Projects
+  </a>
+	<a href="/files/about/CV___V1_5.pdf" class="button buttonblack-fixed" style="text-decoration: none" target="_blank" rel="noopener noreferrer">
+		  CV
 	</a>
 </center>
 
 <p/>
+
+<!--
 ## Project Highlights
 
 <body>
@@ -143,4 +170,4 @@ If you're interested in learning more about the projects I've worked on or about
   </tr>
 </table>
 
-</body>
+</body> -->

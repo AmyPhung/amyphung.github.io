@@ -19,13 +19,15 @@ fullurl: "https://amyphung.github.io"
 title: Amy Phung
 
 # Short description of your site
-description: Hello World! I'm Amy. Olin Student/Robotics Nerd/Engineer. I believe in the importance of good documentation, so welcome to my portfoilo/blog/personal website!
+description: Amy Phung's personal website & blog
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
   Home: "#"
+
+  Publications: "publications"
 
   Projects: # Use blog style for full list
     - All Projects: "projects"
@@ -37,7 +39,7 @@ navbar-links:
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/website/avatar-icon.png"
+avatar: "/img/website/headshot-icon.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
