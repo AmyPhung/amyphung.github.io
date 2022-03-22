@@ -1,0 +1,40 @@
+# Github Actions YAML File for deploying site. 
+# Builds site and copies static content to master branch
+name: CI
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ source ]
+  pull_request:
+    branches: [ source ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Build
+      uses: ealenn/jekyll-build-action@v1
+
+    - name: Deploy
+      run: |
+        git config user.name "amyphung"
+        git config user.email "amyngph@gmail.com"
+        chmod 777 .
+        cp -r ./_site  /tmp/
+        git checkout -b deploy_test
+        sudo rm -rf *
+        cp -r /tmp/_site/* ./
+        ls -la
+        git add -A
+        git commit -m "github_ci: Deploy amyphung.github.io"
+        git push --force "https://${{ secrets.DEPLOY_TOKEN }}@github.com/amyphung/amyphung.github.io.git" deploy:master
