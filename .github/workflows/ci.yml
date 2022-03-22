@@ -31,11 +31,11 @@ jobs:
         git config user.email "amyngph@gmail.com"
         chmod 777 .
         cp -r ./_site  /tmp/
-        git checkout master
+        git checkout -b deploy
         sudo rm -rf *
         cp -r /tmp/_site/* ./
         ls -la
         git add -A
         git commit -m "github_ci: Deploy amyphung.github.io"
-        git remote add origin https://amyphung:${{ secrets.DEPLOY_TOKEN }}@github.com/amyphung/amyphung.github.io.git
+        git remote add origin https://amyphung:${{ secrets.DEPLOY_TOKEN }}@github.com/amyphung/amyphung.github.io.git deploy:master
         git push
