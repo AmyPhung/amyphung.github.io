@@ -37,5 +37,4 @@ jobs:
         ls -la
         git add -A
         git commit -m "github_ci: Deploy amyphung.github.io"
-        git remote add origin https://amyphung:${{ secrets.DEPLOY_TOKEN }}@github.com/amyphung/amyphung.github.io.git deploy:master
-        git push
+        git push https://amyphung:${{ secrets.DEPLOY_TOKEN }}@github.com/amyphung/amyphung.github.io.git deploy:master
