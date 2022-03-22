@@ -37,4 +37,9 @@ jobs:
         ls -la
         git add -A
         git commit -m "github_ci: Deploy amyphung.github.io"
-        git push https://amyphung:${{ secrets.DEPLOY_TOKEN }}@github.com/amyphung/amyphung.github.io.git deploy:master
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: master
