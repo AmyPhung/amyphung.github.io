@@ -35,8 +35,7 @@ function generate_gallery(photos) {
     console.log(n_photos);
 
     let gallery = document.getElementById("gallery");
-    let overlay = document.getElementById("overlay");
-
+    
     for (let i = 0; i < n_photos; i++) {
         console.log(n_photos);
 
@@ -55,17 +54,6 @@ function generate_gallery(photos) {
         img_overlay.innerHTML = 
             "<img src="+img+" class='lightbox-img' />" + 
             "<div onclick='off(id="+id+")' class='overlay2'></div>"
-        overlay.appendChild(img_overlay);
-
-        // img_overlay.innerHTML="<div id='test' class='overlay'><img src='/img/auckland/akl-tree-park.jpg' class='lightbox-img' /><div onclick='off(id=test)' class='overlay2'></div></div>"
-        // overlay.appendChild(img_overlay);
+        document.body.appendChild(img_overlay);
     }
 }
-
-
-{/* <div id="overlay">
-<div id="test" class="overlay">
-    <img src="/img/auckland/akl-tree-park.jpg" class="lightbox-img" />
-    <div onclick="off(id=test)" class="overlay2"></div>
-</div>
-</div> */}
