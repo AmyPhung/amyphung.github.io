@@ -6,6 +6,7 @@ common-css:
   - "/css/button.css"
   - "/css/image-caption.css"
   - "/css/gallery.css"
+  - "/css/overlay.css"
 common-ext-css:
   - "//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
 common-googlefonts:
@@ -19,6 +20,9 @@ common-js:
 
 <!DOCTYPE html>
 <html lang="en">
+  <!-- TODO: Figure out why this needs to be here -->
+  <script src="/js/gallery.js"></script>
+
   <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
   {% include head.html %}
 
@@ -37,83 +41,4 @@ common-js:
   </body>
 
 
-
-<script>
-  function on(id) {
-    // document.getElementById("overlay").style.display = "block";
-    // $(`${id}, .lightbox-img`).fadeIn();
-    // $(`${id}, .overlay`).fadeIn();
-    // $(`${id}`).fadeIn();
-
-    $(id).fadeIn();
-    console.log("in");
-    console.log(id);
-  }
-
-  function off(id) {
-    // document.getElementById("overlay").style.display = "none";
-    // $(id).fadeIn();
-    // $(`${id}, .lightbox-img`).fadeOut();
-    // $(`${id}, .overlay`).fadeOut();
-    // $(`${id}`).stop().fadeOut();
-    $(id).fadeOut();
-
-    console.log("out");
-    console.log(id);
-  }
-
-  function off2() {
-    // document.getElementById("overlay").style.display = "none";
-    // $(id).fadeIn();
-    // $(`${id}, .lightbox-img`).fadeOut();
-    // $(`${id}, .overlay`).fadeOut();
-    // $(`${id}`).stop().fadeOut();
-    $("#headrig").fadeOut();
-  }
-</script>
-
-
-  <!-- <script>
-    let darkBoxVisible = false;
-
-    function showDarkbox(url) {
-   if(!darkBoxVisible) {
-    let x = (window.innerWidth - 1280) / 2;
-    let y = window.scrollY + 50;
-    // Create the darkBox
-    var div = document.createElement("div");
-    
-    div.id = "darkbox";
-    div.innerHTML = '<img class="darkboximg" src="'+url+'" />';
-    document.body.appendChild(div);
-    let box = document.getElementById("darkbox");
-    box.style.left = x.toString()+"px";
-    box.style.top = y.toString()+"px";
-    box.style.height = 'auto';
-    box.addEventListener('click', (event) => {
-     // Remove it
-     let element = document.getElementById("darkbox");
-     element.parentNode.removeChild(element);
-     darkBoxVisible = false;
-    })
-    darkBoxVisible = true;
-  } else {
-    // Remove it
-    let element = document.getElementById("darkbox");
-    element.parentNode.removeChild(element);
-    darkBoxVisible = false;
- }
-}
-
-window.addEventListener('load', (event) => {
-   let images = document.querySelectorAll("img");
-   if(images !== null && images !== undefined && images.length > 0) {
-    images.forEach(function(img) {
-     img.addEventListener('click', (evt) => {
-      showDarkbox(img.src);
-     });
-    });
-   }
-  });
-  </script> -->
 </html>
