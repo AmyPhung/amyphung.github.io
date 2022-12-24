@@ -35,11 +35,11 @@ function generate_gallery(photos) {
     console.log(n_photos);
 
     let gallery = document.getElementById("gallery");
-    
+
     for (let i = 0; i < n_photos; i++) {
         console.log(n_photos);
 
-        let img = photos[i];
+        let img = photos[i].file;
         let id = "photo"+i;
 
         // Add photo to gallery
