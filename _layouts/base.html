@@ -5,6 +5,8 @@ common-css:
   - "/css/main.css"
   - "/css/button.css"
   - "/css/image-caption.css"
+  - "/css/gallery.css"
+  - "/css/overlay.css"
 common-ext-css:
   - "//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
 common-googlefonts:
@@ -18,6 +20,9 @@ common-js:
 
 <!DOCTYPE html>
 <html lang="en">
+  <!-- TODO: Figure out why this needs to be here -->
+  <script src="/js/gallery.js"></script>
+
   <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
   {% include head.html %}
 
@@ -34,4 +39,6 @@ common-js:
     {% include footer-scripts.html %}
 
   </body>
+
+
 </html>
