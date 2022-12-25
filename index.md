@@ -40,7 +40,7 @@ p {
 ## Biography
 <img style="float: right;" src="/img/website/headshot.jpg" width="30%">
 
-I'm a PhD student at the Massachusetts Institute of Technology in the [MIT-WHOI Joint Program](https://mit.whoi.edu/), where I'm advised by Richard Camilli. I'm affiliated with the [AeroAstro](https://aeroastro.mit.edu/) department at MIT and the [Applied Ocean Sciences and Engineering](https://mit.whoi.edu/academics/fields/aope/) (AOSE) department at WHOI. My research is funded in part by an [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/).
+I'm a PhD student in the [MIT-WHOI Joint Program](https://mit.whoi.edu/), where I'm advised by Richard Camilli. I'm affiliated with the [AeroAstro](https://aeroastro.mit.edu/) department at MIT and the [Applied Ocean Sciences and Engineering](https://mit.whoi.edu/academics/fields/aope/) (AOSE) department at WHOI. My research is funded in part by an [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/) and the [Link Foundation Ocean Engineering and Instrumetation Fellowship](https://linkoe.org/).
 
 Prior to grad school, I studied robotics engineering at [Olin College](https://www.olin.edu/), where I spent a lot of time working on [autonomous tractors](/gravl) and a [VR-based control room](/rov-vr) for underwater remotely operated vehicle (ROV) pilots. My experiences at Olin and my semester [abroad with SEA](/sea) cultivated my interest in the intersection between technology and ocean exploration. Through my research, I hope to improve the perception systems for deep-sea robotic arms to enable safe remote operation.
 
