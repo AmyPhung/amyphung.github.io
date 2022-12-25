@@ -15,49 +15,30 @@ show-avatar: false
     border: 5px solid white;
   }
 }
-
 table {
-    border-collapse: collapse;
-    border: 5px solid white;
+  border-collapse: collapse;
+  border: 5px solid white;
 }
-
 th, td {
-   border-collapse: collapse;
-   border: 5px solid white;
-   /* border: none; */
+  border-collapse: collapse;
+  border: 5px solid white;
+  /* border: none; */
 }
-
 h3 {
-
-text-rendering: optimizeLegibility;
-Margin-bottom: 21px;
+  text-rendering: optimizeLegibility;
+  Margin-bottom: 21px;
 }
-
 p {
-text-rendering: optimizeLegibility;
-Margin-bottom: 21px;
+  text-rendering: optimizeLegibility;
+  Margin-bottom: 21px;
 }
 
-<!-- For image side-by-side with text -->
-bio_container {
-    position:relative;
-    width:30%;
-    height:auto;
-}
 </style>
 </head>
 <!-- font-size: 13px;-->
 
 ## Biography
 <img style="float: right;" src="/img/website/headshot.jpg" width="30%">
-
-<!-- <div id="bio_container">
-  <img style="float: right;" src="/img/website/oppy-background.png" width="100">
-  <p> test test test </p>
-</div> -->
-
-
-
 
 I'm a PhD student at the Massachusetts Institute of Technology in the [MIT-WHOI Joint Program](https://mit.whoi.edu/), where I'm advised by Richard Camilli. I'm affiliated with the [AeroAstro](https://aeroastro.mit.edu/) department at MIT and the [Applied Ocean Sciences and Engineering](https://mit.whoi.edu/academics/fields/aope/) (AOSE) department at WHOI. My research is funded in part by an [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/).
 
@@ -74,12 +55,10 @@ If you're interested in learning more about the projects I've worked on, check o
   <a href="/projects" class="button buttonblack-fixed" style="text-decoration: none">
       Projects
   </a>
-	<a href="/files/about/amy_phung_CV_V2_2.pdf" class="button buttonblack-fixed" style="text-decoration: none" target="_blank" rel="noopener noreferrer">
-		  CV
-	</a>
+  <a href="/files/about/amy_phung_CV_V2_2.pdf" class="button buttonblack-fixed" style="text-decoration: none" target="_blank" rel="noopener noreferrer">
+      CV
+  </a>
 </center>
-
-<p/>
 
 <!--
 ## Project Highlights
