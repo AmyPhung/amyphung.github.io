@@ -24,15 +24,17 @@ Ultimately, we were able to train two different types of models using imitation 
 
 <center>
   <a href="https://github.com/EverardoG/ml_comprobofinal" class="button buttonblack" style="text-decoration: none" target="_blank" rel="noopener noreferrer">
-      Check out our Project Repository!
+      Project Repository
   </a>
 </center>
 
 <center>
   <a href="https://everardog.github.io/ml_comprobofinal/" class="button buttonblack" style="text-decoration: none" target="_blank" rel="noopener noreferrer">
-      Visit our Project Website!
+      Project Website
   </a>
-  <a href="https://everardog.github.io/ml_comprobofinal/" target="_blank" rel="noopener noreferrer">
+  <iframe src="https://everardog.github.io/ml_comprobofinal/" style="width:100%;height:700px;">
+  </iframe>
+  <!-- <a href="https://everardog.github.io/ml_comprobofinal/" target="_blank" rel="noopener noreferrer">
       <img src="/img/projects/comprobo/dodgeball-website-preview.png">
-  </a>
+  </a> -->
 </center>
