@@ -55,7 +55,7 @@ If you're interested in learning more about the projects I've worked on, check o
   <a href="/projects" class="button buttonblack-fixed" style="text-decoration: none">
       Projects
   </a>
-  <a href="/files/about/amy_phung_CV_V2_2.pdf" class="button buttonblack-fixed" style="text-decoration: none" target="_blank" rel="noopener noreferrer">
+  <a href="/files/about/amy_phung_CV_V2_5.pdf" class="button buttonblack-fixed" style="text-decoration: none" target="_blank" rel="noopener noreferrer">
       CV
   </a>
 </center>
