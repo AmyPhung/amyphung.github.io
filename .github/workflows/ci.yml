@@ -16,11 +16,22 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+
+    - name: Set up Ruby 2.7
+      uses: ruby/setup-ruby@ec02537da5712d66d4d50a0f33b7eb52773b5ed1
+      with:
+        ruby-version: 2.7
+    
+    - name: Install dependencies
+      run: bundle install
+    
+    - name: Run tests
+      run: bundle exec rake
 
     - name: Build
       uses: ealenn/jekyll-build-action@v1
