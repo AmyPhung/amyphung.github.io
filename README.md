@@ -1,18 +1,25 @@
 # Notes
 + General local setup:
-  + Follow the instructions here to install rvm https://github.com/rvm/ubuntu_rvm
-  + To set this up, install ruby 2.6.3 with `rvm install 2.6.3`
-    + If this errors, see below - likely caused by a known incompatibility with ruby 2.X and openssl
-  + Install bundler `gem install bundler`
+  + OpenSSL setup to get older ruby versions to work with ubuntu 22.04 ([reference](https://deanpcmad.com/2024/installing-older-ruby-versions-on-ubuntu-24-04-and-22-04/))
+    + `wget https://www.openssl.org/source/openssl-1.1.1w.tar.gz`
+    + `tar zxvf openssl-1.1.1w.tar.gz`
+    + `export OPENSSL=$HOME/.openssl/openssl-1.1.1w`
+    + `cd openssl-1.1.1w`
+    + `./config --prefix=$OPENSSL --openssldir=$OPENSSL`
+    + `make`
+    + `make test`
+    + `make install`
+  + Add symlink for certs so install works
+    + `rm -rf $OPENSSL/certs`
+    + `ln -s /etc/ssl/certs $OPENSSL/certs`
+  + Install ruby environment manager `sudo apt install rbenv`
+  + Add rbenv to `.bashrc` 
+    + `export PATH="$HOME/.rbenv/bin:$PATH"`
+    + `eval "$(rbenv init -)"`
+  + Install ruby `RUBY_CONFIGURE_OPTS=--with-openssl-dir=$OPENSSL rbenv install 2.6.3`
+  + Install bundler `gem install bundler:2.3.10`
   + Navigate to this directory and run `bundle install`
-    + If this errors, need to use a different version of bundler `gem install bundler:2.3.10`
-  + In the future, use `rvm use 2.6.3` to re-activate this environment
-
 + To test locally, navigate to this directory and run `bundle exec jekyll serve`
-+ To update the `Gemfile.lock` file (to fix old dependency issues)
-  + Delete the old `Gemfile.lock`
-  + Navigate to this directory and run `bundle install`
-  + There should be a new `Gemfile.lock` with the updated dependencies
 
 # Documentation
 + Multiple Paginate example ([reference](https://github.com/scandio/jekyll-paginate-multiple-example
@@ -40,3 +47,18 @@
 + Comments section
 + Fix display image
 + Last updated date in footer
+
+# Old local setup instructions
++ Follow the instructions here to install rvm https://github.com/rvm/ubuntu_rvm
++ To set this up, install ruby 2.6.3 with `rvm install 2.6.3`
+  + If this errors, see below - likely caused by a known incompatibility with ruby 2.X and openssl
++ Install bundler `gem install bundler`
++ Navigate to this directory and run `bundle install`
+  + If this errors, need to use a different version of bundler `gem install bundler:2.3.10`
++ In the future, use `rvm use 2.6.3` to re-activate this environment
+
++ To test locally, navigate to this directory and run `bundle exec jekyll serve`
++ To update the `Gemfile.lock` file (to fix old dependency issues)
++ Delete the old `Gemfile.lock`
++ Navigate to this directory and run `bundle install`
++ There should be a new `Gemfile.lock` with the updated dependencies
