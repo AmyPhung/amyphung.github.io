@@ -11,7 +11,9 @@ title: Publications
 
 <!-- Conference and Journal Publications -->
 ## Publications
-**A. Phung**, G. Billings, G. Burgess, R. Camilli, “Unattended Geo-referenced Survey with An Autonomous Underwater Glider” (Submitted)
+**A. Phung**, G. Billings, G. Burgess, R. Camilli, “An Autonomous Underwater Glider With Improved Onboard Navigation for Unattended Mapping” IEEE Journal of Oceanic Engineering, 2025. [https://doi.org/10.1109/JOE.2025.3538925](https://doi.org/10.1109/JOE.2025.3538925)
+<br /> 
+[[PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10980064)]
 
 **A. Phung**, G. Billings, R. Camilli, “Sonar-Aided Manipulation in Low-Visibility Conditions by Novice Users” IEEE/MTS OCEANS - Halifax, 2024.
 <br /> 
@@ -70,6 +72,7 @@ Zealand” IEEE/MTS OCEANS Singapore-U.S. Gulf Coast, 2020. [https://doi.org/10.
 + WHOI
     + [5 WHOI women making waves in ocean science and engineering](https://www.whoi.edu/oceanus/feature/5-whoi-women-making-waves-in-ocean-science-and-engineering/)
     + [Automating Exploration](https://www.whoi.edu/oceanus/feature/automating-exploration/)
+    + [Learning to see through cloudy waters](https://www.whoi.edu/oceanus/feature/learning-to-see-through-cloudy-waters/)
 + Nautilus Live
     + [Q&A](https://nautiluslive.org/people/amy-phung)
 + Olin
