@@ -9,12 +9,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Personal Blog</title>
+  <title>Using Extended Kalman Filters for SLAM</title>
 
   <meta name="author" content="Amy Phung" />
 
   
-  <meta name="description" content="Photos from this and that, every now and then">
+  <meta name="description" content="A deep dive into the math and theory behind SLAM">
   
 
   <link rel="alternate" type="application/rss+xml" title="Amy Phung - Amy Phung's personal website & blog" href="/feed.xml" />
@@ -78,23 +78,23 @@
   
 
   
-  <meta property="og:title" content="Personal Blog" />
+  <meta property="og:title" content="Using Extended Kalman Filters for SLAM" />
   
 
    
-  <meta property="og:description" content="Photos from this and that, every now and then">
+  <meta property="og:description" content="A deep dive into the math and theory behind SLAM">
   
 
 
   <meta property="og:type" content="website" />
 
   
-  <meta property="og:url" content="/blog/" />
-  <link rel="canonical" href="/blog/" />
+  <meta property="og:url" content="/ekf-slam/" />
+  <link rel="canonical" href="/ekf-slam/" />
   
 
   
-  <meta property="og:image" content="/img/blog/beach.jpg" />
+  <meta property="og:image" content="/img/projects/qea/neatomeasure.png" />
   
 
 
@@ -104,15 +104,15 @@
   <meta name="twitter:creator" content="@" />
 
   
-  <meta name="twitter:title" content="Personal Blog" />
+  <meta name="twitter:title" content="Using Extended Kalman Filters for SLAM" />
   
 
   
-  <meta name="twitter:description" content="Photos from this and that, every now and then">
+  <meta name="twitter:description" content="A deep dive into the math and theory behind SLAM">
   
 
   
-  <meta name="twitter:image" content="/img/blog/beach.jpg" />
+  <meta name="twitter:image" content="/img/projects/qea/neatomeasure.png" />
   
 
   
@@ -268,54 +268,23 @@
 
 
 
-  <div id="header-big-imgs" data-num-img=1
-    
-	  
-	  
-	    
-		  data-img-src-1="/img/blog/beach.jpg"
-		
-	  
-    
-  ></div>
 
-
-<header class="header-section has-img">
-
-<div class="big-img intro-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="page-heading">
-          <h1>Personal Blog</h1>
-		  
-		    
-            <hr class="small">
-            <span class="page-subheading">Photos from this and that, every now and then</span>
-			
-		  
-
-		  
-        </div>
-      </div>
-    </div>
-  </div>
-  <span class='img-desc'></span>
-</div>
+<header class="header-section ">
 
 <div class="intro-header no-img">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="page-heading">
-          <h1>Personal Blog</h1>
+        <div class="post-heading">
+          <h1>Using Extended Kalman Filters for SLAM</h1>
 		  
 		    
-            <hr class="small">
-            <span class="page-subheading">Photos from this and that, every now and then</span>
+			<h2 class="post-subheading">A deep dive into the math and theory behind SLAM</h2>
 			
 		  
 
+		  
+		  <!--<span class="post-meta">Posted on December 1, 2018</span>-->
 		  
         </div>
       </div>
@@ -328,138 +297,209 @@
 
 
 
-<div class="container" role="main">
+<div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <p>
-  I don't often post things on social media, but there are times when I wish I 
-  had a place to curate photos to look back on a few years from now and 
-  share with friends and family, so this is it! I hope you enjoy it! 
-</p>
 
-<br>
-</br>
-
-<div class="posts-list">
-  <div>
-    <center>
-      <h1> Blog Posts: </h1>
-    </center>
-  </div>
-
-  
-  <article class="post-preview">
-    <a href="/puerto-rico2022/">
-	  <h2 class="post-title">Puerto Rico</h2>
-
-	  
-	  <h3 class="post-subtitle">
-	    Field work! Glider field ops
-	  </h3>
-	  
-    </a>
-
-    
-
-    <p class="post-meta">
-      Posted on November 22, 2022
-    </p>
-
-    <div class="post-entry-container">
       
-      <div class="post-image">
-        <a href="/puerto-rico2022/">
-          <img src="/img/blog/puerto-rico2022/cover.jpg">
-        </a>
-      </div>
+
       
-      <div class="post-entry">
-        Field work was one of the aspects to my grad program that I was the most excited about, and here we are! I’d participated remotely on a cruise my work was being tested on last year, but it’s not quite the same as being there in person.
-
-
-        
-        
-          <a href="/puerto-rico2022/" class="post-read-more">[Read&nbsp;More]</a>
-        
-      </div>
-    </div>
-   </article>
-  
-  <article class="post-preview">
-    <a href="/maine2022/">
-	  <h2 class="post-title">Maine 2022</h2>
-
-	  
-	  <h3 class="post-subtitle">
-	    Sailing around Camden, backpacking in Baxter, and a brief visit to Acadia
-	  </h3>
-	  
-    </a>
-
-    
-
-    <p class="post-meta">
-      Posted on August 10, 2022
-    </p>
-
-    <div class="post-entry-container">
+        <div class="blog-tags">
+          Tags:
+          
+          
+            <a href="/tags#Quantitative-Engineering-Analysis">Quantitative-Engineering-Analysis</a>
+          
+          
+        </div>
       
-      <div class="post-image">
-        <a href="/maine2022/">
-          <img src="/img/blog/maine2022/cover.jpg">
-        </a>
-      </div>
-      
-      <div class="post-entry">
-        This was my first backpacking trip, my first time visiting Maine, and my first overnight trip on Mashnee! It was a fantastic break from the day-to-day work. I took a bus from Boston up to Camden, where Mashnee was moored. Over the next couple of days we sailed around Penobscot...
-        
-        
-          <a href="/maine2022/" class="post-read-more">[Read&nbsp;More]</a>
-        
-      </div>
-    </div>
-   </article>
-  
-  <article class="post-preview">
-    <a href="/armstrong2021/">
-	  <h2 class="post-title">JP Student Cruise</h2>
 
-	  
-	  <h3 class="post-subtitle">
-	    Introductory cruise aboard the R/V Armstrong
-	  </h3>
-	  
-    </a>
+      <article role="main" class="blog-post">
+        <p>Inspired by my first year experiences working on the <a href="/ROS-map-navigation">ROS map navigation project</a>, I worked on a project which involved a deep-dive into the math and theory behind using extended kalman filters for SLAM as my final project in Quantitative Engineering Analysis. Working on the ROS map navigation project was pretty neat, but that project was much more focused on the implementation rather than the theory.</p>
 
-    
+<p>Here’s a graph showing the results of our implementation. We generated a set of noisy sensor readings (distance and angle of beacons) from a theoretical robot traveling along the ground truth path. The ellipses indicate the uncertainty estimates of the position, with the centers of the ellipses being the best prediction of the odometry at each timestep. Overall, the odometry lines up pretty well with the ground truth values, so I’d say that’s a success!</p>
 
-    <p class="post-meta">
-      Posted on November 7, 2021
-    </p>
+<p>Project partner: Kawin Nikomborirak</p>
 
-    <div class="post-entry-container">
-      
-      <div class="post-image">
-        <a href="/armstrong2021/">
-          <img src="/img/blog/armstrong2022/cover.jpg">
-        </a>
-      </div>
-      
-      <div class="post-entry">
-        First-year students in the MIT-WHOI Joint Program typically go on a 10-day cruise aboard the Cramer (the sister ship to the Seamans!) to get to know their cohort while getting some hands-on experience with common oceanographic sampling equipment. Unfortunately, COVID was still causing logistics issues when I enrolled in the...
-        
-        
-          <a href="/armstrong2021/" class="post-read-more">[Read&nbsp;More]</a>
-        
-      </div>
-    </div>
-   </article>
-  
+<center>
+  <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="/img/projects/qea/slam-output.png" class="thumbnail-img" onclick="on(id='#results')" style="padding-top: 5px; width: 70%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="results" class="overlay">
+  <img src="/img/projects/qea/slam-output.png" class="lightbox-img" />
+  <div onclick="off(id='#results')" class="overlay2"></div>
 </div>
 
+</center>
+
+<center>
+  <embed src="/files/qea/QEA_Technical_Report.pdf" width="100%" height="1000" />
+</center>
+
+<p><a href="https://github.com/concavegit/ekf-slam-lidar">Link to code</a></p>
+
+      </article>
+
+      
+        <!-- Check if any share-links are active -->
 
 
-	    
+
+
+<section id = "social-share-section">
+  <span class="sr-only">Share: </span>
+
+  
+  <!--- Share on Twitter -->
+    <a href="https://twitter.com/intent/tweet?text=Using+Extended+Kalman+Filters+for+SLAM+https://amyphung.github.io/ekf-slam/"
+      class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fa fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  
+
+  
+  <!--- Share on Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://amyphung.github.io/ekf-slam/"
+      class="btn btn-social-icon btn-facebook" title="Share on Facebook">
+      <span class="fa fa-fw fa-facebook" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+    </a>
+  
+
+  
+
+  
+  <!--- Share on LinkedIn -->
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://amyphung.github.io/ekf-slam/"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fa fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  
+
+</section>
+
+
+
+      
+
+      <ul class="pager blog-pager">
+        
+        <!-- Disconnect SEA and project posts  -->
+          
+            <li class="previous">
+              <a href="/segway/" data-toggle="tooltip" data-placement="top" title="Segway Robot">&larr; Previous Post</a>
+            </li>
+          
+        
+        
+        <!-- Disconnect SEA and project posts  -->
+          
+            <li class="next">
+              <a href="/robotic-tugboat/" data-toggle="tooltip" data-placement="top" title="Robot Tugboat">Next Post &rarr;</a>
+            </li>
+          
+        
+      </ul>
+
+      
+        <div class="disqus-comments">
+          
+        </div>
+          <div class="comments">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=600762203989703&autoLogAppEvents=1';
+       fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="fb-comments" data-href="/ekf-slam/" data-width="100%" data-numposts="5"></div>
+    <noscript>Please enable JavaScript to view the comments powered by Facebook.</noscript>
+</div>
+      
     </div>
   </div>
 </div>
