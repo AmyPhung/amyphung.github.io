@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- TODO: Figure out why this needs to be here -->
+  <script src="/js/gallery.js"></script>
+
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Chlorophyll-a Comparison</title>
+
+  <meta name="author" content="Amy Phung" />
+
+  
+  <meta name="description" content="Comparing chl-a measurements from satellites, robotic floats, and shipborne fluorometers in New Zealand">
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Amy Phung - Amy Phung's personal website & blog" href="/feed.xml" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KVB79MNVY1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KVB79MNVY1');
+</script>
+
+  
+  
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+      <link rel="stylesheet" href="/css/button.css" />
+    
+      <link rel="stylesheet" href="/css/image-caption.css" />
+    
+      <link rel="stylesheet" href="/css/gallery.css" />
+    
+      <link rel="stylesheet" href="/css/overlay.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+  <meta property="fb:app_id" content="600762203989703" />
+  
+
+  
+  <meta property="og:title" content="Chlorophyll-a Comparison" />
+  
+
+   
+  <meta property="og:description" content="Comparing chl-a measurements from satellites, robotic floats, and shipborne fluorometers in New Zealand">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="/chl-a-comparison/" />
+  <link rel="canonical" href="/chl-a-comparison/" />
+  
+
+  
+  <meta property="og:image" content="/img/projects/chl-a/display-img.png" />
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="Chlorophyll-a Comparison" />
+  
+
+  
+  <meta name="twitter:description" content="Comparing chl-a measurements from satellites, robotic floats, and shipborne fluorometers in New Zealand">
+  
+
+  
+  <meta name="twitter:image" content="/img/projects/chl-a/display-img.png" />
+  
+
+  
+
+</head>
+
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <!-- <a class="navbar-brand" href="">Amy Phung</a> -->
+        <a class="navbar-brand" href="https://amyphung.github.io">Amy Phung</a>
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/#">Home</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/publications">Publications</a>
+
+          </li>
+        
+        
+        
+          <li class="navlinks-container">
+            <a class="navlinks-parent" href="javascript:void(0)">Projects</a>
+            <div class="navlinks-children">
+              
+                
+                  
+
+
+
+
+
+
+<a href="/projects">All Projects</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/tags">Projects by Category</a>
+
+                
+              
+            </div>
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/sea">SEA Semester</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/blog">Blog</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/aboutme">About Me</a>
+
+          </li>
+        
+        
+      </ul>
+    </div>
+
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <!-- <a href=" "> -->
+    <a href="https://amyphung.github.io ">
+	      <img class="avatar-img" src="/img/website/profile.jpg" />
+		</a>
+	  </div>
+	</div>
+	
+
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-heading">
+          <h1>Chlorophyll-a Comparison</h1>
+		  
+		    
+			<h2 class="post-subheading">Comparing chl-a measurements from satellites, robotic floats, and shipborne fluorometers in New Zealand</h2>
+			
+		  
+
+		  
+		  <!--<span class="post-meta">Posted on October 1, 2020</span>-->
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+      
+
+      
+        <div class="blog-tags">
+          Tags:
+          
+          
+            <a href="/tags#SEA-Research">SEA-Research</a>
+          
+          
+        </div>
+      
+
+      <article role="main" class="blog-post">
+        <p>During my semester abroad with <a href="/sea">SEA</a>, taking the class “Directed Oceanographic Research” gave me the opportunity to complete a research project and communicate my results in a technical write-up. One of my primary motivations when studying with SEA was to learn more about the role robots played in the ocean sciences since I wanted to find a way to apply what I’d learned from Olin to make an impact. My professor for this class suggested looking into the robotic Argo floats as a potential research topic, which eventually led to this chlorophyll-a comparison project.</p>
+
+<p>Through my other classes with SEA, I learned that chlorophyll-a data was widely used among the oceanographic research community, and that each method of collecting this data came with its set of pros and cons, which can be summarized as follows:</p>
+
+<center>
+  <figure>
+    <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="/img/projects/chl-a/pros-cons.png" class="thumbnail-img" onclick="on(id='#pro-con')" style="padding-top: 5px; width: 100%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="pro-con" class="overlay">
+  <img src="/img/projects/chl-a/pros-cons.png" class="lightbox-img" />
+  <div onclick="off(id='#pro-con')" class="overlay2"></div>
+</div>
+
+    <figcaption style="padding-top:5px;width:70%">Summary of pros and cons for each sensor</figcaption>
+  </figure>
+</center>
+
+<p>I wanted to compare the measurements between the robotic Argo floats and the flow-through fluorometer we had on board our ship, but these two pieces of data couldn’t be directly compared with each other for a couple of reasons:</p>
+<ol>
+  <li>The Argo floats take profiles at depth while our fluorometer only took surface measurements</li>
+  <li>Our cruise track and the Argo float path didn’t quite line up exactly.</li>
+  <li>The Argo floats that traveled near New Zealand have been taking samples since 2017, but the samples collected during our cruise would only span a 1-month period in 2020.</li>
+</ol>
+
+<p>In order for my comparisons to make some sense, I compared each of these sensors to data collected by satellites, which ultimately allowed me to make indirect comparisons between the Argo and shipborne fluorometer data. Overall, my results showed that at lower concentrations, all three sensors were in fairly good agreement, but in areas with higher concentrations the data deviated. In high concentration areas, the robotic Argo floats tended to record higher than the satellite data, and the fluorometer tended to record lower concentrations than the satellite did.</p>
+
+<h3 id="conference-submission">Conference Submission</h3>
+<p>After departing from New Zealand, I had originally planned to travel for the next month around New Zealand, Australia, and Hawaii before returning home. Unfortunately, due to the pandemic, these plans got canceled, but a silver lining that came out of the situation was that it provided me plenty of time at home to put together a submission for the OCEANS 2020 Student Poster Competition. I submitted my results in a 2-page extended abstract back in April, hopeful that the pandemic would be over by the conference date in October. The conference ended up being held virtually - for more info about the conference, visit the <a href="https://global20.oceansconference.org/">OCEANS 2020 website</a>.</p>
+
+<p>After my extended abstract was accepted, I submitted a paper, poster, and video to the competition. I was a bit bummed that my first conference experience was remote, but am excited for more opportunities to present at conferences in the near future once I’m in grad school.</p>
+
+<h4 id="conference-paper-abstract">Conference Paper Abstract</h4>
+<font size="2.5">
+<p style="margin-left:5%;margin-right:5%;">
+Accurately measuring chlorophyll-a concentrations within the world’s oceans is an important part of building our understanding of its underlying processes and the human impact on it, and developing tools to do this is an area of active study. Some methods used today to collect this data include in-situ fluorometers on board automated Biogeochemical Argo floats, flow-through fluorometers on board oceangoing vessels, and ocean color algorithms applied to remote sensing data. While shipborne field fluorometers are the most accurate of the three since they can be recalibrated before and after each expedition, they are limited in spatial and temporal coverage due to their dependence on expensive oceanographic research cruises. The Biogeochemical floats help to increase the coverage of fluorometer data by automating the data collection, but are known to suffer from sensor drift over time since their fluorometers cannot be serviced and calibrated regularly. Remote sensing data has by far the greatest spatial and temporal coverage of the three methods, but is known to be significantly less accurate in certain regions and is limited to surface measurements. This study compares these three measurement methods by analyzing data collected by a 10AU Field and Laboratory Fluorometer connected to a flow-through system, data from a Biogeochemical Argo float, and satellite data from the VIIRS-SNPP dataset in the same region. The results of comparisons between each of these collection methods are presented.
+</p>
+</font>
+
+<h4 id="full-conference-paper">Full Conference Paper</h4>
+<center>
+  <embed src="/files/chl-a/Chl_A_Comparison_Formatted.pdf" width="100%" height="1000" />
+</center>
+
+<h4 id="conference-poster">Conference Poster</h4>
+<center>
+  <figure>
+    <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="/img/projects/chl-a/chl-a-poster.jpg" class="thumbnail-img" onclick="on(id='#poster')" style="padding-top: 5px; width: 100%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="poster" class="overlay">
+  <img src="/img/projects/chl-a/chl-a-poster.jpg" class="lightbox-img" />
+  <div onclick="off(id='#poster')" class="overlay2"></div>
+</div>
+
+    <figcaption style="padding-top:5px;width:70%"></figcaption>
+  </figure>
+</center>
+
+<center>
+  <a href="/files/chl-a/PosterPDF_Phung.pdf" class="button buttonblack" style="text-decoration: none">
+      High-Resolution PDF Version
+  </a>
+</center>
+
+<h4 id="pre-recorded-presentation-video">Pre-recorded Presentation Video</h4>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/zJIH4F3Ajn0" frameborder="0" allowfullscreen=""></iframe></div>
+
+<h3 id="other-links">Other Links</h3>
+<ul>
+  <li><a href="https://ieeeoes.org/oes-beacon/december-2020-oes-beacon/the-student-poster-competition-at-global-oceans-2020/">Global OCEANS 2020 Student Poster Competition Article</a></li>
+  <li><a href="https://global20.oceansconference.org/">Global OCEANS 2020 Conference Website</a></li>
+  <li><a href="https://github.com/AmyPhung/chl-a-comparison/">Project Code &amp; Data Info</a></li>
+  <li><a href="https://ieeexplore.ieee.org/document/9389221">View on IEEE Xplore</a></li>
+</ul>
+
+      </article>
+
+      
+        <!-- Check if any share-links are active -->
+
+
+
+
+<section id = "social-share-section">
+  <span class="sr-only">Share: </span>
+
+  
+  <!--- Share on Twitter -->
+    <a href="https://twitter.com/intent/tweet?text=Chlorophyll-a+Comparison+https://amyphung.github.io/chl-a-comparison/"
+      class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fa fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  
+
+  
+  <!--- Share on Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://amyphung.github.io/chl-a-comparison/"
+      class="btn btn-social-icon btn-facebook" title="Share on Facebook">
+      <span class="fa fa-fw fa-facebook" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+    </a>
+  
+
+  
+
+  
+  <!--- Share on LinkedIn -->
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://amyphung.github.io/chl-a-comparison/"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fa fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  
+
+</section>
+
+
+
+      
+
+      <ul class="pager blog-pager">
+        
+        <!-- Disconnect SEA and project posts  -->
+          
+            <li class="previous">
+              <a href="/manipulator-calibration/" data-toggle="tooltip" data-placement="top" title="Manipulator Calibration">&larr; Previous Post</a>
+            </li>
+          
+        
+        
+        <!-- Disconnect SEA and project posts  -->
+          
+            <li class="next">
+              <a href="/particle-filter/" data-toggle="tooltip" data-placement="top" title="Particle Filter">Next Post &rarr;</a>
+            </li>
+          
+        
+      </ul>
+
+      
+        <div class="disqus-comments">
+          
+        </div>
+          <div class="comments">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=600762203989703&autoLogAppEvents=1';
+       fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="fb-comments" data-href="/chl-a-comparison/" data-width="100%" data-numposts="5"></div>
+    <noscript>Please enable JavaScript to view the comments powered by Facebook.</noscript>
+</div>
+      
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links"><li><a href="mailto:amyngph@gmail.com" title="Email me"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Email me</span>
+              </a>
+            </li><li><a href="https://www.facebook.com/amy.n.phung" title="Facebook"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li><li><a href="https://github.com/amyphung" title="GitHub"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">GitHub</span>
+              </a>
+            </li><li><a href="https://linkedin.com/in/amy-phung" title="LinkedIn"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li><li><a href="https://scholar.google.com/citations?hl=en&user=UeDEjpoAAAAJ&view_op=list_works&gmla=AJsN-F7dSnx6VnJDpdt3N0cBYrrhtmKchWBRBYyVsvv1KRDaU2CqtR8NQ23vNWCgT9h5SsgtdERHTWOERjx3JNOrMNRn47QttA_3-V72DZWQ3JBy_W_jMag" title="Google Scholar"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Google Scholar</span>
+              </a>
+            </li></ul>
+      <p class="copyright text-muted">
+      Amy Phung
+      &nbsp;&bull;&nbsp;
+      2025
+
+      
+      &nbsp;&bull;&nbsp;
+      <a href="">https://amyphung.github.io/</a>
+      
+
+      
+      </p>
+          <!-- Please don't remove this, keep my open source work credited :) -->
+    <p class="theme-by text-muted">
+      Theme by
+      <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+    </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/main.js"></script>
+    
+  
+
+
+
+
+
+  </body>
+
+
+</html>

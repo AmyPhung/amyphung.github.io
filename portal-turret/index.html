@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- TODO: Figure out why this needs to be here -->
+  <script src="/js/gallery.js"></script>
+
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>POE-tal Turret</title>
+
+  <meta name="author" content="Amy Phung" />
+
+  
+  <meta name="description" content="A fun functioning sentry turret from the game Portal">
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Amy Phung - Amy Phung's personal website & blog" href="/feed.xml" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KVB79MNVY1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KVB79MNVY1');
+</script>
+
+  
+  
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+      <link rel="stylesheet" href="/css/button.css" />
+    
+      <link rel="stylesheet" href="/css/image-caption.css" />
+    
+      <link rel="stylesheet" href="/css/gallery.css" />
+    
+      <link rel="stylesheet" href="/css/overlay.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+  <meta property="fb:app_id" content="600762203989703" />
+  
+
+  
+  <meta property="og:title" content="POE-tal Turret" />
+  
+
+   
+  <meta property="og:description" content="A fun functioning sentry turret from the game Portal">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="/portal-turret/" />
+  <link rel="canonical" href="/portal-turret/" />
+  
+
+  
+  <meta property="og:image" content="/img/projects/portal-turret/portal-turret.jpg" />
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="POE-tal Turret" />
+  
+
+  
+  <meta name="twitter:description" content="A fun functioning sentry turret from the game Portal">
+  
+
+  
+  <meta name="twitter:image" content="/img/projects/portal-turret/portal-turret.jpg" />
+  
+
+  
+
+</head>
+
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <!-- <a class="navbar-brand" href="">Amy Phung</a> -->
+        <a class="navbar-brand" href="https://amyphung.github.io">Amy Phung</a>
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/#">Home</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/publications">Publications</a>
+
+          </li>
+        
+        
+        
+          <li class="navlinks-container">
+            <a class="navlinks-parent" href="javascript:void(0)">Projects</a>
+            <div class="navlinks-children">
+              
+                
+                  
+
+
+
+
+
+
+<a href="/projects">All Projects</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/tags">Projects by Category</a>
+
+                
+              
+            </div>
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/sea">SEA Semester</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/blog">Blog</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/aboutme">About Me</a>
+
+          </li>
+        
+        
+      </ul>
+    </div>
+
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <!-- <a href=" "> -->
+    <a href="https://amyphung.github.io ">
+	      <img class="avatar-img" src="/img/website/profile.jpg" />
+		</a>
+	  </div>
+	</div>
+	
+
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-heading">
+          <h1>POE-tal Turret</h1>
+		  
+		    
+			<h2 class="post-subheading">A fun functioning sentry turret from the game Portal</h2>
+			
+		  
+
+		  
+		  <!--<span class="post-meta">Posted on December 1, 2019</span>-->
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+      
+
+      
+        <div class="blog-tags">
+          Tags:
+          
+          
+            <a href="/tags#Principles-Of-Engineering">Principles-Of-Engineering</a>
+          
+          
+        </div>
+      
+
+      <article role="main" class="blog-post">
+        <p>For those who’ve played the game Portal or Portal 2, you probably recognized the unmistakable sentry turret from the games based on the display image (if not, here’s a side-by-side comparison for reference!)</p>
+
+<center>
+  <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="/img/projects/portal-turret/portal-turret-game.jpg" class="thumbnail-img" onclick="on(id='#portal-turret-game')" style="padding-top: 5px; width: 35%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="portal-turret-game" class="overlay">
+  <img src="/img/projects/portal-turret/portal-turret-game.jpg" class="lightbox-img" />
+  <div onclick="off(id='#portal-turret-game')" class="overlay2"></div>
+</div>
+
+
+  <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="/img/projects/portal-turret/portal-turret-side.jpg" class="thumbnail-img" onclick="on(id='#portal-turret-side')" style="padding-top: 5px; width: 45%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="portal-turret-side" class="overlay">
+  <img src="/img/projects/portal-turret/portal-turret-side.jpg" class="lightbox-img" />
+  <div onclick="off(id='#portal-turret-side')" class="overlay2"></div>
+</div>
+
+</center>
+
+<p>I’d also highly suggest checking our project website <a href="http://poe.olin.edu/2019/poetal-turret/">here</a> for more documentation!</p>
+<center>
+  <a href="http://poe.olin.edu/2019/poetal-turret/" target="_blank" rel="project website"><img src="/img/projects/portal-turret/website.jpg" alt="" /></a>
+</center>
+
+<p>This project was created along with my classmates Tim, Bennett, Mia, and Skye for our Principles of Engineering (POE) class. The final project for this class was rather open-ended - the only requirement was that whatever we made, it needed to consist of a significant mechanical, electrical, and software component. We chose this project since it provided good technical work that all of our members were interested in and could learn a lot from, with the bonus of being a project that would be fun for our classmates to interact with.</p>
+
+<center>
+  <figure>
+    <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="/img/projects/portal-turret/team-photo.jpg" class="thumbnail-img" onclick="on(id='#team-photo')" style="padding-top: 5px; width: 70%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="team-photo" class="overlay">
+  <img src="/img/projects/portal-turret/team-photo.jpg" class="lightbox-img" />
+  <div onclick="off(id='#team-photo')" class="overlay2"></div>
+</div>
+
+    <figcaption style="padding-top:5px;width:70%">Team POE-tal turret poses with our creation</figcaption>
+  </figure>
+</center>
+
+<h3 id="photos">Photos</h3>
+<center>
+  <figure>
+  <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="/img/projects/portal-turret/v1-iteration.jpg" class="thumbnail-img" onclick="on(id='#v1')" style="padding-top: 5px; width: 57.5%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="v1" class="overlay">
+  <img src="/img/projects/portal-turret/v1-iteration.jpg" class="lightbox-img" />
+  <div onclick="off(id='#v1')" class="overlay2"></div>
+</div>
+
+  <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="/img/projects/portal-turret/v2-iteration.jpg" class="thumbnail-img" onclick="on(id='#v2')" style="padding-top: 5px; width: 32.5%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="v2" class="overlay">
+  <img src="/img/projects/portal-turret/v2-iteration.jpg" class="lightbox-img" />
+  <div onclick="off(id='#v2')" class="overlay2"></div>
+</div>
+
+  <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="/img/projects/portal-turret/v3-iteration.jpg" class="thumbnail-img" onclick="on(id='#v3')" style="padding-top: 5px; width: 45%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="v3" class="overlay">
+  <img src="/img/projects/portal-turret/v3-iteration.jpg" class="lightbox-img" />
+  <div onclick="off(id='#v3')" class="overlay2"></div>
+</div>
+
+  <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="/img/projects/portal-turret/half-shell-turret.jpg" class="thumbnail-img" onclick="on(id='#half-shell')" style="padding-top: 5px; width: 45%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="half-shell" class="overlay">
+  <img src="/img/projects/portal-turret/half-shell-turret.jpg" class="lightbox-img" />
+  <div onclick="off(id='#half-shell')" class="overlay2"></div>
+</div>
+
+    <figcaption style="padding-top:5px;width:80%">Project evolution - from prototype to polish!</figcaption>
+  </figure>
+</center>
+
+<h3 id="videos">Videos</h3>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 5px; left: 0; width: 100%; height: 100%; }</style>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/jeXZIWN4Z0k" frameborder="0" allowfullscreen=""></iframe></div>
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 5px; left: 0; width: 100%; height: 100%; }</style>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/PaUOFTwS_SE" frameborder="0" allowfullscreen=""></iframe></div>
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 5px; left: 0; width: 100%; height: 100%; }</style>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/zmT4dJ4Yj_Q" frameborder="0" allowfullscreen=""></iframe></div>
+
+<h3 id="source-code">Source Code</h3>
+<ul>
+  <li><a href="https://github.com/AmyPhung/portal_turret_site">Website</a></li>
+  <li><a href="https://github.com/AmyPhung/portal_turret">Firmware &amp; Software</a></li>
+</ul>
+
+      </article>
+
+      
+        <!-- Check if any share-links are active -->
+
+
+
+
+<section id = "social-share-section">
+  <span class="sr-only">Share: </span>
+
+  
+  <!--- Share on Twitter -->
+    <a href="https://twitter.com/intent/tweet?text=POE-tal+Turret+https://amyphung.github.io/portal-turret/"
+      class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fa fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  
+
+  
+  <!--- Share on Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://amyphung.github.io/portal-turret/"
+      class="btn btn-social-icon btn-facebook" title="Share on Facebook">
+      <span class="fa fa-fw fa-facebook" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+    </a>
+  
+
+  
+
+  
+  <!--- Share on LinkedIn -->
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://amyphung.github.io/portal-turret/"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fa fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  
+
+</section>
+
+
+
+      
+
+      <ul class="pager blog-pager">
+        
+        <!-- Disconnect SEA and project posts  -->
+          
+            <li class="previous">
+              <a href="/robotic-tugboat/" data-toggle="tooltip" data-placement="top" title="Robot Tugboat">&larr; Previous Post</a>
+            </li>
+          
+        
+        
+        <!-- Disconnect SEA and project posts  -->
+          
+            <li class="next">
+              <a href="/gravl/" data-toggle="tooltip" data-placement="top" title="Ground Robotic Autonomous Vehicle Lab">Next Post &rarr;</a>
+            </li>
+          
+        
+      </ul>
+
+      
+        <div class="disqus-comments">
+          
+        </div>
+          <div class="comments">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=600762203989703&autoLogAppEvents=1';
+       fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="fb-comments" data-href="/portal-turret/" data-width="100%" data-numposts="5"></div>
+    <noscript>Please enable JavaScript to view the comments powered by Facebook.</noscript>
+</div>
+      
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links"><li><a href="mailto:amyngph@gmail.com" title="Email me"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Email me</span>
+              </a>
+            </li><li><a href="https://www.facebook.com/amy.n.phung" title="Facebook"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li><li><a href="https://github.com/amyphung" title="GitHub"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">GitHub</span>
+              </a>
+            </li><li><a href="https://linkedin.com/in/amy-phung" title="LinkedIn"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li><li><a href="https://scholar.google.com/citations?hl=en&user=UeDEjpoAAAAJ&view_op=list_works&gmla=AJsN-F7dSnx6VnJDpdt3N0cBYrrhtmKchWBRBYyVsvv1KRDaU2CqtR8NQ23vNWCgT9h5SsgtdERHTWOERjx3JNOrMNRn47QttA_3-V72DZWQ3JBy_W_jMag" title="Google Scholar"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Google Scholar</span>
+              </a>
+            </li></ul>
+      <p class="copyright text-muted">
+      Amy Phung
+      &nbsp;&bull;&nbsp;
+      2025
+
+      
+      &nbsp;&bull;&nbsp;
+      <a href="">https://amyphung.github.io/</a>
+      
+
+      
+      </p>
+          <!-- Please don't remove this, keep my open source work credited :) -->
+    <p class="theme-by text-muted">
+      Theme by
+      <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+    </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/main.js"></script>
+    
+  
+
+
+
+
+
+  </body>
+
+
+</html>

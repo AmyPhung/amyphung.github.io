@@ -1,71 +1,888 @@
----
-layout: page
-title: Projects
-subtitle: A page dedicated to more project details, deliverables, and demos
-bigimg: /img/website/workbench2.jpg
----
+<!DOCTYPE html>
+<html lang="en">
+  <!-- TODO: Figure out why this needs to be here -->
+  <script src="/js/gallery.js"></script>
 
-<div class="posts-list">
-  {% for post in paginator.posts %}
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Projects</title>
+
+  <meta name="author" content="Amy Phung" />
+
+  
+  <meta name="description" content="A page dedicated to more project details, deliverables, and demos">
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Amy Phung - Amy Phung's personal website & blog" href="/feed.xml" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KVB79MNVY1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KVB79MNVY1');
+</script>
+
+  
+  
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+      <link rel="stylesheet" href="/css/button.css" />
+    
+      <link rel="stylesheet" href="/css/image-caption.css" />
+    
+      <link rel="stylesheet" href="/css/gallery.css" />
+    
+      <link rel="stylesheet" href="/css/overlay.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+  <meta property="fb:app_id" content="600762203989703" />
+  
+
+  
+  <meta property="og:title" content="Projects" />
+  
+
+   
+  <meta property="og:description" content="A page dedicated to more project details, deliverables, and demos">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="/projects/" />
+  <link rel="canonical" href="/projects/" />
+  
+
+  
+  <meta property="og:image" content="/img/website/profile.jpg" />
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="Projects" />
+  
+
+  
+  <meta name="twitter:description" content="A page dedicated to more project details, deliverables, and demos">
+  
+
+  
+  <meta name="twitter:image" content="/img/website/profile.jpg" />
+  
+
+  
+
+</head>
+
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <!-- <a class="navbar-brand" href="">Amy Phung</a> -->
+        <a class="navbar-brand" href="https://amyphung.github.io">Amy Phung</a>
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/#">Home</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/publications">Publications</a>
+
+          </li>
+        
+        
+        
+          <li class="navlinks-container">
+            <a class="navlinks-parent" href="javascript:void(0)">Projects</a>
+            <div class="navlinks-children">
+              
+                
+                  
+
+
+
+
+
+
+<a href="/projects">All Projects</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/tags">Projects by Category</a>
+
+                
+              
+            </div>
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/sea">SEA Semester</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/blog">Blog</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/aboutme">About Me</a>
+
+          </li>
+        
+        
+      </ul>
+    </div>
+
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <!-- <a href=" "> -->
+    <a href="https://amyphung.github.io ">
+	      <img class="avatar-img" src="/img/website/profile.jpg" />
+		</a>
+	  </div>
+	</div>
+	
+
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+  <div id="header-big-imgs" data-num-img=1
+    
+	  
+	  
+	    
+		  data-img-src-1="/img/website/workbench2.jpg"
+		
+	  
+    
+  ></div>
+
+
+<header class="header-section has-img">
+
+<div class="big-img intro-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-heading">
+          <h1>Projects</h1>
+		  
+		    
+            <hr class="small">
+            <span class="page-subheading">A page dedicated to more project details, deliverables, and demos</span>
+			
+		  
+
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class='img-desc'></span>
+</div>
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-heading">
+          <h1>Projects</h1>
+		  
+		    
+            <hr class="small">
+            <span class="page-subheading">A page dedicated to more project details, deliverables, and demos</span>
+			
+		  
+
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="posts-list">
+  
   <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+    <a href="/oasis/">
+	  <h2 class="post-title">Opti-Acoustic Perception (OASIS)</h2>
 
-	  {% if post.subtitle %}
+	  
 	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
+	    Real-time opti-acoustic sensing for intervention systems in unstructured environments
 	  </h3>
-	  {% endif %}
+	  
     </a>
 
-    {% if post.tags.size > 0 %}
+    
     <div class="blog-tags">
       Tags:
-      {% if site.link-tags %}
-      {% for tag in post.tags %}
-      <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
-      {% endfor %}
-      {% else %}
-        {{ post.tags | join: ", " }}
-      {% endif %}
+      
+      
+      <a href="/tags#PhD-thesis">PhD-thesis</a>
+      
+      
     </div>
-    {% endif %}
+    
 
     <!--<p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
+      Posted on January 1, 2024
     </p>-->
 
     <div class="post-entry-container">
-      {% if post.image %}
+      
       <div class="post-image">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <img src="{{ post.image }}">
+        <a href="/oasis/">
+          <img src="/img/projects/oasis/oasis-preview.jpg">
         </a>
       </div>
-      {% endif %}
+      
       <div class="post-entry">
-        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
-        {% assign excerpt_word_count = post.excerpt | number_of_words %}
-        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
-        {% endif %}
+        OASIS is an opti-acoustic fusion method that integrates data from optical images with voxel carving techniques to achieve real-time 3D reconstruction unstructured underwater workspaces. High resolution underwater 3D scene reconstruction is crucial for various applications, including construction, infrastructure maintenance, monitoring, exploration, and scientific investigation. Prior work has leveraged the complementary...
+        
+        
+          <a href="/oasis/" class="post-read-more">[Read&nbsp;More]</a>
+        
       </div>
     </div>
    </article>
-  {% endfor %}
+  
+  <article class="post-preview">
+    <a href="/sharc/">
+	  <h2 class="post-title">Shared Autonomy Framework (SHARC)</h2>
+
+	  
+	  <h3 class="post-subtitle">
+	    Enabling remote novice users to conduct deep-ocean science operations with robotic manipulators
+	  </h3>
+	  
+    </a>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/tags#PhD-thesis">PhD-thesis</a>
+      
+      
+    </div>
+    
+
+    <!--<p class="post-meta">
+      Posted on January 1, 2023
+    </p>-->
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/sharc/">
+          <img src="/img/projects/sharc/sharc-cover.jpg">
+        </a>
+      </div>
+      
+      <div class="post-entry">
+        Conventional underwater intervention operations using robotic vehicles require expert teleoperators and limit interaction with remote scientists. In this work, we introduce the shared autonomy for remote collaboration (SHARC) framework which enables novice operators to cooperatively conduct underwater sampling and manipulation tasks. With SHARC, operators can plan and complete manipulation tasks...
+        
+        
+          <a href="/sharc/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+   </article>
+  
+  <article class="post-preview">
+    <a href="/rov-vr/">
+	  <h2 class="post-title">ROV-VR</h2>
+
+	  
+	  <h3 class="post-subtitle">
+	    Leveraging virtual reality to improve underwater robotic vehicle piloting for deep-sea scientific sampling
+	  </h3>
+	  
+    </a>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/tags#Olin-SCOPE">Olin-SCOPE</a>
+      
+      
+    </div>
+    
+
+    <!--<p class="post-meta">
+      Posted on May 1, 2021
+    </p>-->
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/rov-vr/">
+          <img src="/img/projects/rov-vr/rov-vr-cover-img.png">
+        </a>
+      </div>
+      
+      <div class="post-entry">
+        For my senior capstone project at Olin, I led the development of a control room display in virtual reality (VR) to help improve operation of underwater remotely operated vehicles (ROVs). Thanks to generous support from the Dassault Systèmes Foundation, we were able to work on this project in collaboration with...
+        
+        
+          <a href="/rov-vr/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+   </article>
+  
+  <article class="post-preview">
+    <a href="/robo-fish/">
+	  <h2 class="post-title">Robo Fish</h2>
+
+	  
+	  <h3 class="post-subtitle">
+	    Creating a small robotic fish with a soft tail
+	  </h3>
+	  
+    </a>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/tags#Robotics-Systems-Integration">Robotics-Systems-Integration</a>
+      
+      
+    </div>
+    
+
+    <!--<p class="post-meta">
+      Posted on April 1, 2021
+    </p>-->
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/robo-fish/">
+          <img src="/img/projects/robo-fish/cover.png">
+        </a>
+      </div>
+      
+      <div class="post-entry">
+        This project was created as part of the open-ended final project in my Robotics Systems Integration course, which had a particular focus on designing robotics systems with soft actuators. Working with hardware during COVID proved to be challenging, especially with each of us working from a separate location. We were...
+        
+        
+          <a href="/robo-fish/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+   </article>
+  
+  <article class="post-preview">
+    <a href="/discrete-landmark-navigation/">
+	  <h2 class="post-title">Discrete Landmark Navigation</h2>
+
+	  
+	  <h3 class="post-subtitle">
+	    A study in finding the optimal path within stochastic graphs
+	  </h3>
+	  
+    </a>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/tags#Discrete-Math">Discrete-Math</a>
+      
+      
+    </div>
+    
+
+    <!--<p class="post-meta">
+      Posted on December 1, 2020
+    </p>-->
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/discrete-landmark-navigation/">
+          <img src="/img/projects/discrete/cover-img.png">
+        </a>
+      </div>
+      
+      <div class="post-entry">
+        For our final project in our Discrete Math course, my project partners and I wanted to find ways to use what we had learned in discrete to solve common robotics problems. Earlier in the course, we had touched upon the theory behind popular algorithms like Dijkstra’s and Bellman-Ford for finding...
+        
+        
+          <a href="/discrete-landmark-navigation/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+   </article>
+  
+  <article class="post-preview">
+    <a href="/robo-dodgeball/">
+	  <h2 class="post-title">Robo Dodgeball</h2>
+
+	  
+	  <h3 class="post-subtitle">
+	    Using machine learning to train a robot to play dodgeball
+	  </h3>
+	  
+    </a>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/tags#Computational-Robotics">Computational-Robotics</a>
+      
+      
+    </div>
+    
+
+    <!--<p class="post-meta">
+      Posted on November 30, 2020
+    </p>-->
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/robo-dodgeball/">
+          <img src="/img/projects/comprobo/dodgeball-cover-img.png">
+        </a>
+      </div>
+      
+      <div class="post-entry">
+        This project was created as part of the open-ended final project in my Computational Robotics course - we were provided with a gazebo simulator that provided the low-level controls for a Neato robotic vacuum, and it was up to us to decide what to do with it. For this project,...
+        
+        
+          <a href="/robo-dodgeball/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+   </article>
+  
+  <article class="post-preview">
+    <a href="/two-view-reconstruction/">
+	  <h2 class="post-title">Image-based 3D reconstruction</h2>
+
+	  
+	  <h3 class="post-subtitle">
+	    Creating 3D pointclouds from 2D photos
+	  </h3>
+	  
+    </a>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/tags#Computational-Robotics">Computational-Robotics</a>
+      
+      
+    </div>
+    
+
+    <!--<p class="post-meta">
+      Posted on October 30, 2020
+    </p>-->
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/two-view-reconstruction/">
+          <img src="/img/projects/comprobo/cv-cover-img.png">
+        </a>
+      </div>
+      
+      <div class="post-entry">
+        For our open-ended computer vision project in my Computational Robotics course, my project partner and I wanted to work on a project related to localization. The idea of SLAM in unstructured environments was pretty interesting to us, particularly the step where the pose of the camera is estimated relative to...
+        
+        
+          <a href="/two-view-reconstruction/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+   </article>
+  
+  <article class="post-preview">
+    <a href="/particle-filter/">
+	  <h2 class="post-title">Particle Filter</h2>
+
+	  
+	  <h3 class="post-subtitle">
+	    Implementing a particle filter for mobile robot localization
+	  </h3>
+	  
+    </a>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/tags#Computational-Robotics">Computational-Robotics</a>
+      
+      
+    </div>
+    
+
+    <!--<p class="post-meta">
+      Posted on October 2, 2020
+    </p>-->
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/particle-filter/">
+          <img src="/img/projects/comprobo/particle-filter-cover-img.png">
+        </a>
+      </div>
+      
+      <div class="post-entry">
+        As one of the first few projects in my Computational Robotics course, my project group and I implemented a Particle Filter to help localize a robot based on lidar data (in layman’s terms - figured out where the robot is on a map based on sensor input). As one of...
+        
+        
+          <a href="/particle-filter/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+   </article>
+  
+  <article class="post-preview">
+    <a href="/chl-a-comparison/">
+	  <h2 class="post-title">Chlorophyll-a Comparison</h2>
+
+	  
+	  <h3 class="post-subtitle">
+	    Comparing chl-a measurements from satellites, robotic floats, and shipborne fluorometers in New Zealand
+	  </h3>
+	  
+    </a>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/tags#SEA-Research">SEA-Research</a>
+      
+      
+    </div>
+    
+
+    <!--<p class="post-meta">
+      Posted on October 1, 2020
+    </p>-->
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/chl-a-comparison/">
+          <img src="/img/projects/chl-a/display-img.png">
+        </a>
+      </div>
+      
+      <div class="post-entry">
+        During my semester abroad with SEA, taking the class “Directed Oceanographic Research” gave me the opportunity to complete a research project and communicate my results in a technical write-up. One of my primary motivations when studying with SEA was to learn more about the role robots played in the ocean...
+        
+        
+          <a href="/chl-a-comparison/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+   </article>
+  
+  <article class="post-preview">
+    <a href="/manipulator-calibration/">
+	  <h2 class="post-title">Manipulator Calibration</h2>
+
+	  
+	  <h3 class="post-subtitle">
+	    Developing a calibration method extensible to deep-sea manipulators
+	  </h3>
+	  
+    </a>
+
+    
+    <div class="blog-tags">
+      Tags:
+      
+      
+      <a href="/tags#WHOI-SSF">WHOI-SSF</a>
+      
+      
+    </div>
+    
+
+    <!--<p class="post-meta">
+      Posted on June 1, 2020
+    </p>-->
+
+    <div class="post-entry-container">
+      
+      <div class="post-image">
+        <a href="/manipulator-calibration/">
+          <img src="/img/projects/whoi/manipulator-cover-img.png">
+        </a>
+      </div>
+      
+      <div class="post-entry">
+        During my Summer Student Fellowship with WHOI, I researched computer vision-based calibration methods that would be extensible to deep-sea manipulators. Hydraulic manipulator arms are commonly used for a variety of underwater tasks requiring a high degree of both strength and dexterity, ranging from scientific tasks such as capturing delicate live...
+        
+        
+          <a href="/manipulator-calibration/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+   </article>
+  
 </div>
 
-{% if paginator.total_pages > 1 %}
+
 <ul class="pager main-pager">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
+  
+  
   <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    <a href="/projects/page2/">Older Posts &rarr;</a>
   </li>
-  {% endif %}
+  
 </ul>
-{% endif %}
+
+
+	    
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links"><li><a href="mailto:amyngph@gmail.com" title="Email me"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Email me</span>
+              </a>
+            </li><li><a href="https://www.facebook.com/amy.n.phung" title="Facebook"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li><li><a href="https://github.com/amyphung" title="GitHub"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">GitHub</span>
+              </a>
+            </li><li><a href="https://linkedin.com/in/amy-phung" title="LinkedIn"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li><li><a href="https://scholar.google.com/citations?hl=en&user=UeDEjpoAAAAJ&view_op=list_works&gmla=AJsN-F7dSnx6VnJDpdt3N0cBYrrhtmKchWBRBYyVsvv1KRDaU2CqtR8NQ23vNWCgT9h5SsgtdERHTWOERjx3JNOrMNRn47QttA_3-V72DZWQ3JBy_W_jMag" title="Google Scholar"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Google Scholar</span>
+              </a>
+            </li></ul>
+      <p class="copyright text-muted">
+      Amy Phung
+      &nbsp;&bull;&nbsp;
+      2025
+
+      
+      &nbsp;&bull;&nbsp;
+      <a href="">https://amyphung.github.io/</a>
+      
+
+      
+      </p>
+          <!-- Please don't remove this, keep my open source work credited :) -->
+    <p class="theme-by text-muted">
+      Theme by
+      <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+    </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/main.js"></script>
+    
+  
+
+
+
+
+
+  </body>
+
+
+</html>

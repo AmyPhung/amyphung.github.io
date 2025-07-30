@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- TODO: Figure out why this needs to be here -->
+  <script src="/js/gallery.js"></script>
+
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Projects By Category</title>
+
+  <meta name="author" content="Amy Phung" />
+
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Amy Phung - Amy Phung's personal website & blog" href="/feed.xml" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KVB79MNVY1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KVB79MNVY1');
+</script>
+
+  
+  
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+      <link rel="stylesheet" href="/css/button.css" />
+    
+      <link rel="stylesheet" href="/css/image-caption.css" />
+    
+      <link rel="stylesheet" href="/css/gallery.css" />
+    
+      <link rel="stylesheet" href="/css/overlay.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+  <meta property="fb:app_id" content="600762203989703" />
+  
+
+  
+  <meta property="og:title" content="Projects By Category" />
+  
+
+   
+  <meta property="og:description" content="{%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:',' | sort -%} {%- for tag in tags_list -%} {%- if tag != &quot;SEA&quot; -%} &amp;nbsp;{{- tag...">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="/tags/" />
+  <link rel="canonical" href="/tags/" />
+  
+
+  
+  <meta property="og:image" content="/img/website/profile.jpg" />
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="Projects By Category" />
+  
+
+  
+  <meta name="twitter:description" content="{%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:',' | sort -%} {%- for tag in tags_list -%} {%- if tag != &quot;SEA&quot; -%} &amp;nbsp;{{- tag...">
+  
+
+  
+  <meta name="twitter:image" content="/img/website/profile.jpg" />
+  
+
+  
+
+</head>
+
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <!-- <a class="navbar-brand" href="">Amy Phung</a> -->
+        <a class="navbar-brand" href="https://amyphung.github.io">Amy Phung</a>
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/#">Home</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/publications">Publications</a>
+
+          </li>
+        
+        
+        
+          <li class="navlinks-container">
+            <a class="navlinks-parent" href="javascript:void(0)">Projects</a>
+            <div class="navlinks-children">
+              
+                
+                  
+
+
+
+
+
+
+<a href="/projects">All Projects</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/tags">Projects by Category</a>
+
+                
+              
+            </div>
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/sea">SEA Semester</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/blog">Blog</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/aboutme">About Me</a>
+
+          </li>
+        
+        
+      </ul>
+    </div>
+
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <!-- <a href=" "> -->
+    <a href="https://amyphung.github.io ">
+	      <img class="avatar-img" src="/img/website/profile.jpg" />
+		</a>
+	  </div>
+	</div>
+	
+
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-heading">
+          <h1>Projects By Category</h1>
+		  
+
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <!--<a href="#Computational-Robotics" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;Computational-Robotics&nbsp;(3)</a><a href="#Discrete-Math" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;Discrete-Math&nbsp;(1)</a><a href="#Fundamentals-Of-Robotics" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;Fundamentals-Of-Robotics&nbsp;(1)</a><a href="#GE-Aviation" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;GE-Aviation&nbsp;(2)</a><a href="#Mechanical-Prototyping" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;Mechanical-Prototyping&nbsp;(4)</a><a href="#Olin-Robotics-Lab" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;Olin-Robotics-Lab&nbsp;(1)</a><a href="#Olin-SCOPE" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;Olin-SCOPE&nbsp;(1)</a><a href="#PhD-thesis" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;PhD-thesis&nbsp;(2)</a><a href="#Principles-Of-Engineering" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;Principles-Of-Engineering&nbsp;(1)</a><a href="#Quantitative-Engineering-Analysis" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;Quantitative-Engineering-Analysis&nbsp;(6)</a><a href="#Robotics-Systems-Integration" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;Robotics-Systems-Integration&nbsp;(1)</a><a href="#SEA-Research" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;SEA-Research&nbsp;(1)</a><a href="#Software-Design" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;Software-Design&nbsp;(1)</a><a href="#WHOI-SSF" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;WHOI-SSF&nbsp;(1)</a>-->
+
+<div id="full-tags-list"><!-- Ignore SEA posts on project page --><h2 id="Computational-Robotics" class="linked-section">
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        &nbsp;Computational-Robotics&nbsp;(3)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/robo-dodgeball/">Robo Dodgeball</a>
+                <!--<div class="entry-date">
+                    <time datetime="2020-11-30T00:00:00-08:00">November 30, 2020</time>
+                </div>-->
+            </div><div class="tag-entry">
+                <a href="/two-view-reconstruction/">Image-based 3D reconstruction</a>
+                <!--<div class="entry-date">
+                    <time datetime="2020-10-30T00:00:00-07:00">October 30, 2020</time>
+                </div>-->
+            </div><div class="tag-entry">
+                <a href="/particle-filter/">Particle Filter</a>
+                <!--<div class="entry-date">
+                    <time datetime="2020-10-02T00:00:00-07:00">October 02, 2020</time>
+                </div>-->
+            </div></div><!-- Ignore SEA posts on project page --><h2 id="Discrete-Math" class="linked-section">
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        &nbsp;Discrete-Math&nbsp;(1)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/discrete-landmark-navigation/">Discrete Landmark Navigation</a>
+                <!--<div class="entry-date">
+                    <time datetime="2020-12-01T00:00:00-08:00">December 01, 2020</time>
+                </div>-->
+            </div></div><!-- Ignore SEA posts on project page --><h2 id="Fundamentals-Of-Robotics" class="linked-section">
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        &nbsp;Fundamentals-Of-Robotics&nbsp;(1)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/robotic-tugboat/">Robot Tugboat</a>
+                <!--<div class="entry-date">
+                    <time datetime="2019-10-01T00:00:00-07:00">October 01, 2019</time>
+                </div>-->
+            </div></div><!-- Ignore SEA posts on project page --><h2 id="GE-Aviation" class="linked-section">
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        &nbsp;GE-Aviation&nbsp;(2)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/roc/">Rotorcraft Operations Center</a>
+                <!--<div class="entry-date">
+                    <time datetime="2015-02-28T00:00:00-08:00">February 28, 2015</time>
+                </div>-->
+            </div><div class="tag-entry">
+                <a href="/graphing-gui/">Engine Data Graphing GUI</a>
+                <!--<div class="entry-date">
+                    <time datetime="2015-02-28T00:00:00-08:00">February 28, 2015</time>
+                </div>-->
+            </div></div><!-- Ignore SEA posts on project page --><h2 id="Mechanical-Prototyping" class="linked-section">
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        &nbsp;Mechanical-Prototyping&nbsp;(4)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/davinci-sculpture/">DaVinci's Flying Machine Kinetic Sculpture</a>
+                <!--<div class="entry-date">
+                    <time datetime="2017-11-03T00:00:00-07:00">November 03, 2017</time>
+                </div>-->
+            </div><div class="tag-entry">
+                <a href="/dolphin-automata/">Dolphin Automata</a>
+                <!--<div class="entry-date">
+                    <time datetime="2017-11-02T00:00:00-07:00">November 02, 2017</time>
+                </div>-->
+            </div><div class="tag-entry">
+                <a href="/wall-e/">Wall-E Box</a>
+                <!--<div class="entry-date">
+                    <time datetime="2017-11-01T00:00:00-07:00">November 01, 2017</time>
+                </div>-->
+            </div><div class="tag-entry">
+                <a href="/hell-sculpture/">'Welcome to Hell' Sculpture</a>
+                <!--<div class="entry-date">
+                    <time datetime="2017-11-01T00:00:00-07:00">November 01, 2017</time>
+                </div>-->
+            </div></div><!-- Ignore SEA posts on project page --><h2 id="Olin-Robotics-Lab" class="linked-section">
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        &nbsp;Olin-Robotics-Lab&nbsp;(1)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/gravl/">Ground Robotic Autonomous Vehicle Lab</a>
+                <!--<div class="entry-date">
+                    <time datetime="2020-01-01T00:00:00-08:00">January 01, 2020</time>
+                </div>-->
+            </div></div><!-- Ignore SEA posts on project page --><h2 id="Olin-SCOPE" class="linked-section">
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        &nbsp;Olin-SCOPE&nbsp;(1)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/rov-vr/">ROV-VR</a>
+                <!--<div class="entry-date">
+                    <time datetime="2021-05-01T00:00:00-07:00">May 01, 2021</time>
+                </div>-->
+            </div></div><!-- Ignore SEA posts on project page --><h2 id="PhD-thesis" class="linked-section">
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        &nbsp;PhD-thesis&nbsp;(2)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/oasis/">Opti-Acoustic Perception (OASIS)</a>
+                <!--<div class="entry-date">
+                    <time datetime="2024-01-01T00:00:00-08:00">January 01, 2024</time>
+                </div>-->
+            </div><div class="tag-entry">
+                <a href="/sharc/">Shared Autonomy Framework (SHARC)</a>
+                <!--<div class="entry-date">
+                    <time datetime="2023-01-01T00:00:00-08:00">January 01, 2023</time>
+                </div>-->
+            </div></div><!-- Ignore SEA posts on project page --><h2 id="Principles-Of-Engineering" class="linked-section">
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        &nbsp;Principles-Of-Engineering&nbsp;(1)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/portal-turret/">POE-tal Turret</a>
+                <!--<div class="entry-date">
+                    <time datetime="2019-12-01T00:00:00-08:00">December 01, 2019</time>
+                </div>-->
+            </div></div><!-- Ignore SEA posts on project page --><h2 id="Quantitative-Engineering-Analysis" class="linked-section">
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        &nbsp;Quantitative-Engineering-Analysis&nbsp;(6)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/ekf-slam/">Using Extended Kalman Filters for SLAM</a>
+                <!--<div class="entry-date">
+                    <time datetime="2018-12-01T00:00:00-08:00">December 01, 2018</time>
+                </div>-->
+            </div><div class="tag-entry">
+                <a href="/segway/">Segway Robot</a>
+                <!--<div class="entry-date">
+                    <time datetime="2018-11-01T00:00:00-07:00">November 01, 2018</time>
+                </div>-->
+            </div><div class="tag-entry">
+                <a href="/eigentricks/">Eigentricks</a>
+                <!--<div class="entry-date">
+                    <time datetime="2018-09-01T00:00:00-07:00">September 01, 2018</time>
+                </div>-->
+            </div><div class="tag-entry">
+                <a href="/neatos/">NEATOs</a>
+                <!--<div class="entry-date">
+                    <time datetime="2018-05-01T00:00:00-07:00">May 01, 2018</time>
+                </div>-->
+            </div><div class="tag-entry">
+                <a href="/eigenfaces/">Eigenfaces and Fisherfaces</a>
+                <!--<div class="entry-date">
+                    <time datetime="2018-03-01T00:00:00-08:00">March 01, 2018</time>
+                </div>-->
+            </div><div class="tag-entry">
+                <a href="/boat-design/">Boat Design</a>
+                <!--<div class="entry-date">
+                    <time datetime="2018-02-01T00:00:00-08:00">February 01, 2018</time>
+                </div>-->
+            </div></div><!-- Ignore SEA posts on project page --><h2 id="Robotics-Systems-Integration" class="linked-section">
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        &nbsp;Robotics-Systems-Integration&nbsp;(1)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/robo-fish/">Robo Fish</a>
+                <!--<div class="entry-date">
+                    <time datetime="2021-04-01T00:00:00-07:00">April 01, 2021</time>
+                </div>-->
+            </div></div><!-- Ignore SEA posts on project page --><!-- Ignore SEA posts on project page --><h2 id="SEA-Research" class="linked-section">
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        &nbsp;SEA-Research&nbsp;(1)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/chl-a-comparison/">Chlorophyll-a Comparison</a>
+                <!--<div class="entry-date">
+                    <time datetime="2020-10-01T00:00:00-07:00">October 01, 2020</time>
+                </div>-->
+            </div></div><!-- Ignore SEA posts on project page --><h2 id="Software-Design" class="linked-section">
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        &nbsp;Software-Design&nbsp;(1)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/ROS-map-navigation/">ROS Map Navigation</a>
+                <!--<div class="entry-date">
+                    <time datetime="2018-10-01T00:00:00-07:00">October 01, 2018</time>
+                </div>-->
+            </div></div><!-- Ignore SEA posts on project page --><h2 id="WHOI-SSF" class="linked-section">
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        &nbsp;WHOI-SSF&nbsp;(1)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/manipulator-calibration/">Manipulator Calibration</a>
+                <!--<div class="entry-date">
+                    <time datetime="2020-06-01T00:00:00-07:00">June 01, 2020</time>
+                </div>-->
+            </div></div></div>
+
+	    
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links"><li><a href="mailto:amyngph@gmail.com" title="Email me"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Email me</span>
+              </a>
+            </li><li><a href="https://www.facebook.com/amy.n.phung" title="Facebook"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li><li><a href="https://github.com/amyphung" title="GitHub"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">GitHub</span>
+              </a>
+            </li><li><a href="https://linkedin.com/in/amy-phung" title="LinkedIn"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li><li><a href="https://scholar.google.com/citations?hl=en&user=UeDEjpoAAAAJ&view_op=list_works&gmla=AJsN-F7dSnx6VnJDpdt3N0cBYrrhtmKchWBRBYyVsvv1KRDaU2CqtR8NQ23vNWCgT9h5SsgtdERHTWOERjx3JNOrMNRn47QttA_3-V72DZWQ3JBy_W_jMag" title="Google Scholar"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Google Scholar</span>
+              </a>
+            </li></ul>
+      <p class="copyright text-muted">
+      Amy Phung
+      &nbsp;&bull;&nbsp;
+      2025
+
+      
+      &nbsp;&bull;&nbsp;
+      <a href="">https://amyphung.github.io/</a>
+      
+
+      
+      </p>
+          <!-- Please don't remove this, keep my open source work credited :) -->
+    <p class="theme-by text-muted">
+      Theme by
+      <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+    </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/main.js"></script>
+    
+  
+
+
+
+
+
+  </body>
+
+
+</html>

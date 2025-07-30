@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- TODO: Figure out why this needs to be here -->
+  <script src="/js/gallery.js"></script>
+
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Ground Robotic Autonomous Vehicle Lab</title>
+
+  <meta name="author" content="Amy Phung" />
+
+  
+  <meta name="description" content="Developing an autonomous tractor as a research platform">
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Amy Phung - Amy Phung's personal website & blog" href="/feed.xml" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KVB79MNVY1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KVB79MNVY1');
+</script>
+
+  
+  
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+      <link rel="stylesheet" href="/css/button.css" />
+    
+      <link rel="stylesheet" href="/css/image-caption.css" />
+    
+      <link rel="stylesheet" href="/css/gallery.css" />
+    
+      <link rel="stylesheet" href="/css/overlay.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+  <meta property="fb:app_id" content="600762203989703" />
+  
+
+  
+  <meta property="og:title" content="Ground Robotic Autonomous Vehicle Lab" />
+  
+
+   
+  <meta property="og:description" content="Developing an autonomous tractor as a research platform">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="/gravl/" />
+  <link rel="canonical" href="/gravl/" />
+  
+
+  
+  <meta property="og:image" content="/img/projects/gravl/tractor-square.jpg" />
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="Ground Robotic Autonomous Vehicle Lab" />
+  
+
+  
+  <meta name="twitter:description" content="Developing an autonomous tractor as a research platform">
+  
+
+  
+  <meta name="twitter:image" content="/img/projects/gravl/tractor-square.jpg" />
+  
+
+  
+
+</head>
+
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <!-- <a class="navbar-brand" href="">Amy Phung</a> -->
+        <a class="navbar-brand" href="https://amyphung.github.io">Amy Phung</a>
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/#">Home</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/publications">Publications</a>
+
+          </li>
+        
+        
+        
+          <li class="navlinks-container">
+            <a class="navlinks-parent" href="javascript:void(0)">Projects</a>
+            <div class="navlinks-children">
+              
+                
+                  
+
+
+
+
+
+
+<a href="/projects">All Projects</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/tags">Projects by Category</a>
+
+                
+              
+            </div>
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/sea">SEA Semester</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/blog">Blog</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/aboutme">About Me</a>
+
+          </li>
+        
+        
+      </ul>
+    </div>
+
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <!-- <a href=" "> -->
+    <a href="https://amyphung.github.io ">
+	      <img class="avatar-img" src="/img/website/profile.jpg" />
+		</a>
+	  </div>
+	</div>
+	
+
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-heading">
+          <h1>Ground Robotic Autonomous Vehicle Lab</h1>
+		  
+		    
+			<h2 class="post-subheading">Developing an autonomous tractor as a research platform</h2>
+			
+		  
+
+		  
+		  <!--<span class="post-meta">Posted on January 1, 2020</span>-->
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+      
+
+      
+        <div class="blog-tags">
+          Tags:
+          
+          
+            <a href="/tags#Olin-Robotics-Lab">Olin-Robotics-Lab</a>
+          
+          
+        </div>
+      
+
+      <article role="main" class="blog-post">
+        <p>The Ground Robotic Autonomous Vehicle Lab (GRAVL) is a student-run research group at Olin where I’ve worked since I arrived at Olin. During my first year, we set our sights on research that would focus on automated dirt road leveling. We recognized that self-driving car technology has been rapidly advancing in urban environments over the last few years, and envisioned a future in which these vehicles would be capable of navigating off-road areas and other unstructured environments. We believe that our work will contribute to the existing tech now so that rural roads will be ready when the time for widespread adoption of autonomous vehicles comes.</p>
+
+<p>During my time on the team, I’ve worked on a mix of electro-mechanical system development (Freshman Year), simulation development (Sophomore Year), and most recently using machine learning for object detection and classification in 3D pointclouds (Junior Year). For more details, keep scrolling!</p>
+
+<p>Project Links:</p>
+<ul>
+  <li><a href="https://github.com/olinrobotics/gravl">Main Repository</a></li>
+  <li><a href="https://github.com/olinrobotics/tractor_sim">Simulation</a></li>
+  <li>Other Maintained Repositories
+    <ul>
+      <li><a href="https://github.com/olinrobotics/state_controller">Robot State Controller</a></li>
+    </ul>
+  </li>
+  <li><a href="https://github.com/olinrobotics/gravl/wiki">Wiki</a></li>
+</ul>
+
+<h3 id="junior-year-2019-fall-only">Junior Year 2019 (Fall Only):</h3>
+<p>During my junior year, the team participated in the
+<a href="https://www.massrobotics.org/2020/05/21/panasonic-prototype-3d-lidar-challenge/">Panasonic Prototype 3D Lidar challenge</a>
+and was selected as a finalist, receiving $2.5K for project funding and a loaned prototype 3D LiDAR to complete our project. I worked on a sub-project aimed at exploring the possibility of training datasets in simulation or with standard datasets data to use with the 3D Lidar, so we started with training a model on the Waymo dataset. The vision is to eventually be able to train up a model on purely simulated and automatically labeled datasets in order to use this data as part of a safety system. Using this data, this safety system would be able to reliably detect dangerous situations such as people standing in front of the tractor, potholes above a certain size, or an upcoming incline that would be unsafe for operation. This data could also be used to classify the current state of the road to inform the system whether or note more leveling is needed.</p>
+
+<p>Our initial object detection results are presented in the image below:</p>
+
+<center>
+  <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="/img/projects/gravl/ml.jpg" class="thumbnail-img" onclick="on(id='#ml')" style="padding-top: 5px; width: 95%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="ml" class="overlay">
+  <img src="/img/projects/gravl/ml.jpg" class="lightbox-img" />
+  <div onclick="off(id='#ml')" class="overlay2"></div>
+</div>
+
+</center>
+
+<p><a href="https://github.com/AmyPhung/ml_person_detection">Source Code</a></p>
+
+<p>Other platform improvements completed during this year are summarized in this video</p>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/sytteTSZ4Ug" frameborder="0" allowfullscreen=""></iframe></div>
+
+<h3 id="sophomore-year-2018-2019">Sophomore Year 2018-2019:</h3>
+<p>After my first year experience, we quickly learned that our heavy reliance on a physical platform had a number of issues:</p>
+<ul>
+  <li>Only one person could test code at any given point</li>
+  <li>Systems were co-dependent and tests would be halted due to one failing system</li>
+  <li>The ground freezing during the winter months hindered our ability to test and effectively prevented us from testing during the end of the Fall semester and the first half of the Spring semester</li>
+</ul>
+
+<p>During this year, the group refocused to robust platform development to improve upon the issues we encountered during our first year. Noticing our issues with extremely slow testing cycles and weather-dependent testing, I worked on developing a simulation that could be used as the first test platform. This simulation allowed us to significantly decrease our testing cycle. Tests that had previously required several team members to run a 3-hour field mission could now be completed by an individual within an hour of debugging in simulation.</p>
+
+<p>The source code to the simulation can be viewed <a href="https://github.com/olinrobotics/tractor_sim">here</a></p>
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/raW6wDYDRLI" frameborder="0" allowfullscreen=""></iframe></div>
+
+<h3 id="freshman-year-2017-2018">Freshman Year 2017-2018:</h3>
+<p>When I joined the team during my first semester, the group was in the middle of developing a package delivery system with a combination of an UAV (Unmanned Aerial Vehicle) and an UGV (Unmanned Ground Vehicle) as an “Air-Amazon” for US Marines. This semester’s work primarily consisted of individual sub-system development and testing. Demonstrated behaviors include 2D Lidar-based target tracking and path planning, autonomous offboard control of a Pixhawk-based drone, and monocular camera-based unstructured road detection.</p>
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/e5cIqTJsXIo" frameborder="0" allowfullscreen=""></iframe></div>
+
+<p>In my second semester, since we were no longer under contract, we chose to pursue a new project related to automated dirt road maintenance &amp; terraforming. Although our tractor was equipped with a three-point hitch that could be fitted with a box blade to terraform dirt, it was not currently outfitted for autonomous operation. My primary contribution this semester was in developing the firmware and low-level actuator control and designing a custom solution for precise actuation and control of the vehicle’s hitch. At the conclusion of this semester, we were able to detect bumps and divots in dirt by scanning the ground with a 2D lidar and precisely controlling the height of the box blade through ROS.</p>
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/rLdPoTPenYo" frameborder="0" allowfullscreen=""></iframe></div>
+
+      </article>
+
+      
+        <!-- Check if any share-links are active -->
+
+
+
+
+<section id = "social-share-section">
+  <span class="sr-only">Share: </span>
+
+  
+  <!--- Share on Twitter -->
+    <a href="https://twitter.com/intent/tweet?text=Ground+Robotic+Autonomous+Vehicle+Lab+https://amyphung.github.io/gravl/"
+      class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fa fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  
+
+  
+  <!--- Share on Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://amyphung.github.io/gravl/"
+      class="btn btn-social-icon btn-facebook" title="Share on Facebook">
+      <span class="fa fa-fw fa-facebook" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+    </a>
+  
+
+  
+
+  
+  <!--- Share on LinkedIn -->
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://amyphung.github.io/gravl/"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fa fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  
+
+</section>
+
+
+
+      
+
+      <ul class="pager blog-pager">
+        
+        <!-- Disconnect SEA and project posts  -->
+          
+            <li class="previous">
+              <a href="/portal-turret/" data-toggle="tooltip" data-placement="top" title="POE-tal Turret">&larr; Previous Post</a>
+            </li>
+          
+        
+        
+        <!-- Disconnect SEA and project posts  -->
+          
+            <li class="next">
+              <a href="/manipulator-calibration/" data-toggle="tooltip" data-placement="top" title="Manipulator Calibration">Next Post &rarr;</a>
+            </li>
+          
+        
+      </ul>
+
+      
+        <div class="disqus-comments">
+          
+        </div>
+          <div class="comments">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=600762203989703&autoLogAppEvents=1';
+       fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="fb-comments" data-href="/gravl/" data-width="100%" data-numposts="5"></div>
+    <noscript>Please enable JavaScript to view the comments powered by Facebook.</noscript>
+</div>
+      
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links"><li><a href="mailto:amyngph@gmail.com" title="Email me"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Email me</span>
+              </a>
+            </li><li><a href="https://www.facebook.com/amy.n.phung" title="Facebook"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li><li><a href="https://github.com/amyphung" title="GitHub"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">GitHub</span>
+              </a>
+            </li><li><a href="https://linkedin.com/in/amy-phung" title="LinkedIn"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li><li><a href="https://scholar.google.com/citations?hl=en&user=UeDEjpoAAAAJ&view_op=list_works&gmla=AJsN-F7dSnx6VnJDpdt3N0cBYrrhtmKchWBRBYyVsvv1KRDaU2CqtR8NQ23vNWCgT9h5SsgtdERHTWOERjx3JNOrMNRn47QttA_3-V72DZWQ3JBy_W_jMag" title="Google Scholar"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Google Scholar</span>
+              </a>
+            </li></ul>
+      <p class="copyright text-muted">
+      Amy Phung
+      &nbsp;&bull;&nbsp;
+      2025
+
+      
+      &nbsp;&bull;&nbsp;
+      <a href="">https://amyphung.github.io/</a>
+      
+
+      
+      </p>
+          <!-- Please don't remove this, keep my open source work credited :) -->
+    <p class="theme-by text-muted">
+      Theme by
+      <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+    </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/main.js"></script>
+    
+  
+
+
+
+
+
+  </body>
+
+
+</html>

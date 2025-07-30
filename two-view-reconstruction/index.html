@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- TODO: Figure out why this needs to be here -->
+  <script src="/js/gallery.js"></script>
+
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Image-based 3D reconstruction</title>
+
+  <meta name="author" content="Amy Phung" />
+
+  
+  <meta name="description" content="Creating 3D pointclouds from 2D photos">
+  
+
+  <link rel="alternate" type="application/rss+xml" title="Amy Phung - Amy Phung's personal website & blog" href="/feed.xml" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KVB79MNVY1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KVB79MNVY1');
+</script>
+
+  
+  
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+      <link rel="stylesheet" href="/css/button.css" />
+    
+      <link rel="stylesheet" href="/css/image-caption.css" />
+    
+      <link rel="stylesheet" href="/css/gallery.css" />
+    
+      <link rel="stylesheet" href="/css/overlay.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+  <meta property="fb:app_id" content="600762203989703" />
+  
+
+  
+  <meta property="og:title" content="Image-based 3D reconstruction" />
+  
+
+   
+  <meta property="og:description" content="Creating 3D pointclouds from 2D photos">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="/two-view-reconstruction/" />
+  <link rel="canonical" href="/two-view-reconstruction/" />
+  
+
+  
+  <meta property="og:image" content="/img/projects/comprobo/cv-cover-img.png" />
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="Image-based 3D reconstruction" />
+  
+
+  
+  <meta name="twitter:description" content="Creating 3D pointclouds from 2D photos">
+  
+
+  
+  <meta name="twitter:image" content="/img/projects/comprobo/cv-cover-img.png" />
+  
+
+  
+
+</head>
+
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <!-- <a class="navbar-brand" href="">Amy Phung</a> -->
+        <a class="navbar-brand" href="https://amyphung.github.io">Amy Phung</a>
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/#">Home</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/publications">Publications</a>
+
+          </li>
+        
+        
+        
+          <li class="navlinks-container">
+            <a class="navlinks-parent" href="javascript:void(0)">Projects</a>
+            <div class="navlinks-children">
+              
+                
+                  
+
+
+
+
+
+
+<a href="/projects">All Projects</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/tags">Projects by Category</a>
+
+                
+              
+            </div>
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/sea">SEA Semester</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/blog">Blog</a>
+
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="/aboutme">About Me</a>
+
+          </li>
+        
+        
+      </ul>
+    </div>
+
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <!-- <a href=" "> -->
+    <a href="https://amyphung.github.io ">
+	      <img class="avatar-img" src="/img/website/profile.jpg" />
+		</a>
+	  </div>
+	</div>
+	
+
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-heading">
+          <h1>Image-based 3D reconstruction</h1>
+		  
+		    
+			<h2 class="post-subheading">Creating 3D pointclouds from 2D photos</h2>
+			
+		  
+
+		  
+		  <!--<span class="post-meta">Posted on October 30, 2020</span>-->
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+      
+
+      
+        <div class="blog-tags">
+          Tags:
+          
+          
+            <a href="/tags#Computational-Robotics">Computational-Robotics</a>
+          
+          
+        </div>
+      
+
+      <article role="main" class="blog-post">
+        <p>For our <a href="https://comprobo20.github.io/assignments/computer_vision_project">open-ended computer vision project</a> in my <a href="https://comprobo20.github.io/">Computational Robotics course</a>, my project partner and I wanted to work on a project related to localization. The idea of SLAM in unstructured environments was pretty interesting to us, particularly the step where the pose of the camera is estimated relative to a newly-constructed map of the environment. Implementing a fully-fledged monocular SLAM project would be too ambitious for this brief 2-week-long project, so we decided to focus on creating a 3D reconstruction from still images. This process is fairly similar to the camera pose estimation step in monocular SLAM algorithms, but not needing to deal with challenges such as loop closure or scale allowed us to focus on the process of how to get from 2D to 3D data.</p>
+
+<p>Project Partner: Everardo Gonzalez</p>
+
+<h2 id="project-results">Project Results</h2>
+<p>Ultimately, we were able to get a 3D reconstruction with two images on both a <a href="https://github.com/openMVG/SfM_quality_evaluation/tree/master/Benchmarking_Camera_Calibration_2008/fountain-P11/images">publicly-available dataset</a> where the camera calibration matrices were provided, and with our own dataset which we recorded with an Xbox 360 Kinect. Photos of our results are shown below:</p>
+
+<h4 id="input-images---standard-dataset">Input Images - standard dataset:</h4>
+<center>
+  <figure>
+    <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="https://github.com/AmyPhung/computer_vision/blob/main/img/fountain0.jpg?raw=true" class="thumbnail-img" onclick="on(id='#fountain0')" style="padding-top: 5px; width: 45%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="fountain0" class="overlay">
+  <img src="https://github.com/AmyPhung/computer_vision/blob/main/img/fountain0.jpg?raw=true" class="lightbox-img" />
+  <div onclick="off(id='#fountain0')" class="overlay2"></div>
+</div>
+
+    <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="https://github.com/AmyPhung/computer_vision/blob/main/img/fountain1.jpg?raw=true" class="thumbnail-img" onclick="on(id='#fountain1')" style="padding-top: 5px; width: 45%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="fountain1" class="overlay">
+  <img src="https://github.com/AmyPhung/computer_vision/blob/main/img/fountain1.jpg?raw=true" class="lightbox-img" />
+  <div onclick="off(id='#fountain1')" class="overlay2"></div>
+</div>
+
+    <figcaption style="padding-top:5px;width:70%">Fountain input images (look carefully - they have slightly different perspectives!)</figcaption>
+  </figure>
+</center>
+
+<h4 id="output-pointcloud-and-computed-camera-positions----standard-dataset">Output pointcloud and computed camera positions  - standard dataset:</h4>
+<center>
+  <figure>
+    <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="https://github.com/AmyPhung/computer_vision/blob/main/img/fountain_result.png?raw=true" class="thumbnail-img" onclick="on(id='#result')" style="padding-top: 5px; width: 100%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="result" class="overlay">
+  <img src="https://github.com/AmyPhung/computer_vision/blob/main/img/fountain_result.png?raw=true" class="lightbox-img" />
+  <div onclick="off(id='#result')" class="overlay2"></div>
+</div>
+
+    <figcaption style="padding-top:5px;width:70%">3D Reconstruction Results displayed in RVIZ</figcaption>
+  </figure>
+</center>
+
+<p>Unfortunately, we didn’t have a “ground truth” 3D scan of the fountain or known locations of our camera when these photos were taken, which meant we couldn’t compute quantitative metrics to evaluate our results. However, we can qualitatively see that the results look pretty good - the wall behind the fountain appears fairly flat, and notable features like the ornament above the fountain, the fountain centerpiece, and the black and white sign in the bottom right are distinctly visible.</p>
+
+<p>Qualitatively, the relative position of the camera across the two images also looks good. In OpenCV, the x-axis (red) points to the right, the y-axis (green) points down, and the z-axis (blue) points directly into the screen (this is illustrated in the image below)</p>
+
+<center>
+  <figure>
+    <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="https://docs.nvidia.com/isaac/archive/2019.1/_images/coord-frame-camera-frame.png" class="thumbnail-img" onclick="on(id='#camera-axes')" style="padding-top: 5px; width: 60%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="camera-axes" class="overlay">
+  <img src="https://docs.nvidia.com/isaac/archive/2019.1/_images/coord-frame-camera-frame.png" class="lightbox-img" />
+  <div onclick="off(id='#camera-axes')" class="overlay2"></div>
+</div>
+
+    <figcaption style="padding-top:5px;width:70%">Camera Axes (
+      <a href="https://docs.nvidia.com/isaac/archive/2019.1/packages/perception/doc/coord_frame.html">image source</a>
+      )</figcaption>
+  </figure>
+</center>
+
+<p>Looking at the input images, we expect the orientation of the camera’s axes across the two images to be fairly similar, with the z-axes to be slightly pointed towards each other. Since the photos are upright, we also expect that the x-axis will point to the right and the y-axis will point downwards. Looking at our computed camera positions relative to our output pointcloud, we can see that these appear to match the position and orientation we expected, providing confidence that our implementation was successful.</p>
+
+<h4 id="input-images---custom-dataset">Input Images - custom dataset:</h4>
+<center>
+  <figure>
+    <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="https://github.com/AmyPhung/computer_vision/blob/main/img/shelf3.png?raw=true" class="thumbnail-img" onclick="on(id='#shelf3')" style="padding-top: 5px; width: 45%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="shelf3" class="overlay">
+  <img src="https://github.com/AmyPhung/computer_vision/blob/main/img/shelf3.png?raw=true" class="lightbox-img" />
+  <div onclick="off(id='#shelf3')" class="overlay2"></div>
+</div>
+
+    <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="https://github.com/AmyPhung/computer_vision/blob/main/img/shelf4.png?raw=true" class="thumbnail-img" onclick="on(id='#shelf4')" style="padding-top: 5px; width: 45%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="shelf4" class="overlay">
+  <img src="https://github.com/AmyPhung/computer_vision/blob/main/img/shelf4.png?raw=true" class="lightbox-img" />
+  <div onclick="off(id='#shelf4')" class="overlay2"></div>
+</div>
+
+    <figcaption style="padding-top:5px;width:70%">Our custom test images - taken with an old Xbox 360 Kinect sitting around the house</figcaption>
+  </figure>
+</center>
+
+<h4 id="output-pointcloud-and-computed-camera-positions---custom-dataset">Output pointcloud and computed camera positions - custom dataset:</h4>
+<center>
+  <figure>
+    <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="https://github.com/AmyPhung/computer_vision/blob/main/img/shelf_output.png?raw=true" class="thumbnail-img" onclick="on(id='#shelf_output')" style="padding-top: 5px; width: 46%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="shelf_output" class="overlay">
+  <img src="https://github.com/AmyPhung/computer_vision/blob/main/img/shelf_output.png?raw=true" class="lightbox-img" />
+  <div onclick="off(id='#shelf_output')" class="overlay2"></div>
+</div>
+
+    <script>
+  function on(id) {
+    // document.getElementById("overlay").style.display = "block";
+    // $(`${id}, .lightbox-img`).fadeIn();
+    // $(`${id}, .overlay`).fadeIn();
+    // $(`${id}`).fadeIn();
+
+    $(id).fadeIn();
+    console.log("in");
+    console.log(id);
+  }
+
+  function off(id) {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $(id).fadeOut();
+
+    console.log("out");
+    console.log(id);
+  }
+
+  function off2() {
+    // document.getElementById("overlay").style.display = "none";
+    // $(id).fadeIn();
+    // $(`${id}, .lightbox-img`).fadeOut();
+    // $(`${id}, .overlay`).fadeOut();
+    // $(`${id}`).stop().fadeOut();
+    $("#headrig").fadeOut();
+  }
+</script>
+
+<style>
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .thumbnail-img {
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 10000
+  }
+
+  .lightbox-img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    /* Maintain Original Aspect Ratio */
+    width: auto;
+    height: auto;
+    /* Set limits for max display size */
+    max-width: 85%;
+    max-height: 85%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
+</style>
+
+
+<!-- Thumbnail Image -->
+<img src="https://github.com/AmyPhung/computer_vision/blob/main/img/shelf_output_top.png?raw=true" class="thumbnail-img" onclick="on(id='#shelf_output_top')" style="padding-top: 5px; width: 30%;" />
+
+<!-- Image in lightbox -->
+<!-- $id = strip_tags($des); echo $clear; -->
+<div id="shelf_output_top" class="overlay">
+  <img src="https://github.com/AmyPhung/computer_vision/blob/main/img/shelf_output_top.png?raw=true" class="lightbox-img" />
+  <div onclick="off(id='#shelf_output_top')" class="overlay2"></div>
+</div>
+
+    <figcaption style="padding-top:5px;width:70%">3D Reconstruction Results displayed in RVIZ (left: side view, right: top-down view)</figcaption>
+  </figure>
+</center>
+
+<p>In the left view it’s evident that the camera locations look about as we’d expect from the images, but it’s difficult to tell the quality of the pointcloud due to it’s sparseness (likely caused by the relatively low resolution of the kinect compared to the camera used for the fountain dataset). However, looking at the pointcloud from the top-down view (pictured on the right), the distinct roundness of the globe can be seen.</p>
+
+<p>We also tested our implementation on other views and found that the quality of the results significantly drops if it can’t find good keypoint matches. In particular, our implementation is particularly sensitive to:</p>
+
+<ul>
+  <li>low or inconsistent lighting</li>
+  <li>repetitive patterns</li>
+  <li>views that are too different or are too similar to each other</li>
+</ul>
+
+<h2 id="project-documentation">Project Documentation</h2>
+<p>For more information and to see our detailed write-up, check out our project repo!</p>
+
+<center>
+  <a href="https://github.com/AmyPhung/computer_vision" class="button buttonblack" style="text-decoration: none" target="_blank" rel="noopener noreferrer">
+      Check out our Project Repository &amp; Writeup!
+  </a>
+</center>
+
+      </article>
+
+      
+        <!-- Check if any share-links are active -->
+
+
+
+
+<section id = "social-share-section">
+  <span class="sr-only">Share: </span>
+
+  
+  <!--- Share on Twitter -->
+    <a href="https://twitter.com/intent/tweet?text=Image-based+3D+reconstruction+https://amyphung.github.io/two-view-reconstruction/"
+      class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fa fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  
+
+  
+  <!--- Share on Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://amyphung.github.io/two-view-reconstruction/"
+      class="btn btn-social-icon btn-facebook" title="Share on Facebook">
+      <span class="fa fa-fw fa-facebook" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
+    </a>
+  
+
+  
+
+  
+  <!--- Share on LinkedIn -->
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://amyphung.github.io/two-view-reconstruction/"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fa fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  
+
+</section>
+
+
+
+      
+
+      <ul class="pager blog-pager">
+        
+        <!-- Disconnect SEA and project posts  -->
+          
+            <li class="previous">
+              <a href="/particle-filter/" data-toggle="tooltip" data-placement="top" title="Particle Filter">&larr; Previous Post</a>
+            </li>
+          
+        
+        
+        <!-- Disconnect SEA and project posts  -->
+          
+            <li class="next">
+              <a href="/robo-dodgeball/" data-toggle="tooltip" data-placement="top" title="Robo Dodgeball">Next Post &rarr;</a>
+            </li>
+          
+        
+      </ul>
+
+      
+        <div class="disqus-comments">
+          
+        </div>
+          <div class="comments">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=600762203989703&autoLogAppEvents=1';
+       fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="fb-comments" data-href="/two-view-reconstruction/" data-width="100%" data-numposts="5"></div>
+    <noscript>Please enable JavaScript to view the comments powered by Facebook.</noscript>
+</div>
+      
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links"><li><a href="mailto:amyngph@gmail.com" title="Email me"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Email me</span>
+              </a>
+            </li><li><a href="https://www.facebook.com/amy.n.phung" title="Facebook"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li><li><a href="https://github.com/amyphung" title="GitHub"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">GitHub</span>
+              </a>
+            </li><li><a href="https://linkedin.com/in/amy-phung" title="LinkedIn"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li><li><a href="https://scholar.google.com/citations?hl=en&user=UeDEjpoAAAAJ&view_op=list_works&gmla=AJsN-F7dSnx6VnJDpdt3N0cBYrrhtmKchWBRBYyVsvv1KRDaU2CqtR8NQ23vNWCgT9h5SsgtdERHTWOERjx3JNOrMNRn47QttA_3-V72DZWQ3JBy_W_jMag" title="Google Scholar"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">Google Scholar</span>
+              </a>
+            </li></ul>
+      <p class="copyright text-muted">
+      Amy Phung
+      &nbsp;&bull;&nbsp;
+      2025
+
+      
+      &nbsp;&bull;&nbsp;
+      <a href="">https://amyphung.github.io/</a>
+      
+
+      
+      </p>
+          <!-- Please don't remove this, keep my open source work credited :) -->
+    <p class="theme-by text-muted">
+      Theme by
+      <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+    </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/js/main.js"></script>
+    
+  
+
+
+
+
+
+  </body>
+
+
+</html>

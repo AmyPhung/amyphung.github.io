@@ -1,24 +1,230 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:20 %}
+    <title>Amy Phung</title>
+    <description>Amy Phung's personal website &amp; blog</description>
+    <link></link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
+        <title>Opti-Acoustic Perception (OASIS)</title>
         <description>
-          {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
-          {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
+          Real-time opti-acoustic sensing for intervention systems in unstructured environments - 
+          OASIS is an opti-acoustic fusion method that integrates data from optical images with voxel carving techniques to achieve real-time 3D reconstruction unstructured underwater workspaces. High resolution underwater 3D scene reconstruction is crucial for various applications, including construction, infrastructure maintenance, monitoring, exploration, and scientific investigation. Prior work has leveraged the complementary...
         </description>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ site.url }}{{ post.url }}</link>
-        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+        <pubDate>Mon, 01 Jan 2024 00:00:00 -0800</pubDate>
+        <link>/oasis/</link>
+        <guid isPermaLink="true">/oasis/</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Shared Autonomy Framework (SHARC)</title>
+        <description>
+          Enabling remote novice users to conduct deep-ocean science operations with robotic manipulators - 
+          Conventional underwater intervention operations using robotic vehicles require expert teleoperators and limit interaction with remote scientists. In this work, we introduce the shared autonomy for remote collaboration (SHARC) framework which enables novice operators to cooperatively conduct underwater sampling and manipulation tasks. With SHARC, operators can plan and complete manipulation tasks...
+        </description>
+        <pubDate>Sun, 01 Jan 2023 00:00:00 -0800</pubDate>
+        <link>/sharc/</link>
+        <guid isPermaLink="true">/sharc/</guid>
+      </item>
+    
+      <item>
+        <title>Puerto Rico</title>
+        <description>
+          Field work! Glider field ops - 
+          Field work was one of the aspects to my grad program that I was the most excited about, and here we are! I’d participated remotely on a cruise my work was being tested on last year, but it’s not quite the same as being there in person. This trip was...
+        </description>
+        <pubDate>Tue, 22 Nov 2022 00:00:00 -0800</pubDate>
+        <link>/puerto-rico2022/</link>
+        <guid isPermaLink="true">/puerto-rico2022/</guid>
+      </item>
+    
+      <item>
+        <title>Maine 2022</title>
+        <description>
+          Sailing around Camden, backpacking in Baxter, and a brief visit to Acadia - 
+          This was my first backpacking trip, my first time visiting Maine, and my first overnight trip on Mashnee! It was a fantastic break from the day-to-day work. I took a bus from Boston up to Camden, where Mashnee was moored. Over the next couple of days we sailed around Penobscot...
+        </description>
+        <pubDate>Wed, 10 Aug 2022 00:00:00 -0700</pubDate>
+        <link>/maine2022/</link>
+        <guid isPermaLink="true">/maine2022/</guid>
+      </item>
+    
+      <item>
+        <title>JP Student Cruise</title>
+        <description>
+          Introductory cruise aboard the R/V Armstrong - 
+          First-year students in the MIT-WHOI Joint Program typically go on a 10-day cruise aboard the Cramer (the sister ship to the Seamans!) to get to know their cohort while getting some hands-on experience with common oceanographic sampling equipment. Unfortunately, COVID was still causing logistics issues when I enrolled in the...
+        </description>
+        <pubDate>Sun, 07 Nov 2021 00:00:00 -0700</pubDate>
+        <link>/armstrong2021/</link>
+        <guid isPermaLink="true">/armstrong2021/</guid>
+      </item>
+    
+      <item>
+        <title>ROV-VR</title>
+        <description>
+          Leveraging virtual reality to improve underwater robotic vehicle piloting for deep-sea scientific sampling - 
+          For my senior capstone project at Olin, I led the development of a control room display in virtual reality (VR) to help improve operation of underwater remotely operated vehicles (ROVs). Thanks to generous support from the Dassault Systèmes Foundation, we were able to work on this project in collaboration with...
+        </description>
+        <pubDate>Sat, 01 May 2021 00:00:00 -0700</pubDate>
+        <link>/rov-vr/</link>
+        <guid isPermaLink="true">/rov-vr/</guid>
+      </item>
+    
+      <item>
+        <title>Robo Fish</title>
+        <description>
+          Creating a small robotic fish with a soft tail - 
+          This project was created as part of the open-ended final project in my Robotics Systems Integration course, which had a particular focus on designing robotics systems with soft actuators. Working with hardware during COVID proved to be challenging, especially with each of us working from a separate location. We were...
+        </description>
+        <pubDate>Thu, 01 Apr 2021 00:00:00 -0700</pubDate>
+        <link>/robo-fish/</link>
+        <guid isPermaLink="true">/robo-fish/</guid>
+      </item>
+    
+      <item>
+        <title>Discrete Landmark Navigation</title>
+        <description>
+          A study in finding the optimal path within stochastic graphs - 
+          For our final project in our Discrete Math course, my project partners and I wanted to find ways to use what we had learned in discrete to solve common robotics problems. Earlier in the course, we had touched upon the theory behind popular algorithms like Dijkstra’s and Bellman-Ford for finding...
+        </description>
+        <pubDate>Tue, 01 Dec 2020 00:00:00 -0800</pubDate>
+        <link>/discrete-landmark-navigation/</link>
+        <guid isPermaLink="true">/discrete-landmark-navigation/</guid>
+      </item>
+    
+      <item>
+        <title>Robo Dodgeball</title>
+        <description>
+          Using machine learning to train a robot to play dodgeball - 
+          This project was created as part of the open-ended final project in my Computational Robotics course - we were provided with a gazebo simulator that provided the low-level controls for a Neato robotic vacuum, and it was up to us to decide what to do with it. For this project,...
+        </description>
+        <pubDate>Mon, 30 Nov 2020 00:00:00 -0800</pubDate>
+        <link>/robo-dodgeball/</link>
+        <guid isPermaLink="true">/robo-dodgeball/</guid>
+      </item>
+    
+      <item>
+        <title>Image-based 3D reconstruction</title>
+        <description>
+          Creating 3D pointclouds from 2D photos - 
+          For our open-ended computer vision project in my Computational Robotics course, my project partner and I wanted to work on a project related to localization. The idea of SLAM in unstructured environments was pretty interesting to us, particularly the step where the pose of the camera is estimated relative to...
+        </description>
+        <pubDate>Fri, 30 Oct 2020 00:00:00 -0700</pubDate>
+        <link>/two-view-reconstruction/</link>
+        <guid isPermaLink="true">/two-view-reconstruction/</guid>
+      </item>
+    
+      <item>
+        <title>Particle Filter</title>
+        <description>
+          Implementing a particle filter for mobile robot localization - 
+          As one of the first few projects in my Computational Robotics course, my project group and I implemented a Particle Filter to help localize a robot based on lidar data (in layman’s terms - figured out where the robot is on a map based on sensor input). As one of...
+        </description>
+        <pubDate>Fri, 02 Oct 2020 00:00:00 -0700</pubDate>
+        <link>/particle-filter/</link>
+        <guid isPermaLink="true">/particle-filter/</guid>
+      </item>
+    
+      <item>
+        <title>Chlorophyll-a Comparison</title>
+        <description>
+          Comparing chl-a measurements from satellites, robotic floats, and shipborne fluorometers in New Zealand - 
+          During my semester abroad with SEA, taking the class “Directed Oceanographic Research” gave me the opportunity to complete a research project and communicate my results in a technical write-up. One of my primary motivations when studying with SEA was to learn more about the role robots played in the ocean...
+        </description>
+        <pubDate>Thu, 01 Oct 2020 00:00:00 -0700</pubDate>
+        <link>/chl-a-comparison/</link>
+        <guid isPermaLink="true">/chl-a-comparison/</guid>
+      </item>
+    
+      <item>
+        <title>Manipulator Calibration</title>
+        <description>
+          Developing a calibration method extensible to deep-sea manipulators - 
+          During my Summer Student Fellowship with WHOI, I researched computer vision-based calibration methods that would be extensible to deep-sea manipulators. Hydraulic manipulator arms are commonly used for a variety of underwater tasks requiring a high degree of both strength and dexterity, ranging from scientific tasks such as capturing delicate live...
+        </description>
+        <pubDate>Mon, 01 Jun 2020 00:00:00 -0700</pubDate>
+        <link>/manipulator-calibration/</link>
+        <guid isPermaLink="true">/manipulator-calibration/</guid>
+      </item>
+    
+      <item>
+        <title>Ground Robotic Autonomous Vehicle Lab</title>
+        <description>
+          Developing an autonomous tractor as a research platform - 
+          The Ground Robotic Autonomous Vehicle Lab (GRAVL) is a student-run research group at Olin where I’ve worked since I arrived at Olin. During my first year, we set our sights on research that would focus on automated dirt road leveling. We recognized that self-driving car technology has been rapidly advancing...
+        </description>
+        <pubDate>Wed, 01 Jan 2020 00:00:00 -0800</pubDate>
+        <link>/gravl/</link>
+        <guid isPermaLink="true">/gravl/</guid>
+      </item>
+    
+      <item>
+        <title>POE-tal Turret</title>
+        <description>
+          A fun functioning sentry turret from the game Portal - 
+          For those who’ve played the game Portal or Portal 2, you probably recognized the unmistakable sentry turret from the games based on the display image (if not, here’s a side-by-side comparison for reference!) I’d also highly suggest checking our project website here for more documentation! This project was created along...
+        </description>
+        <pubDate>Sun, 01 Dec 2019 00:00:00 -0800</pubDate>
+        <link>/portal-turret/</link>
+        <guid isPermaLink="true">/portal-turret/</guid>
+      </item>
+    
+      <item>
+        <title>Robot Tugboat</title>
+        <description>
+          An autonomous mini-tugboat - 
+          This project involved modifying a prebuilt tugboat and adding sensors, sensor mounts, Arduinos, and other hardware to upgrade the platform from being remote-controlled to a fully autonomous tugboat with radio communications to an off-board computer. To prove sufficient autonomous behavior, we programmed our boat to be able to do several...
+        </description>
+        <pubDate>Tue, 01 Oct 2019 00:00:00 -0700</pubDate>
+        <link>/robotic-tugboat/</link>
+        <guid isPermaLink="true">/robotic-tugboat/</guid>
+      </item>
+    
+      <item>
+        <title>Using Extended Kalman Filters for SLAM</title>
+        <description>
+          A deep dive into the math and theory behind SLAM - 
+          Inspired by my first year experiences working on the ROS map navigation project, I worked on a project which involved a deep-dive into the math and theory behind using extended kalman filters for SLAM as my final project in Quantitative Engineering Analysis. Working on the ROS map navigation project was...
+        </description>
+        <pubDate>Sat, 01 Dec 2018 00:00:00 -0800</pubDate>
+        <link>/ekf-slam/</link>
+        <guid isPermaLink="true">/ekf-slam/</guid>
+      </item>
+    
+      <item>
+        <title>Segway Robot</title>
+        <description>
+          A segway robot that drives along a parametric curve - 
+          This class project was part of a segway robots module centered on learning about controls. The base deliverable was to get the robot to stand, drive forward, and spin, but we took this a step further and got the robot to also drive along a parametric curve. Project Partner: Everardo...
+        </description>
+        <pubDate>Thu, 01 Nov 2018 00:00:00 -0700</pubDate>
+        <link>/segway/</link>
+        <guid isPermaLink="true">/segway/</guid>
+      </item>
+    
+      <item>
+        <title>ROS Map Navigation</title>
+        <description>
+          A simple ROS package to navigate a robot through a map - 
+          My friends and I wanted to learn more about SLAM, so we thought it’d be a good idea to use the final project in our Software Design class to get a headstart in learning about what goes into this complex problem. We first used the ROS package hector_slam to get...
+        </description>
+        <pubDate>Mon, 01 Oct 2018 00:00:00 -0700</pubDate>
+        <link>/ROS-map-navigation/</link>
+        <guid isPermaLink="true">/ROS-map-navigation/</guid>
+      </item>
+    
+      <item>
+        <title>Eigentricks</title>
+        <description>
+          Using eigenvectors to characterize and identify poi tricks - 
+          The topic of this project was “wearable sensing” and analyzing sensor data for a user’s benefit. My project partner and I were both involved with the fire arts club, so we asked ourselves - Could we collect data on someone’s poi spinning to determine what trick they were using, then...
+        </description>
+        <pubDate>Sat, 01 Sep 2018 00:00:00 -0700</pubDate>
+        <link>/eigentricks/</link>
+        <guid isPermaLink="true">/eigentricks/</guid>
+      </item>
+    
   </channel>
 </rss>
