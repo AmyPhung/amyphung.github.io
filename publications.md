@@ -7,7 +7,8 @@ title: Publications
 ## Theses
  **A. Phung**, “Enabling Robotic Manipulation in Remote Environments with Shared Autonomy” Massachusetts Institute of Technology and Woods Hole Oceanographic Institution, 2023. [https://doi.org/10.1575/1912/66365](https://doi.org/10.1575/1912/66365)
  <br /> 
-[[PDF](https://darchive.mblwhoilibrary.org/bitstreams/236ef97b-0232-4cbe-ae12-cccf1f06d258/download)]
+[[PDF](https://dspace.mit.edu/handle/1721.1/158267)]
+<!-- https://darchive.mblwhoilibrary.org/bitstreams/236ef97b-0232-4cbe-ae12-cccf1f06d258/download -->
 
 <!-- Conference and Journal Publications -->
 ## Publications

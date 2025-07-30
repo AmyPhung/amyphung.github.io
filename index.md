@@ -38,7 +38,7 @@ p {
 <!-- font-size: 13px;-->
 
 ## Biography
-<img style="float: right;" src="/img/website/headshot.jpg" width="32%">
+<img style="float: right;" src="/img/website/profile.jpg" width="32%">
 
 I'm a PhD student in the [MIT-WHOI Joint Program](https://mit.whoi.edu/), where I'm advised by Richard Camilli. I'm affiliated with the [AeroAstro](https://aeroastro.mit.edu/) department at MIT and the [Applied Ocean Sciences and Engineering](https://mit.whoi.edu/academics/fields/aope/) (AOSE) department at WHOI. My research is funded in part by the [NASA FINESST](https://nspires.nasaprs.com/external/solicitations/summary!init.do?solId=%7bEA8742DF-E6E6-67E9-4D56-267EF31C1CDB%7d&path=open) research grant, the [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/), and the [Link Foundation Ocean Engineering and Instrumentation Fellowship](https://linkoe.org/).
 
@@ -55,7 +55,7 @@ If you're interested in learning more about the projects I've worked on, check o
   <a href="/projects" class="button buttonblack-fixed" style="text-decoration: none">
       Projects
   </a>
-  <a href="/files/about/amy_phung_CV_V2_9.pdf" class="button buttonblack-fixed" style="text-decoration: none" target="_blank" rel="noopener noreferrer">
+  <a href="/files/about/amy_phung_CV_V3_0.pdf" class="button buttonblack-fixed" style="text-decoration: none" target="_blank" rel="noopener noreferrer">
       CV
   </a>
 </center>
