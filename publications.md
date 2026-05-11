@@ -5,6 +5,8 @@ title: Publications
 
 <!-- Theses -->
 ## Theses
+ **A. Phung**, “Optical and Acoustic Perception for Robotic Exploration and Intervention in Challenging Underwater Environments” Massachusetts Institute of Technology and Woods Hole Oceanographic Institution, 2026. 
+ 
  **A. Phung**, “Enabling Robotic Manipulation in Remote Environments with Shared Autonomy” Massachusetts Institute of Technology and Woods Hole Oceanographic Institution, 2023. [https://doi.org/10.1575/1912/66365](https://doi.org/10.1575/1912/66365)
  <br /> 
 [[PDF](https://dspace.mit.edu/handle/1721.1/158267)]
@@ -12,36 +14,78 @@ title: Publications
 
 <!-- Conference and Journal Publications -->
 ## Publications
-**A. Phung**, G. Billings, G. Burgess, R. Camilli, “An Autonomous Underwater Glider With Improved Onboard Navigation for Unattended Mapping” IEEE Journal of Oceanic Engineering, 2025. [https://doi.org/10.1109/JOE.2025.3538925](https://doi.org/10.1109/JOE.2025.3538925)
+**A. Phung**, R. Camilli, “Sonar-MASt3R: Real-Time Opti-Acoustic Fusion in Turbid, Unstructured Environments” IEEE International Conference on Robotics and Automation, 2026. (In press)
 <br /> 
-[[PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10980064)]
+[[PDF](https://arxiv.org/pdf/2603.13585)]
+[[Project Website](https://sonar-mast3r.github.io/)]
+
+**A. Phung**, R. Camilli, “OASIS: Real-Time Opti-Acoustic Sensing for Intervention Systems in Unstructured Environments” IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).
+[https://doi.org/10.1109/IROS60139.2025.11246656](https://doi.org/10.1109/IROS60139.2025.11246656)
+<br /> 
+[[PDF](https://arxiv.org/pdf/2508.12071)]
+[[Project Website](https://oasis-iros.github.io/)]
+
+**A. Phung**, G. Billings, T. Maksym, R. Camilli, “Automated Ice Detection for Autonomous Underwater Gliders” IEEE/MTS OCEANS - Brest, 2025.
+[https://doi.org/10.1109/OCEANS58557.2025.11104330](https://doi.org/10.1109/OCEANS58557.2025.11104330)
+<br /> 
+[[PDF](https://aug-mapping.github.io/static/pdf/OCEANS2025_aug_ice.pdf)]
+[[Project Website](https://aug-mapping.github.io/)]
+
+G. Billings, **A. Phung**, R. Camilli, “DVL Integration with Autonomous Underwater Gliders for Navigation in Arctic Marginal Ice Zones” IEEE/MTS OCEANS - Brest, 2025.
+[https://doi.org/10.1109/OCEANS58557.2025.11104400](https://doi.org/10.1109/OCEANS58557.2025.11104400)
+<br /> 
+[[PDF](https://aug-mapping.github.io/static/pdf/OCEANS2025_arctic_dvl_odo.pdf)]
+[[Project Website](https://aug-mapping.github.io/)]
+
+**A. Phung**, G. Billings, G. Burgess, R. Camilli, “An Autonomous Underwater Glider With Improved Onboard Navigation for Unattended Mapping” IEEE Journal of Oceanic Engineering, 2025. 
+[https://doi.org/10.1109/JOE.2025.3538925](https://doi.org/10.1109/JOE.2025.3538925)
+<br /> 
+[[PDF](https://aug-mapping.github.io/static/pdf/JOE2025_aug_survey.pdf)]
+[[Project Website](https://aug-mapping.github.io/)]
 
 **A. Phung**, G. Billings, R. Camilli, “Sonar-Aided Manipulation in Low-Visibility Conditions by Novice Users” IEEE/MTS OCEANS - Halifax, 2024.
+[https://doi.org/10.1109/OCEANS55160.2024.10753694](https://doi.org/10.1109/OCEANS55160.2024.10753694)
 <br /> 
 [[PDF](/files/publications/Sonar_Manip__2024_OCEANS.pdf)]
 [[Poster](/files/presentations/OCEANS-2024-poster.pdf)]
 
-**A. Phung**, G. Billings, A. F. Daniele, M. R. Walter, R. Camilli, “A Shared Autonomy System for Precise and Efficient Remote Underwater Manipulation” IEEE Transactions on Robotics, vol. 40, pp. 4147-4159, 2024. [https://doi.org/10.1109/TRO.2024.3431830](https://doi.org/10.1109/TRO.2024.3431830)
+**A. Phung**, G. Billings, A. F. Daniele, M. R. Walter, R. Camilli, “A Shared Autonomy System for Precise and Efficient Remote Underwater Manipulation” IEEE Transactions on Robotics, vol. 40, pp. 4147-4159, 2024. 
+[https://doi.org/10.1109/TRO.2024.3431830](https://doi.org/10.1109/TRO.2024.3431830)
 <br /> 
 [[PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10606089)]
+[[Project Website](https://amyphung.github.io/sharc/)]
+
+G. Billings, **A. Phung**, R. Camilli, “DVL-Based Odometry for Autonomous Underwater Gliders” IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023. 
+[https://doi.org/10.1109/IROS55552.2023.10341554](https://doi.org/10.1109/IROS55552.2023.10341554)
+<br /> 
+[[PDF](https://aug-mapping.github.io/static/pdf/OCEANS2025_arctic_dvl_odo.pdf)]
+[[Project Website](https://aug-mapping.github.io/)]
 
 **A. Phung**, G. Billings, A. F. Daniele, M. R. Walter, R. Camilli, “Enhancing Scientific Exploration of the Deep Sea Through Shared Autonomy in Remote Manipulation” Science Robotics, 8(81), eadi5227, 2023. 
 [https://doi.org/10.1126/scirobotics.adi5227](https://doi.org/10.1126/scirobotics.adi5227)
 <br /> 
 [[PDF](https://www.science.org/doi/epdf/10.1126/scirobotics.adi5227)]
+[[Project Website](https://amyphung.github.io/sharc/)]
 
 A. Elor, T. Thang, B. Hughes, A. Crosby, **A. Phung**, E. Gonzalez, K. Katija, S. Haddock, E. Martin,
 B. Erwin, L. Takayama, “Catching Jellies in Immersive Virtual Reality: A Comparative Teleoperation
 Study of ROVs in Underwater Capture Tasks” ACM Symposium on Virtual Reality Software and
-Technology (VRST), 2021. [https://doi.org/10.1145/3489849.3489861](https://doi.org/10.1145/3489849.3489861)
+Technology (VRST), 2021. 
+[https://doi.org/10.1145/3489849.3489861](https://doi.org/10.1145/3489849.3489861)
+<br /> 
+[[Project Website](https://amyphung.github.io/rov-vr/)]
 
 E. Martin, B. Erwin, K. Katija, **A. Phung**, E. Gonzalez, S. Thun, H. Cullen, S. Haddock, “A Virtual
 Reality Video System for Deep Ocean Remotely Operated Vehicles” IEEE/MTS OCEANS San Diego -
-Porto, 2021. [https://doi.org/10.23919/OCEANS44145.2021.9705810](https://doi.org/10.23919/OCEANS44145.2021.9705810)
+Porto, 2021. 
+[https://doi.org/10.23919/OCEANS44145.2021.9705810](https://doi.org/10.23919/OCEANS44145.2021.9705810)
+<br /> 
+[[Project Website](https://amyphung.github.io/rov-vr/)]
 
 **A. Phung**, “A comparison of Biogeochemical Argo sensors, remote sensing systems, and shipborne field
 fluorometers to measure Chlorophyll-A concentrations in the Pacific Ocean off the northern coast of New
-Zealand” IEEE/MTS OCEANS Singapore-U.S. Gulf Coast, 2020. [https://doi.org/10.1109/IEEECONF38699.2020.9389221](https://doi.org/10.1109/IEEECONF38699.2020.9389221)
+Zealand” IEEE/MTS OCEANS Singapore-U.S. Gulf Coast, 2020. 
+[https://doi.org/10.1109/IEEECONF38699.2020.9389221](https://doi.org/10.1109/IEEECONF38699.2020.9389221)
 <br /> 
 [[PDF](/files/chl-a/Chl_A_Comparison_Formatted.pdf)]
 [[Poster](/files/chl-a/PosterPDF_Phung.pdf)]
